@@ -6,15 +6,26 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
 
-    .headerSpacing {
-        padding-top: 3.5em;
+
+
+@media only screen and (max-width: 768px) {
+    .headerStyling {
+        font-size: 8vw !important;
+        line-height: 1.2em !important;
 
     }
+}
+
+    .headerSpacing {
+        padding-top: 3.5rem;
+        
+    }
     .headerStyling {
-        margin-left: 1em;
+    
         margin-right: 1em;
-        font-size: 3.25vw;
+        font-size: 3.16vw;
         font-weight: bold;
+        line-height: 1.4em;
     }
     `;
 
@@ -27,11 +38,9 @@ export const Home = () => (
 <Container fluid>
 <div className = "headerSpacing"/>
  <Row>  
-    <h1 className="headerStyling">
-    I’m a digital product designer, currently living and
-    </h1>
-    <h1 className="headerStyling">
-        working in London, UK
+    <h1 className="ml-5 mr-5 headerStyling">
+    I’m a digital product designer, currently living and <br></br>
+    working in London, UK
     </h1>
  </Row>
 </Container>
