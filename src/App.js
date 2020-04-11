@@ -13,7 +13,7 @@ class App extends Component {
       <React.Fragment>
         <Router>
           <NavigationBar />
-       
+
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />

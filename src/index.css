@@ -3,3 +3,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+::selection {
+  background: #D2BDFF; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #D2BDFF; /* Gecko Browsers */
+}

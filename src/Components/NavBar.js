@@ -5,10 +5,7 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
 
-.logoStyling .nabarBrand {
 
-    color: coral;
-}
   .navbar {
     background-color: #FFFFFF;
     -webkit-box-shadow: 0 8px 6px -6px #999;
@@ -20,11 +17,14 @@ const Styles = styled.div`
     font-size: 18px;
     color: black;
 
-
   }
 
   .navbar-brand: hover {
     color: #A346FF;
+  }
+
+  .navbar-light .navbar-toggler {
+    border: 0;
   }
 
 
