@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import styled from 'styled-components';
 import {BigCard} from './Components/BigCard';
+import './App.css';
 
 const Styles = styled.div`
 
@@ -38,11 +39,13 @@ export const Home = () => (
 
 <Container fluid>
 <div className = "headerSpacing"/>
- <Row>  
+ <Row className = "align-items-center">  
+     <Col md="8">
     <h1 className="ml-5 mr-5 headerStyling">
-    I’m a digital product designer, currently living and <br></br>
+    I’m a digital product designer, currently living and
     working in London, UK
     </h1>
+    </Col>
  </Row>
 </Container>
 <BigCard/>
