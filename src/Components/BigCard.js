@@ -17,9 +17,15 @@ import '../App.css';
 const Styles = styled.div` 
 
 
+
+
 @media only screen and (max-width: 768px) {
 
- 
+ .buttonStyling {
+
+  display: block;
+  width: 100% !important;
+ }
   .cardStyling {
     margin-top: 3rem !important;
     margin-left: 1.6rem !important;
@@ -46,7 +52,6 @@ const Styles = styled.div`
   }
 }
 
-
 .buttonStyling {
   border-style: solid;
   border-width: 2px;
@@ -59,6 +64,12 @@ const Styles = styled.div`
 
 }
 
+.buttonStyling:hover {
+  background-color: inherit;
+  color: #A346FF;
+  border-color: #A346FF;
+}
+
 
 .cardImageStyle {
 
@@ -68,7 +79,7 @@ const Styles = styled.div`
 
 }
 .cardStyling {
-
+    margin-bottom: 3rem !important;
     border: none;
     background-color: #F7F7F7;
 }
@@ -112,11 +123,11 @@ export const BigCard = () => (
     <Col md = {6}>
     <Card.Body>
     <Image className = "projectLogo float-right" src={fordLogo}  />
-    <Card.Title className = "cardTitleStyling">Bringing vehicle data into customer's hands</Card.Title>
+    <Card.Title className = "cardTitleStyling">Bringing live vehicle data into customer's hands</Card.Title>
     <Card.Text className = "cardBodyStyling">
       The Digital CoPilot is about putting customer's vehicle data into the FordPass App. 
     </Card.Text>
-    <Button block className = "buttonStyling" variant="outline-dark">Read More</Button>
+    <Button block className = "buttonStyling" variant="outline-dark">Read more</Button>
   </Card.Body>
     </Col>
   </Row>

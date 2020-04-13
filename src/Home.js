@@ -14,8 +14,13 @@ const Styles = styled.div`
     .headerStyling {
         font-size: 8vw !important;
         line-height: 1.2em !important;
+        margin-left: 2rem !important;
+        margin-right: 2rem !important;
+        padding: 0;
 
     }
+
+   
 }
 
     .headerSpacing {
@@ -23,11 +28,10 @@ const Styles = styled.div`
         
     }
     .headerStyling {
-    
-        margin-right: 1em;
+        padding: 15px;
         font-size: 3.16vw;
         font-weight: bold;
-        line-height: 1.4em;
+        line-height: 1.2em;
     }
     `;
 
@@ -37,16 +41,37 @@ export const Home = () => (
 
 <Styles>
 
-<Container fluid>
+<Container className="align-content-center">
 <div className = "headerSpacing"/>
- <Row className = "align-items-center">  
-    <h1 className="ml-5 mr-5 headerStyling">
+ <Row>  
+   <Col>
+    <h1 className="headerStyling">
     I’m a digital product designer, currently living and
     working in London, UK.
     </h1>
+    </Col>
  </Row>
+
+ <Row> 
+  <Col>
+    <BigCard/>
+   </Col>
+ </Row>
+
+ <Row> 
+  <Col>
+    <BigCard/>
+   </Col>
+ </Row>
+
+ <Row> 
+  <Col>
+    <BigCard/>
+   </Col>
+ </Row>
+
+
 </Container>
-<BigCard/>
 </Styles>
 
 )

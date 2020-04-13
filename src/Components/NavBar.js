@@ -28,8 +28,7 @@ const Styles = styled.div`
   }
 
 
-
-  a, .navbar-nav .nav-link {
+  a, .navbar-nav .nav-item {
     padding-right: 16px;
     font-weight: normal;
     font-size: 14px;
@@ -53,7 +52,7 @@ const Styles = styled.div`
 
 export const NavigationBar = () => (
   <Styles>
-    <Navbar className="py-4 px-5"expand="lg">
+    <Navbar className="stickygit -top py-4 px-5"expand="lg">
       <Navbar.Brand href="/">FURQUAN AHMAD</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -68,11 +67,13 @@ export const NavigationBar = () => (
               <Link to="/CV">Resume</Link>
             </Nav.Link>
           </Nav.Item>
+          
           <Nav.Item>
-            <Nav.Link>
-              <Link to="/CV">LinkedIn</Link>
-            </Nav.Link>
+          <Nav.Link>
+              <a target="_blank" href="https://www.linkedin.com/in/furquan-ahmad-2528a44b/">LinkedIn </a>
+           </Nav.Link>
           </Nav.Item>
+
           <Nav.Item>
             <Nav.Link>
               <Link to="/About">About</Link>
