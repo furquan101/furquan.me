@@ -40,12 +40,10 @@ export const Home = () => (
 <Container fluid>
 <div className = "headerSpacing"/>
  <Row className = "align-items-center">  
-     <Col md="8">
     <h1 className="ml-5 mr-5 headerStyling">
     I’m a digital product designer, currently living and
-    working in London, UK
+    working in London, UK.
     </h1>
-    </Col>
  </Row>
 </Container>
 <BigCard/>

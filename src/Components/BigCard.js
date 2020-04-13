@@ -7,31 +7,73 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import fordLogo from '../../src/Components/Assets/Img/FordLogo.svg';
+import fordPass from '../../src/Components/Assets/Img/Fordpass.png';
 import mustangImage from '../../src/Components/Assets/Img/Mustang.png';
+import transitvan from '../../src/Components/Assets/Img/Transit.jpg';
 import '../App.css';
 
 
 
 const Styles = styled.div` 
 
-@media only screen and (max-width: 768px) {
-  .cardStyling {
-    margin: 0px !important;
 
+@media only screen and (max-width: 768px) {
+
+ 
+  .cardStyling {
+    margin-top: 3rem !important;
+    margin-left: 1.6rem !important;
+    margin-right: 1.6rem !important;
+
+  }
+
+  .projectLogo {
+    display: none !important;
+  }
+
+  .cardTitleStyling {
+
+    margin-top: 16px!important;
+    font-size: 1.4em!important;
+  }
+
+  .cardBodyStyling {
+
+    font-weight: 300;
+    font-size: 0.9em !important;
+    line-height: 150%;
+  
   }
 }
 
+
+.buttonStyling {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: roboto;
+  width: 128px;
+  height: 40px;
+
+}
+
+
+.cardImageStyle {
+
+  max-width: 1080px;
+  max-height: 1080px;
+
+
+}
 .cardStyling {
 
     border: none;
     background-color: #F7F7F7;
 }
 
-.projectLogo {
-  width: 120px;
-  height: 50px;
 
-}
 .cardTitleStyling {
 
   font-size: 28px;
@@ -49,6 +91,12 @@ const Styles = styled.div`
 
 }
 
+.projectLogo {
+  width: 120px;
+  height: 50px;
+
+}
+
 `;
 export const BigCard = () => (
 
@@ -57,27 +105,20 @@ export const BigCard = () => (
 
 <Card className = "cardStyling">
   <Row>
-    <Col md = "6">
-      <Card.Img src = {mustangImage}/>
+  <Col md={6}>
+      <Card.Img className = "cardImageStyle" src = {fordPass}/>
     </Col>
 
-    <Col md = "6">
+    <Col md = {6}>
     <Card.Body>
     <Image className = "projectLogo float-right" src={fordLogo}  />
     <Card.Title className = "cardTitleStyling">Bringing vehicle data into customer's hands</Card.Title>
     <Card.Text className = "cardBodyStyling">
-      For the first time customers will be able to view real time vehcile data their cars produce. 
       The Digital CoPilot is about putting customer's vehicle data into the FordPass App. 
     </Card.Text>
-    <Button variant="primary">Learn More</Button>
+    <Button block className = "buttonStyling" variant="outline-dark">Read More</Button>
   </Card.Body>
     </Col>
-
-
-
-
-
-
   </Row>
 </Card>
 
