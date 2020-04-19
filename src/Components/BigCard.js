@@ -6,19 +6,10 @@ import styled from 'styled-components';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
-import fordLogo from '../../src/Components/Assets/Img/FordLogo.svg';
-import fordPass from '../../src/Components/Assets/Img/Fordpass.png';
-import mustangImage from '../../src/Components/Assets/Img/Mustang.png';
-import transitvan from '../../src/Components/Assets/Img/Transit.jpg';
-import '../App.css';
 
 
 
 const Styles = styled.div` 
-
-
-
-
 @media only screen and (max-width: 768px) {
 
  .buttonStyling {
@@ -68,20 +59,21 @@ const Styles = styled.div`
   background-color: inherit;
   color: #A346FF;
   border-color: #A346FF;
+  transition: 0.2s ease-in;
 }
 
 
-.cardImageStyle {
-
-  max-width: 1080px;
-  max-height: 1080px;
-
-
-}
 .cardStyling {
     margin-bottom: 3rem !important;
     border: none;
     background-color: #F7F7F7;
+
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .1);
+  transform: scale(1.02);
+  transition: 0.3s cubic-bezier(.215, .61, .355, 1);
 }
 
 
@@ -109,32 +101,30 @@ const Styles = styled.div`
 }
 
 `;
-export const BigCard = () => (
+export const BigCard = props =>(
 
 <Styles>
 <Container>
-
 <Card className = "cardStyling">
   <Row>
   <Col md={6}>
-      <Card.Img className = "cardImageStyle" src = {fordPass}/>
+      <Card.Img src = {props.imgCardLarge}/>
     </Col>
-
     <Col md = {6}>
     <Card.Body>
-    <Image className = "projectLogo float-right" src={fordLogo}  />
-    <Card.Title className = "cardTitleStyling">Bringing live vehicle data into customer's hands</Card.Title>
+    <Image className = "projectLogo float-right" src={props.imgProjectLogo}  />
+    <Card.Title className = "cardTitleStyling">
+      {props.cardTitleName} 
+    </Card.Title>
     <Card.Text className = "cardBodyStyling">
-      The Digital CoPilot is about putting customer's vehicle data into the FordPass App. 
+    {props.cardBodyText} 
     </Card.Text>
     <Button block className = "buttonStyling" variant="outline-dark">Read more</Button>
   </Card.Body>
     </Col>
   </Row>
 </Card>
-
 </Container>
-
 </Styles>
 
 )

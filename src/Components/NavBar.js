@@ -10,7 +10,9 @@ const Styles = styled.div`
     background-color: #FFFFFF;
     -webkit-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
+
   }
+
 
   .navbar-brand {
     font-weight: bold;
@@ -23,36 +25,40 @@ const Styles = styled.div`
     color: #A346FF;
   }
 
+
+  .nav-link.active {
+    coral;
+  }
+  /**
   .navbar-light .navbar-toggler {
     border: 0;
   }
 
-
-  a, .navbar-nav .nav-item {
+ 
+  a, .navbar-nav .nav-item .nav-link {
     padding-right: 16px;
     font-weight: normal;
     font-size: 14px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: black;
+
     &:hover {
       color: #A346FF;
-      text-decoration: none;
-    }
-
-    
-
+      transition: color .165s ease-in-out, opacity .165s ease-in-out;
+      
+      
+    }  
 
   }
 
-
-
- 
+  **/
+  
 `;
 
 export const NavigationBar = () => (
   <Styles>
-    <Navbar className="stickygit -top py-4 px-5"expand="lg">
+    <Navbar className="sticky-top py-4 px-5" expand="lg">
       <Navbar.Brand href="/">FURQUAN AHMAD</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -63,14 +69,16 @@ export const NavigationBar = () => (
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link>
-              <Link to="/CV">Resume</Link>
+            <Nav.Link  target="_blank" href="https://drive.google.com/file/d/1xIkkqduMqnDCDkj35yex8qKkD70O6hic/view?usp=sharing">
+             Resume
             </Nav.Link>
           </Nav.Item>
+
+  
           
           <Nav.Item>
-          <Nav.Link>
-              <a target="_blank" href="https://www.linkedin.com/in/furquan-ahmad-2528a44b/">LinkedIn </a>
+          <Nav.Link target="_blank" href="https://www.linkedin.com/in/furquan-ahmad-2528a44b/">
+            LinkedIn
            </Nav.Link>
           </Nav.Item>
 

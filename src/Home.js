@@ -4,7 +4,11 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import styled from 'styled-components';
 import {BigCard} from './Components/BigCard';
+import fordPass from '../src/Components/Assets/Img/Fordpass.png';
+import fordLogo from '../src/Components/Assets/Img/FordLogo.svg';
+import rsa from '../src/Components/Assets/Img/RSA.png';
 import './App.css';
+
 
 const Styles = styled.div`
 
@@ -52,21 +56,51 @@ export const Home = () => (
     </Col>
  </Row>
 
- <Row> 
-  <Col>
-    <BigCard/>
-   </Col>
- </Row>
 
  <Row> 
   <Col>
-    <BigCard/>
+  <BigCard 
+    imgProjectLogo={fordLogo}
+    imgCardLarge={rsa}
+    cardTitleName = {"Designing a smart, live, digital breakdown experience."}
+    cardBodyText = {"When you breakdown in your vehicle, you are left in the cold about what's going on. We changed this experience to be completley digital in the Digital RSA project."}
+    />
    </Col>
  </Row>
 
+
  <Row> 
   <Col>
-    <BigCard/>
+    <BigCard 
+    imgProjectLogo={fordLogo}
+    imgCardLarge={fordPass}
+    cardTitleName = {"Putting your live vehicle data into your hands."}
+    cardBodyText = {"The FordPass Digital CoPilot project is about displaying live, important vehicle data into the FordPass app for you to view."}
+    />
+   </Col>
+ </Row>
+
+
+ <Row> 
+  <Col>
+  <BigCard 
+    imgProjectLogo={fordLogo}
+    imgCardLarge={fordPass}
+    cardTitleName = {"Creating a scaleable delivery network in mega cities"}
+    cardBodyText = {"The Last Mile project is a new urban multimodal goods delivery system. We aim to reduce city congestion, improves air quality and drive up productivity of delivery vans. "}
+    />
+   </Col>
+ </Row>
+
+
+ <Row> 
+  <Col>
+  <BigCard 
+    imgProjectLogo={fordLogo}
+    imgCardLarge={fordPass}
+    cardTitleName = {"Designing a global pro app from the ground up"}
+    cardBodyText = {"Designing a dedicated app for our commercial vehicle customers that own small fleets and businesses."}
+    />
    </Col>
  </Row>
 
