@@ -32,7 +32,7 @@ const Styles = styled.div`
         
     }
     .headerStyling {
-        padding: 15px;
+      
         font-size: 3.16vw;
         font-weight: bold;
         line-height: 1.2em;

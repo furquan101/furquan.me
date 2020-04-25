@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Styles = styled.div`
 
 
   .navbar {
+    border-top: 2px solid #E95FFF; 
     background-color: #FFFFFF;
     -webkit-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
@@ -22,7 +23,7 @@ const Styles = styled.div`
   }
 
   .navbar-brand: hover {
-    color: #A346FF;
+    color: #E95FFF;
   }
 
 
@@ -58,7 +59,8 @@ const Styles = styled.div`
 
 export const NavigationBar = () => (
   <Styles>
-    <Navbar className="sticky-top py-4 px-5" expand="lg">
+    <Navbar className="py-4 px-3" expand="lg">
+      <Container>
       <Navbar.Brand href="/">FURQUAN AHMAD</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -94,6 +96,7 @@ export const NavigationBar = () => (
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
+      </Container>
     </Navbar>
   </Styles >
 )
