@@ -6,16 +6,146 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import profileRounded from '../src/Components/Assets/Img/profileRounded.png';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import DeedsAtHome from '../src/Components/Assets/Img/DeedsAtHome.png';
+import Covid19 from '../src/Components/Assets/Img/Covid19.png';
+import Yuumi from '../src/Components/Assets/Img/Yuumi.png';
 
 
 
 
 const Styles = styled.div`
 
+
+@media only screen and (max-width: 768px) {
+
+    .headerStyle {
+        font-size: 2.15rem !important;
+    }
+
+    .profilePicture {
+        border-radius: 99em !Important;
+        max-width: 135px !important;
+        max-height: 135px !important;
+    }
+
+}
+
+.headerJumbotron {
+
+    background-color: #F7F7F7;
+
+}
+.headerStyle {
+    font-family: Apercu Pro Bold, Helvetica, Arial, sans-serif;
+    font-size: 3rem;
+    line-height: 150%;
+    color: black;
+}
+
+.subHeaderText {
+    font-family: Apercu Pro, Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    line-height: 150%;
+    color: black;
+    margin-bottom: 0.8rem !important;
+}
+
+.bodyHeaderText {
+    font-family: Apercu Pro;
+    font-size: 1.05rem;
+}
+
  .profilePicture {
      border-radius: 99em !Important;
-     width: 100px;
-     height: 150px;
+     max-width: 250px;
+     max-height: 250px;
+ }
+
+
+
+ .fancy-line {
+     background: #9665FF;
+     border-radius: 10px;
+     height: 2px;
+ }
+
+
+ .TLDRHeader {
+     font-family: Apercu Pro Bold,Helvetica, Arial, sans-serif;
+     font-size: 2.5rem;
+     color: black;
+ }
+
+ .TLDRSubHeader {
+     font-family: Apercu Pro Mono,Helvetica, Arial, sans-serif;
+     font-size: 1.75rem;
+     line-height: 150%;
+     color: black;
+ }
+
+ .TLDRBodyText {
+
+    font-family: Apercu Pro,Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 150%;
+    color: black;
+ }
+
+ .seperator {
+     background: #C4C4C4;
+     height: 0.5px;
+ }
+
+ .sideProjectHeader {
+     font-family: Apercu Pro Bold,Helvetica, Arial, sans-serif;
+     font-size: 2rem;
+     letter-spacing: 0.015em;
+     color: black;
+     text-transform: uppercase;
+ }
+
+ .sideProjectSubHeader {
+     font-family: Apercu Pro,Helvetica, Arial, sans-serif;
+     font-size: 1.25rem;
+     color: black;
+ }
+
+
+ .cardTitle {
+
+    font-family: Apercu Pro,Helvetica, Arial, sans-serif; 
+    color: #5100FF;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+ }
+
+ .cardBody {
+
+    font-family: Apercu Pro,Helvetica, Arial, sans-serif; 
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 150%;
+    margin-top: 16px;
+
+ }
+
+ .contactJumbotron {
+    margin-top: 100px;
+    background-color: #9665FF;
+
+ }
+ .contactHeader {
+     font-family: Apercu Pro,Helvetica, Arial, sans-serif;
+     font-size: 2.1rem;
+     color: white;
+ }
+
+ .contactLine {
+     height: 2px;
+     background-color: white;
+     border-radius: 10px;
  }
 
     `;
@@ -28,25 +158,26 @@ export const About = () => (
 
 
 
-<Jumbotron mb-0>
+<Jumbotron className = "headerJumbotron" mb-0>
         <div className="intro py-5">
           <Container>
             <div className="row d-flex align-items-center">
               <div className="col-lg-6 col-12 col-md-7">
-              <h1> Hi, I'm Furquan <span aria-label="waving hand" role="img">👋</span></h1>
-                <p className="lead"> I'm a product designer designing global mobility soloutions for mega cities.
+              <h1 className = "headerStyle"> Hi, I'm Furquan <span aria-label="waving hand" role="img">👋</span></h1>
+                <p className="subHeaderText"> I'm a product designer designing global mobility soloutions for mega cities.
                 </p><div className="row">
                   <div className="col-lg-6 col-6">
                     <hr className="fancy-line mt-2 mb-4" />
                   </div>
                 </div>
-                <p>Because I've been in the trenches as a designer and developer, I know all about the tech jargon that matters.</p>
-                <p>Today, I'm product designer at Ford Mobility in London, designing a brand new delivery network to combat congestion cities.</p>
-                <p>Catch me outside from work you will find me running with my local running club <span aria-label="running man" role="img">🏃🏽‍♂️</span>,  at a climbing wall <span aria-label="climbing" role="img">🧗🏽‍♂️</span>  or working on one of my side projects</p>
-               
+                <div className ="bodyHeaderText">
+                <p>Because I've been in the trenches as a designer and developer, I know all about the tech jargon that matters.
+                <p></p>Today, I'm a product designer at Ford Mobility in London, designing a brand new delivery network to combat congestion in cities.</p>
+                <p>Catch me outside from work you will find me running with my local running club,  at a climbing wall or working on one of my side projects</p>
+               </div>
               </div>
               <div className="col-6 col-sm-3 col-md-4 offset-md-1 col-lg-3 offset-lg-3 mb-3 mb-sm-0 text-right order-first order-sm-last">
-                  <img src={profileRounded} />
+                  <img className = "profilePicture" alt ="Furquan" src={profileRounded} />
               </div>
             </div>
           </Container>
@@ -55,103 +186,97 @@ export const About = () => (
       <div className="container mt-5">
         <div className="row">
             <div className="col-lg-6 mb-4">
-            <h3>TL;DR</h3>
+            <h3 className = "TLDRHeader">TL;DR</h3>
             </div>
         </div>
         <div className="row">
             <div className="col-md-4 col-lg-4">
-            <h5>What</h5>
-            <p>I've been designing and developing global mobility soloutions for over 5 years at Ford Mobility. It started in 2015 when i started a degree apprenticeship at Ford and graduated with a first class honors. </p>
+            <h5 className="TLDRSubHeader">What</h5>
+            <div className="TLDRBodyText">
+            <p>I've been designing and developing global mobility soloutions for over 5 years at Ford Mobility. </p>
+            <p>It started in 2015 when i started a degree apprenticeship at Ford and graduated with a first class honors. </p>
+            </div>
             </div>
             <div className="col-md-4 col-lg-4">
-            <h5>Where</h5>
-            <p>I live in London, United Kingdom one of my faviourte places in the world. and our fluffy scottish-straight <a href="https://instagram.com/mikastgram">cat</a>, Mika.</p>
-            <p>I grew up in Essex, United Kingdom. We invented the flat white there.</p>
+            <h5 className="TLDRSubHeader">Where</h5>
+            <div className = "TLDRBodyText">
+            <p>I live in London, United Kingdom one of my favourite places in the world.</p>
+            <p>I grew up in Essex, United Kingdom. We invented the Radio there.</p>
+            </div>
             </div>
             <div className="col-md-4 col-lg-4">
-            <h5>Wild</h5>
-            <p>Outside from work you will find me running with my local running club <span aria-label="running man" role="img">🏃🏽‍♂️</span>,  at a climbing wall <span aria-label="climbing" role="img">🧗🏽‍♂️</span>  or working on one of my side projects</p>
-            <p> I also love reading books, cooking and gaming.</p>
-            <p>I'm an <a href="https://twitter.com/ow" target="_blank">avid Twitter user</a>, and joined the service in 2008. I didn't get my short username until much later, but that's a story for in person.</p>
+            <h5 className="TLDRSubHeader">Wild</h5>
+            <div className = "TLDRBodyText">
+            <p> I love keeping up with FinTechs and have a strong interest in investing.</p>
+            <p> I also love reading books, cooking and gaming. I'm currently playing a lot of League Of Legends.</p>
+            </div>
             </div>
         </div>
         <div className="row">
             <div className="col-lg-12 my-5">
-            <hr />
+            <hr className="seperator"/>
             </div>
         </div>
         </div>
 
         <Container>
-            <Row>
-            <div className="col-lg-6">
-                <h3>Side Projects</h3>
-            </div>
-            </Row>
-            <Row>
             
-                <div className="col-md-4 col-lg-4">
+            <Row>
+                <div className="col-md-3 col-lg-3">
+                    <h1 className ="sideProjectHeader">Side Projects</h1>
+                    <p className ="sideProjectSubHeader"> A neat collection of my side projects.</p>
+                </div>
+                <div className="col-md-3 col-lg-3">
                     <Card>
-                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Img variant="top" src={DeedsAtHome} />
                         <Card.Body>
-                            <Card.Title>Deeds At Home</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            <a className = "cardTitle" href="https://www.figma.com/community/file/834164719425301604/Deeds-At-Home" target="_blank" rel="noopener noreferrer"> Deeds At Home </a>
+                            <Card.Text className = "cardBody">
+                             Designing a personalised schedule for Ramadan during the lockdown filled with Islamic activities.
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
                         </Card.Body>
                         </Card>
                     </div>
 
-                    <div className="col-md-4 col-lg-4">
+                    <div className="col-md-3 col-lg-3">
                     <Card>
-                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Img variant="top" src={Covid19} />
                         <Card.Body>
-                            <Card.Title>COVID19 Live</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                            <a className = "cardTitle" href="https://www.figma.com/community/file/834164719425301604/Deeds-At-Home" target="_blank" rel="noopener noreferrer"> COVID-19 Live </a>
+                            <Card.Text className = "cardBody">
+                            Designing and developing a web app to allow you to understand the wider impact of COVID-19 on society.
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
                         </Card.Body>
                         </Card>
                     </div>
-                    
-                    <div className="col-md-4 col-lg-4">
-                    <Card>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Yuumi Chatbot</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                        </Card>
-                    </div>
-                    
-                    
 
-                    
-                
-            </Row>
-            
+                    <div className="col-md-3 col-lg-3">
+                    <Card>
+                        <Card.Img variant="top" src={Yuumi} />
+                        <Card.Body>
+                            <a className = "cardTitle" href="https://www.youtube.com/watch?v=1fTNfQvhYso" target="_blank" rel="noopener noreferrer"> Yuumi Chatbot </a>
+                            <Card.Text className = "cardBody">
+                                Developing a chatbot to help people talk openly about their mental health, in a safe, open and free environment. 
+                            </Card.Text>
+                        </Card.Body>
+                        </Card>
+                    </div>      
+                </Row> 
         </Container>
-        <Jumbotron>
+
+        <Jumbotron className="contactJumbotron">
         <Container>
             <div className="col-lg-6">
             <Row>
-                <h3> You can say hello and contact me.</h3>
+                <h3 className ="contactHeader">Say hello.</h3>
             </Row>
                 <Row>
                   <div className="col-lg-6 col-6">
-                    <hr className="fancy-line mt-2 mb-4" />
+                    <hr className="contactLine mt-2 mb-4" />
                   </div>
                 </Row>
                 <Row>
-                    <p>I'm always interested in new ideas, opportunities or hearing what you're working on, so  drop us a message and say hello.</p>
+                    <p>I'm always interested in new ideas, opportunities or hearing what you're working on, so drop us a message and say hello.</p>
                 </Row>
             </div>
             <Button href="mailto:furquan101@gmail.com" className = "buttonStyling" variant="outline-dark">Say hello</Button>

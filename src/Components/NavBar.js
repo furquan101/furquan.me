@@ -23,7 +23,8 @@ const Styles = styled.div`
   }
 
   .navbar-brand: hover {
-    color: #E95FFF;
+    border-bottom: 2px solid black;
+    color: black;
   }
 
 
@@ -71,7 +72,7 @@ export const NavigationBar = () => (
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link  target="_blank" href="https://drive.google.com/file/d/1xIkkqduMqnDCDkj35yex8qKkD70O6hic/view?usp=sharing">
+            <Nav.Link  target="_blank" href="https://drive.google.com/file/d/1xIkkqduMqnDCDkj35yex8qKkD70O6hic/view?usp=sharing" rel="noopener noreferrer">
              Resume
             </Nav.Link>
           </Nav.Item>
@@ -79,7 +80,7 @@ export const NavigationBar = () => (
   
           
           <Nav.Item>
-          <Nav.Link target="_blank" href="https://www.linkedin.com/in/furquan-ahmad-2528a44b/">
+          <Nav.Link target="_blank" href="https://www.linkedin.com/in/furquan-ahmad-2528a44b/" rel="noopener noreferrer">
             LinkedIn
            </Nav.Link>
           </Nav.Item>
