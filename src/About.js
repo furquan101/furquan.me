@@ -232,7 +232,7 @@ export const About = () => (
 
 
         <Container>
-            <Row>
+            <Row className ="justify-content-center">
                 <div className="col-md-6 col-lg-3 mb-4">
                     <h1 className ="sideProjectHeader">Side Projects</h1>
                     <p className ="sideProjectSubHeader"> A neat collection of my side projects.</p>

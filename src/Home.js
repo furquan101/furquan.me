@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import {BigCard} from './Components/BigCard';
 import fordPass from '../src/Components/Assets/Img/Fordpass.png';
 import fordLogo from '../src/Components/Assets/Img/FordLogo.svg';
-import rsa from '../src/Components/Assets/Img/RSA.png';
+import rsa from '../src/Components/Assets/Img/RSA.jpg';
 import './App.css';
 
 
@@ -49,7 +49,7 @@ export const Home = () => (
 <div className = "headerSpacing"/>
  <Row>  
    <Col>
-    <h1 className="headerStyling">
+    <h1 className="headerStyling mb-2">
     I’m a digital product designer, currently living and
     working in London, UK.
     </h1>
@@ -58,7 +58,7 @@ export const Home = () => (
 
 
  <Row> 
-  <Col>
+  <Col className ="mt-5">
   <BigCard 
     imgProjectLogo={fordLogo}
     imgCardLarge={rsa}

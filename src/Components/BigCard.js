@@ -10,6 +10,14 @@ import Image from 'react-bootstrap/Image';
 
 
 const Styles = styled.div` 
+
+@media only screen and (min-width: 768px) {
+
+  .cardPadding {
+    padding:0;
+  }
+
+}
 @media only screen and (max-width: 768px) {
 
  .buttonStyling {
@@ -19,9 +27,6 @@ const Styles = styled.div`
  }
   .cardStyling {
     margin-top: 3rem !important;
-    margin-left: 1.6rem !important;
-    margin-right: 1.6rem !important;
-
   }
 
   .projectLogo {
@@ -63,11 +68,16 @@ const Styles = styled.div`
 }
 
 
+
 .cardStyling {
     margin-bottom: 3rem !important;
     border: none;
     background-color: #F7F7F7;
 
+}
+
+.cardImage {
+  border-radius:0px;
 }
 
 .card:hover {
@@ -100,15 +110,17 @@ const Styles = styled.div`
 
 }
 
+
+
 `;
 export const BigCard = props =>(
 
 <Styles>
-<Container>
-<Card className = "cardStyling">
+<Container className="cardPadding">
+<Card className = "mx-2 mb-5">
   <Row>
   <Col md={6}>
-      <Card.Img src = {props.imgCardLarge}/>
+      <Card.Img className ="cardImage" src = {props.imgCardLarge}/>
     </Col>
     <Col md = {6}>
     <Card.Body>
