@@ -13,6 +13,8 @@ import Yuumi from '../src/Components/Assets/Img/Yuumi.png';
 
 
 
+
+
 const Styles = styled.div`
 
 
@@ -29,6 +31,7 @@ const Styles = styled.div`
     }
 
 }
+
 
 .headerJumbotron {
 
@@ -51,7 +54,7 @@ const Styles = styled.div`
 }
 
 .bodyHeaderText {
-    font-family: Apercu Pro;
+    font-family: Apercu Pro, Helvetica, Arial, sans-serif;
     font-size: 1.05rem;
 }
 
@@ -134,6 +137,7 @@ const Styles = styled.div`
  .contactJumbotron {
     margin-top: 100px;
     background-color: #9665FF;
+    margin-bottom: 0px;
 
  }
  .contactHeader {
@@ -148,6 +152,11 @@ const Styles = styled.div`
      border-radius: 10px;
  }
 
+ .contactText {
+     font-family: Apercu Pro,Helvetica, Arial, sans-serif;
+     font-size: 1.1rem;
+     color: white;
+ }
     `;
 
 
@@ -158,7 +167,7 @@ export const About = () => (
 
 
 
-<Jumbotron className = "headerJumbotron" mb-0>
+<Jumbotron className = "headerJumbotron">
         <div className="intro py-5">
           <Container>
             <div className="row d-flex align-items-center">
@@ -171,8 +180,8 @@ export const About = () => (
                   </div>
                 </div>
                 <div className ="bodyHeaderText">
-                <p>Because I've been in the trenches as a designer and developer, I know all about the tech jargon that matters.
-                <p></p>Today, I'm a product designer at Ford Mobility in London, designing a brand new delivery network to combat congestion in cities.</p>
+                <p>Because I've been in the trenches as a designer and developer, I know all about the tech jargon that matters.</p>
+                <p>Today, I'm a product designer at Ford Mobility in London, designing a brand new delivery network to combat congestion in cities.</p>
                 <p>Catch me outside from work you will find me running with my local running club,  at a climbing wall or working on one of my side projects</p>
                </div>
               </div>
@@ -219,15 +228,17 @@ export const About = () => (
         </div>
         </div>
 
+      
+
+
         <Container>
-            
             <Row>
-                <div className="col-md-3 col-lg-3">
+                <div className="col-md-6 col-lg-3 mb-4">
                     <h1 className ="sideProjectHeader">Side Projects</h1>
                     <p className ="sideProjectSubHeader"> A neat collection of my side projects.</p>
                 </div>
-                <div className="col-md-3 col-lg-3">
-                    <Card>
+                <div className="col-md-6 col-lg-3  mb-4 col-10">
+                    <Card className = "h-100">
                         <Card.Img variant="top" src={DeedsAtHome} />
                         <Card.Body>
                             <a className = "cardTitle" href="https://www.figma.com/community/file/834164719425301604/Deeds-At-Home" target="_blank" rel="noopener noreferrer"> Deeds At Home </a>
@@ -238,8 +249,8 @@ export const About = () => (
                         </Card>
                     </div>
 
-                    <div className="col-md-3 col-lg-3">
-                    <Card>
+                    <div className="col-md-6 col-lg-3 mb-4 col-10">
+                    <Card className = "h-100"> 
                         <Card.Img variant="top" src={Covid19} />
                         <Card.Body>
                             <a className = "cardTitle" href="https://www.figma.com/community/file/834164719425301604/Deeds-At-Home" target="_blank" rel="noopener noreferrer"> COVID-19 Live </a>
@@ -250,8 +261,8 @@ export const About = () => (
                         </Card>
                     </div>
 
-                    <div className="col-md-3 col-lg-3">
-                    <Card>
+                    <div className="col-md-6 col-lg-3 mb-4 col-10">
+                    <Card className = "h-100">
                         <Card.Img variant="top" src={Yuumi} />
                         <Card.Body>
                             <a className = "cardTitle" href="https://www.youtube.com/watch?v=1fTNfQvhYso" target="_blank" rel="noopener noreferrer"> Yuumi Chatbot </a>
@@ -260,38 +271,35 @@ export const About = () => (
                             </Card.Text>
                         </Card.Body>
                         </Card>
-                    </div>      
+                    </div>    
                 </Row> 
         </Container>
 
         <Jumbotron className="contactJumbotron">
         <Container>
-            <div className="col-lg-6">
             <Row>
-                <h3 className ="contactHeader">Say hello.</h3>
+            
+            <div className="col-lg-6 md-12">
+              <h3 className ="contactHeader">Say hello.</h3>
+              </div>
             </Row>
                 <Row>
-                  <div className="col-lg-6 col-6">
-                    <hr className="contactLine mt-2 mb-4" />
+                  <div className="col-lg-4 col-md-4">
+                     <hr className="contactLine mt-2 mb-4"></hr>
                   </div>
                 </Row>
                 <Row>
-                    <p>I'm always interested in new ideas, opportunities or hearing what you're working on, so drop us a message and say hello.</p>
+                <div className="col-lg-6 col-12">
+                    <p className="contactText">I'm always interested in new ideas, opportunities or hearing what you're working on, so drop us a message and say hello.</p>
+                </div>
+                </Row> 
+                <Row>
+                <div className="col-lg-6 col-12">
+                    <Button href="mailto:furquan101@gmail.com" className = "buttonStyling" variant="outline-light">Say hello</Button>
+                </div>
                 </Row>
-            </div>
-            <Button href="mailto:furquan101@gmail.com" className = "buttonStyling" variant="outline-dark">Say hello</Button>
         </Container>
         </Jumbotron>
-            
-            
-     
-       
-
-
-
-
-
-
 </Styles>
 
 )

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 
@@ -7,7 +6,7 @@ const Styles = styled.div`
 
 
   .navbar {
-    border-top: 2px solid #E95FFF; 
+    border-top: 2px solid #9665FF; 
     background-color: #FFFFFF;
     -webkit-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
@@ -67,12 +66,11 @@ export const NavigationBar = () => (
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav id="nav-list-style" className="ml-auto navLinks">
           <Nav.Item>
-            <Nav.Link>
-              <Link to="/">Portfolio</Link>
+            <Nav.Link href="/">Portfolio
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link  target="_blank" href="https://drive.google.com/file/d/1xIkkqduMqnDCDkj35yex8qKkD70O6hic/view?usp=sharing" rel="noopener noreferrer">
+            <Nav.Link  rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1xIkkqduMqnDCDkj35yex8qKkD70O6hic/view?usp=sharing">
              Resume
             </Nav.Link>
           </Nav.Item>
@@ -80,24 +78,22 @@ export const NavigationBar = () => (
   
           
           <Nav.Item>
-          <Nav.Link target="_blank" href="https://www.linkedin.com/in/furquan-ahmad-2528a44b/" rel="noopener noreferrer">
+          <Nav.Link rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/furquan-ahmad-2528a44b/">
             LinkedIn
            </Nav.Link>
           </Nav.Item>
 
           <Nav.Item>
-            <Nav.Link>
-              <Link to="/About">About</Link>
+            <Nav.Link href="/About">About
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link>
-              <Link to="/Contact">Contact me</Link>
+            <Nav.Link href="/Contact">Contact me
             </Nav.Link>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
       </Container>
     </Navbar>
-  </Styles >
+  </Styles>
 )
