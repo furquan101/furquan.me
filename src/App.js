@@ -21,9 +21,8 @@ class App extends Component {
               <Route path="/contact" component={Contact} />
               <Route component={NoMatch} />
             </Switch>
-       
+            <Footer/>
         </Router>
-        <Footer/>
       </React.Fragment>
     );
   }

@@ -3,7 +3,8 @@
  import {Figma} from 'react-feather';
  import {Mail} from 'react-feather';
  import {Twitter} from 'react-feather';
- 
+ import {NavLink} from 'react-router-dom';
+  
  
  const Styles = styled.div`
 
@@ -94,11 +95,17 @@
         <div className="offset-md-1 col-xs-6 col-md-3">
         <h6 className="footerBrowsingHeader">Keep Browsing</h6>
         <ul className="footerList">
-            <li className = "mb-1"><a href="/">Portfolio</a></li>
+            <li className = "mb-1">
+                <NavLink to = "/">Portfolio</NavLink>
+            </li>
             <li className = "mb-1"><a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1xIkkqduMqnDCDkj35yex8qKkD70O6hic/view?usp=sharing">Resume</a></li>
-            <li className = "mb-1"><a href="http://scanfcode.com/contribute-at-scanfcode/">LinkedIn</a></li>
-            <li className = "mb-1"><a href="/About">About</a></li>
-            <li className = "mb-1"><a href="/Contact">Contact me</a></li>
+            <li className = "mb-1"><a href="https://www.linkedin.com/in/furquan101/">LinkedIn</a></li>
+            <li className = "mb-1">
+                <NavLink to = "/About">About</NavLink>
+            </li>
+            <li className = "mb-1">
+                <NavLink to = "/Contact">Contact</NavLink>
+            </li>
         </ul>
         </div>
     </div>
