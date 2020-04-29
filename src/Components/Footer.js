@@ -107,7 +107,7 @@
     <div className="container">
     <div className="row">
         <div className="offset-md-8 col-md-4 col-sm-6 col-xs-12">
-        <p className="copyrightText">Copyright © 2020 Furquan Ahmad. Developed by
+        <p className="copyrightText">Copyright © {new Date().getFullYear()} Furquan Ahmad. Developed by
             <a rel="noopener noreferrer" target="_blank" href="https://github.com/furquan101"> Furquan</a>.
         </p>
         </div>
