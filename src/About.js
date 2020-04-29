@@ -123,6 +123,13 @@ const Styles = styled.div`
     margin-bottom: 1rem;
  }
 
+
+ .cardTitle:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.5em;
+ }
+
  .cardBody {
 
     font-family: Apercu Pro,Helvetica, Arial, sans-serif; 

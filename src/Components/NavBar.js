@@ -23,38 +23,39 @@ const Styles = styled.div`
   }
 
   .navbar-brand: hover {
-    border-bottom: 2px solid black;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.5em;
+    
+  }
+
+
+  .navLinks a {
     color: black;
   }
 
+  .navLinks a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.5em;
 
-  .nav-link.active {
-    coral;
-  }
-  /**
-  .navbar-light .navbar-toggler {
-    border: 0;
   }
 
+  .nav-link {
+    color: black !important;
+  }
+
+  .nav-link:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.5em;
+
+  }
+
+  .navbar-toggler {
+    border-color: white;
+  }
  
-  a, .navbar-nav .nav-item .nav-link {
-    padding-right: 16px;
-    font-weight: normal;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: black;
-
-    &:hover {
-      color: #A346FF;
-      transition: color .165s ease-in-out, opacity .165s ease-in-out;
-      
-      
-    }  
-
-  }
-
-  **/
   
 `;
 

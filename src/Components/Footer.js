@@ -51,7 +51,9 @@
     }
 
     .footerList a:hover {
-        border-bottom: solid 1px !important;
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
+        text-underline-offset: 0.5em;
     }
 
 
@@ -67,6 +69,16 @@
         font-size: 0.75rem;
         color: #666666;
         text-align: right;
+    }
+
+    .copyrightText a {
+        color:#9665FF;
+    }
+
+    .copyrightText a:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
+        text-underline-offset: 0.25em;
     }
 
 
@@ -114,8 +126,8 @@
     <div className="container">
     <div className="row">
         <div className="offset-md-8 col-md-4 col-sm-6 col-xs-12">
-        <p className="copyrightText">Copyright © {new Date().getFullYear()} Furquan Ahmad. Developed by
-            <a rel="noopener noreferrer" target="_blank" href="https://github.com/furquan101"> Furquan</a>.
+        <p className="copyrightText">Copyright © {new Date().getFullYear()} Furquan Ahmad.&nbsp; 
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/furquan101">Developed by Furquan</a>.
         </p>
         </div>
     </div>
