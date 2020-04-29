@@ -8,6 +8,18 @@
  const Styles = styled.div`
 
 
+ @media only screen and (max-width: 768px) { 
+
+    .copyrightText {
+
+        text-align: center !important;
+
+    }
+
+
+ }
+
+
     .footerStyle {
         background-color: #F7F7F7;
         padding-top: 40px;

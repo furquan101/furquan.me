@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, Navbar, Container } from 'react-bootstrap';
 import styled from 'styled-components';
+import { NavLink} from 'react-router-dom';
 
 const Styles = styled.div`
 
@@ -64,33 +65,23 @@ export const NavigationBar = () => (
       <Navbar.Brand href="/">FURQUAN AHMAD</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
+
+
         <Nav id="nav-list-style" className="ml-auto navLinks">
-          <Nav.Item>
-            <Nav.Link href="/">Portfolio
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
+
+          <NavLink className="d-inline p-2" to = "/">Portfolio</NavLink>
+
             <Nav.Link  rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1xIkkqduMqnDCDkj35yex8qKkD70O6hic/view?usp=sharing">
              Resume
             </Nav.Link>
-          </Nav.Item>
-
-  
-          
-          <Nav.Item>
+   
           <Nav.Link rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/furquan-ahmad-2528a44b/">
             LinkedIn
            </Nav.Link>
-          </Nav.Item>
 
-          <Nav.Item>
-            <Nav.Link href="/About">About
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link href="/Contact">Contact me
-            </Nav.Link>
-          </Nav.Item>
+           <NavLink className="d-inline p-2" to = "/About">About</NavLink>
+           <NavLink className="d-inline p-2" to = "/Contact">Contact me</NavLink>
+     
         </Nav>
       </Navbar.Collapse>
       </Container>
