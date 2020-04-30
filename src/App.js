@@ -6,6 +6,11 @@ import { Contact } from './Contact';
 import { NoMatch } from './NoMatch';
 import { NavigationBar } from './Components/NavBar';
 import {Footer} from './Components/Footer';
+import ScrollToTop from './Components/ScrollToTop';
+
+
+
+
 
 
 class App extends Component {
@@ -13,7 +18,9 @@ class App extends Component {
     return (
       <React.Fragment>
         <Router>
+          
           <NavigationBar/>
+          <ScrollToTop/>
 
             <Switch>
               <Route exact path="/" component={Home} />

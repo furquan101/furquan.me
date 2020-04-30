@@ -32,9 +32,9 @@ const Styles = styled.div`
         
     }
     .headerStyling {
-        font-family: Apercu Pro,Helvetica, Arial, sans-serif; 
+        font-family: 'Poppins', sans-serif; 
         font-size: 3.16vw;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.2em;
     }
     `;

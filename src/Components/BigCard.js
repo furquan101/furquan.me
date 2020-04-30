@@ -88,7 +88,6 @@ const Styles = styled.div`
 
 
 .cardTitleStyling {
-  font-family: Apercu Pro Bold,Helvetica, Arial, sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: bold;
@@ -97,7 +96,6 @@ const Styles = styled.div`
 }
 
 .cardBodyStyling {
-  font-family: Roboto;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
