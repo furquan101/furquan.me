@@ -32,7 +32,7 @@ const Styles = styled.div`
 
   .nav-link {
     color: black !important;
-    font-family: Open-Sans;
+    font-family: Open Sans, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;
