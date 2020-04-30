@@ -39,14 +39,16 @@ const Styles = styled.div`
 
 }
 .headerStyle {
-    font-family: Apercu Pro Bold, Helvetica, Arial, sans-serif;
-    font-size: 3rem;
+    font-family: Open Sans, sans-serif;
+    font-weight: bold;
+    font-size: 2.8rem;
     line-height: 150%;
     color: black;
 }
 
 .subHeaderText {
-    font-family: Apercu Pro, Helvetica, Arial, sans-serif;
+    font-family: Open-Sans, sans-serif;
+    font-weight: 400;
     font-size: 1.25rem;
     line-height: 150%;
     color: black;
@@ -54,7 +56,7 @@ const Styles = styled.div`
 }
 
 .bodyHeaderText {
-    font-family: Apercu Pro, Helvetica, Arial, sans-serif;
+    font-family: Open-Sans, sans-serif;
     font-size: 1.05rem;
 }
 
@@ -74,13 +76,14 @@ const Styles = styled.div`
 
 
  .TLDRHeader {
-     font-family: Apercu Pro Bold,Helvetica, Arial, sans-serif;
+     font-family: Open Sans, sans-serif;
+     font-weight: bold;
      font-size: 2.5rem;
      color: black;
  }
 
  .TLDRSubHeader {
-     font-family: Apercu Pro Mono,Helvetica, Arial, sans-serif;
+     font-family: Roboto Mono, sans-serif;
      font-size: 1.75rem;
      line-height: 150%;
      color: black;
@@ -88,7 +91,7 @@ const Styles = styled.div`
 
  .TLDRBodyText {
 
-    font-family: Apercu Pro,Helvetica, Arial, sans-serif;
+    font-family: Open Sans, sans-serif;
     font-size: 1rem;
     line-height: 150%;
     color: black;
@@ -100,7 +103,8 @@ const Styles = styled.div`
  }
 
  .sideProjectHeader {
-     font-family: Apercu Pro Bold,Helvetica, Arial, sans-serif;
+     font-family: Open Sans, sans-serif;
+     font-weight: bold;
      font-size: 2rem;
      letter-spacing: 0.015em;
      color: black;
@@ -108,7 +112,8 @@ const Styles = styled.div`
  }
 
  .sideProjectSubHeader {
-     font-family: Apercu Pro,Helvetica, Arial, sans-serif;
+     font-family: Open Sans, sans-serif;
+     font-weight: 600;
      font-size: 1.25rem;
      color: black;
  }
@@ -116,7 +121,7 @@ const Styles = styled.div`
 
  .cardTitle {
 
-    font-family: Apercu Pro,Helvetica, Arial, sans-serif; 
+    font-family: Roboto Mono, sans-serif; 
     color: #5100FF;
     text-transform: uppercase;
     font-size: 1.25rem;
@@ -132,7 +137,7 @@ const Styles = styled.div`
 
  .cardBody {
 
-    font-family: Apercu Pro,Helvetica, Arial, sans-serif; 
+    font-family:Open Sans, sans-serif; 
     font-style: normal;
     font-weight: normal;
     font-size: 1rem;
@@ -148,7 +153,8 @@ const Styles = styled.div`
 
  }
  .contactHeader {
-     font-family: Apercu Pro,Helvetica, Arial, sans-serif;
+     font-family: Open Sans, sans-serif;
+     font-weight: bold;
      font-size: 2.1rem;
      color: white;
  }
@@ -160,7 +166,7 @@ const Styles = styled.div`
  }
 
  .contactText {
-     font-family: Apercu Pro,Helvetica, Arial, sans-serif;
+     font-family: Open Sans, sans-serif;
      font-size: 1.1rem;
      color: white;
  }
@@ -247,7 +253,7 @@ export const About = () => (
                 <div className="col-md-6 col-lg-3  mb-4 col-10">
                     <Card className = "h-100">
                         <Card.Img variant="top" src={DeedsAtHome} />
-                        <Card.Body>
+                        <Card.Body className="mb-1">
                             <a className = "cardTitle" href="https://www.figma.com/community/file/834164719425301604/Deeds-At-Home" target="_blank" rel="noopener noreferrer"> Deeds At Home </a>
                             <Card.Text className = "cardBody">
                              Designing a personalised schedule for Ramadan during the lockdown filled with Islamic activities.
@@ -259,8 +265,8 @@ export const About = () => (
                     <div className="col-md-6 col-lg-3 mb-4 col-10">
                     <Card className = "h-100"> 
                         <Card.Img variant="top" src={Covid19} />
-                        <Card.Body>
-                            <a className = "cardTitle" href="https://www.figma.com/community/file/834164719425301604/Deeds-At-Home" target="_blank" rel="noopener noreferrer"> COVID-19 Live </a>
+                        <Card.Body className="mb-1">
+                            <a className = "cardTitle" href="https://www.covid19-live.co.uk/" target="_blank" rel="noopener noreferrer"> COVID-19 Live </a>
                             <Card.Text className = "cardBody">
                             Designing and developing a web app to allow you to understand the wider impact of COVID-19 on society.
                             </Card.Text>
@@ -271,7 +277,7 @@ export const About = () => (
                     <div className="col-md-6 col-lg-3 mb-4 col-10">
                     <Card className = "h-100">
                         <Card.Img variant="top" src={Yuumi} />
-                        <Card.Body>
+                        <Card.Body className="mb-1">
                             <a className = "cardTitle" href="https://www.youtube.com/watch?v=1fTNfQvhYso" target="_blank" rel="noopener noreferrer"> Yuumi Chatbot </a>
                             <Card.Text className = "cardBody">
                                 Developing a chatbot to help people talk openly about their mental health, in a safe, open and free environment. 

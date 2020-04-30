@@ -15,8 +15,9 @@ const Styles = styled.div`
 
 
   .navbar-brand {
-    font-weight: bold;
-    font-size: 18px;
+    font-family: Open Sans, sans-serif;
+    font-weight: bold !important;
+    font-size: 1.2rem;
     color: black;
 
   }
@@ -31,6 +32,13 @@ const Styles = styled.div`
 
   .nav-link {
     color: black !important;
+    font-family: Open-Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 150%;
+  
+  
   }
 
   .nav-link:hover{
@@ -59,25 +67,25 @@ export const NavigationBar = () => (
         <Nav id="nav-list-style" className="ml-auto navLinks">
           
           <LinkContainer to = "/"> 
-          <Nav.Link>Portfolio</Nav.Link>
+          <Nav.Link className="mr-1">Portfolio</Nav.Link>
           </LinkContainer>
 
-            <Nav.Link rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1xIkkqduMqnDCDkj35yex8qKkD70O6hic/view?usp=sharing">
+            <Nav.Link className="mr-1" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1xIkkqduMqnDCDkj35yex8qKkD70O6hic/view?usp=sharing">
              Resume
             </Nav.Link>
           
 
-           <Nav.Link rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/furquan-ahmad-2528a44b/">
+           <Nav.Link className="mr-1" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/furquan-ahmad-2528a44b/">
             LinkedIn
            </Nav.Link>
           
 
           <LinkContainer to = "/About"> 
-           <Nav.Link>About</Nav.Link>
+           <Nav.Link className="mr-1">About</Nav.Link>
           </LinkContainer>
 
           <LinkContainer to = "/Contact"> 
-           <Nav.Link>Contact</Nav.Link>
+           <Nav.Link className="mr-1">Contact</Nav.Link>
           </LinkContainer>
         </Nav>
       </Navbar.Collapse>

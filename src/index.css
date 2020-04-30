@@ -10,7 +10,3 @@ body {
 ::-moz-selection {
   background: #D2BDFF; /* Gecko Browsers */
 }
-
-* {
-  font-family: poppins sans-serif;
-}

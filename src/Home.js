@@ -27,13 +27,15 @@ const Styles = styled.div`
    
 }
 
-    .headerSpacing {
-        padding-top: 3.5rem;
+
+.headerSpacing {
+    
+  padding-top: 3.5rem;
         
     }
     .headerStyling {
-        font-family: 'Poppins', sans-serif; 
-        font-size: 3.16vw;
+        font-family: 'Open Sans', sans-serif; 
+        font-size:  3rem;
         font-weight: 700;
         line-height: 1.2em;
     }

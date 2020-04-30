@@ -40,9 +40,9 @@ const Styles = styled.div`
   }
 
   .cardBodyStyling {
-
+    font-family: Open Sans, sans-serif;
     font-weight: 300;
-    font-size: 0.9em !important;
+    font-size: 1rem !important;
     line-height: 150%;
   
   }
@@ -88,7 +88,8 @@ const Styles = styled.div`
 
 
 .cardTitleStyling {
-  font-size: 28px;
+  font-family: Open Sans, sans-serif;
+  font-size: 1.7rem;
   font-style: normal;
   font-weight: bold;
   margin-top: 100px;
@@ -96,6 +97,7 @@ const Styles = styled.div`
 }
 
 .cardBodyStyling {
+  font-family: Open Sans, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;

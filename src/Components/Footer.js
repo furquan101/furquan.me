@@ -29,13 +29,14 @@
     
     .footerHeader {
 
-        font-family: Apercu Pro,Helvetica, Arial, sans-serif;
+        font-family: Proza Libre, sans-serif;
+        font-weight:bold;
         font-size: 1.4rem;
     }
 
     .footerSubHeader {
-        font-family: Apercu Pro,Helvetica, Arial, sans-serif;
-        font-size: 0.94rem;
+        font-family: Open Sans,sans-serif;
+        font-size: 0.9rem;
         letter-spacing: 0.01em
     }
 
@@ -45,7 +46,7 @@
 
     }
     .footerList a {
-        font-family: Apercu Pro,Helvetica, Arial, sans-serif;
+        font-family: Open Sans,sans-serif;
         font-size: 0.9rem;
         color: #333333 !important;
     }
@@ -58,14 +59,14 @@
 
 
     .footerBrowsingHeader {
-        font-family: Apercu Pro Mono,Helvetica, Arial, sans-serif;
+        font-family: Roboto Mono, sans-serif;
         font-size: 1.1rem;
         text-transform: uppercase;
         
     }
 
     .copyrightText {
-        font-family: Apercu Pro,Helvetica, Arial, sans-serif;
+        font-family: Open-Sans, sans-serif;
         font-size: 0.75rem;
         color: #666666;
         text-align: right;
