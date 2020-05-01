@@ -15,9 +15,10 @@ const Styles = styled.div`
 
 
   .navbar-brand {
-    font-family: Open Sans, sans-serif;
-    font-weight: bold !important;
-    font-size: 1.2rem;
+    font-family: Playfair Display, sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 0.015em;
     color: black;
 
   }
@@ -31,12 +32,14 @@ const Styles = styled.div`
 
 
   .nav-link {
-    color: black !important;
+    color: #202020 !important;
     font-family: Open Sans, sans-serif;
     font-style: normal;
+    letter-spacing: 1px;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 0.85rem;
     line-height: 150%;
+    text-transform: uppercase;
   
   
   }
@@ -59,7 +62,7 @@ export const NavigationBar = () => (
   <Styles>
     <Navbar collapseOnSelect className="py-4 px-3" expand="lg">
       <Container>
-      <Navbar.Brand href="/">FURQUAN AHMAD</Navbar.Brand>
+      <Navbar.Brand href="/">Furquan Ahmad</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
 

@@ -34,7 +34,8 @@ const Styles = styled.div`
         
     }
     .headerStyling {
-        font-family: 'Open Sans', sans-serif; 
+        color: #202020;
+        font-family: 'Playfair Display', sans-serif; 
         font-size:  3rem;
         font-weight: 700;
         line-height: 1.2em;
@@ -52,8 +53,8 @@ export const Home = () => (
  <Row>  
    <Col>
     <h1 className="headerStyling mb-2">
-    I’m a digital product designer, currently living and
-    working in London, UK.
+    I’m a digital product designer, currently working and
+    living in London, UK.
     </h1>
     </Col>
  </Row>

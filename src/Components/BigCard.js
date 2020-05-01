@@ -36,7 +36,7 @@ const Styles = styled.div`
   .cardTitleStyling {
 
     margin-top: 16px!important;
-    font-size: 1.4em!important;
+    font-size: 1.27rem!important;
   }
 
   .cardBodyStyling {
@@ -52,9 +52,9 @@ const Styles = styled.div`
   border-style: solid;
   border-width: 2px;
   border-radius: 3px;
-  font-weight: bold;
-  font-size: 16px;
-  font-family: roboto;
+  font-weight:600;
+  font-size: 1rem;
+  font-family: Open Sans, sans-serif;
   width: 128px;
   height: 40px;
 
@@ -89,7 +89,7 @@ const Styles = styled.div`
 
 .cardTitleStyling {
   font-family: Open Sans, sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.55rem;
   font-style: normal;
   font-weight: bold;
   margin-top: 100px;
@@ -97,10 +97,11 @@ const Styles = styled.div`
 }
 
 .cardBodyStyling {
+  color: #202020;
   font-family: Open Sans, sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
+  font-size: 0.9rem;
+  line-height: 24px;
 
 }
 

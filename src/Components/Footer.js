@@ -28,9 +28,9 @@
 
     
     .footerHeader {
-
-        font-family: Proza Libre, sans-serif;
-        font-weight:bold;
+        color: #202020;
+        font-family: 'Playfair Display', sans-serif; 
+        font-weight:900;
         font-size: 1.4rem;
     }
 
