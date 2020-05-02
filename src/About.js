@@ -57,7 +57,9 @@ const Styles = styled.div`
 
 .bodyHeaderText {
     font-family: Open-Sans, sans-serif;
-    font-size: 1.05rem;
+    font-size: 1rem;
+    line-height: 26px;
+    color: #202020;
 }
 
  .profilePicture {
@@ -195,7 +197,7 @@ export const About = () => (
                 <div className ="bodyHeaderText">
                 <p>Because I've been in the trenches as a designer and developer, I know all about the tech jargon that matters.</p>
                 <p>Today, I'm a product designer at Ford Mobility in London, designing a brand new delivery network to combat congestion in cities.</p>
-                <p>Catch me outside from work you will find me running with my local running club,  at a climbing wall or working on one of my side projects</p>
+                <p>Catch me outside from work you will find me running with my local running club,  at a climbing wall or working on one of my side projects.</p>
                </div>
               </div>
               <div className="col-6 col-sm-3 col-md-4 offset-md-1 col-lg-3 offset-lg-3 mb-3 mb-sm-0 text-right order-first order-sm-last">
@@ -230,6 +232,7 @@ export const About = () => (
             <h5 className="TLDRSubHeader">Wild</h5>
             <div className = "TLDRBodyText">
             <p> I love keeping up with FinTechs and have a strong interest in investing.</p>
+            <p> I love the world of open source and try to give back to the community as and when i can. </p>
             <p> I also love reading books, cooking and gaming. I'm currently playing a lot of League Of Legends.</p>
             </div>
             </div>

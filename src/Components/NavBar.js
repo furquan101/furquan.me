@@ -5,6 +5,18 @@ import { LinkContainer } from 'react-router-bootstrap'
 const Styles = styled.div`
 
 
+@media only screen and (max-width: 768px) {
+
+  .navbar-brand {
+    font-family: Playfair Display, sans-serif;
+    font-weight: 900;
+    font-size: 1.3rem !important;
+    letter-spacing: 0.015em;
+    color: black;
+
+  }
+
+}
   .navbar {
     border-top: 2px solid #9665FF; 
     background-color: #FFFFFF;
@@ -17,7 +29,7 @@ const Styles = styled.div`
   .navbar-brand {
     font-family: Playfair Display, sans-serif;
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     letter-spacing: 0.015em;
     color: black;
 

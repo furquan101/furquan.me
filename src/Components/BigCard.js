@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
+import { LinkContainer } from 'react-router-bootstrap';
 
 
 
@@ -120,21 +121,23 @@ export const BigCard = props =>(
 <Container className="cardPadding">
 <Card className = "mx-2 mb-5">
   <Row>
-  <Col md={6}>
+  <div className ="col-lg-6">
       <Card.Img className ="cardImage" src = {props.imgCardLarge}/>
-    </Col>
-    <Col md = {6}>
+    </div>
+    <div className ="col-lg-6">
     <Card.Body>
     <Image className = "projectLogo float-right" src={props.imgProjectLogo}  />
     <Card.Title className = "cardTitleStyling">
       {props.cardTitleName} 
     </Card.Title>
-    <Card.Text className = "cardBodyStyling">
+    <Card.Text className = "cardBodyStyling mb-3">
     {props.cardBodyText} 
     </Card.Text>
+    <LinkContainer to= "/RSA">
     <Button block className = "buttonStyling" variant="outline-dark">Read more</Button>
+    </LinkContainer>
   </Card.Body>
-    </Col>
+    </div>
   </Row>
 </Card>
 </Container>

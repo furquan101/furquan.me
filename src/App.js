@@ -4,6 +4,7 @@ import { Home } from './Home';
 import { About } from './About';
 import { Contact } from './Contact';
 import { NoMatch } from './NoMatch';
+import { RSA } from './RSA';
 import { NavigationBar } from './Components/NavBar';
 import {Footer} from './Components/Footer';
 import ScrollToTop from './Components/ScrollToTop';
@@ -26,6 +27,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
+              <Route path="/rsa" component={RSA} />
               <Route component={NoMatch} />
             </Switch>
             <Footer/>

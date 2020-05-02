@@ -100,9 +100,9 @@
         <p className="footerSubHeader text-justify"> A product designer based in London currently solving as many mobility problems as possible.</p>
 
         <ul className = "footerList">
-        <li className = "listStyle mb-2"><Mail stroke-width="1.5" color = "#333333" size = {20}></Mail> <a href="mailto:furquan101@gmail.com">Email me</a></li>
-        <li className = "mb-2"><Figma stroke-width="1.5" color = "#333333" size = {20}></Figma> <a href="https://www.figma.com/@furquan101" target="_blank" rel="noopener noreferrer">@furquan101</a></li>
-        <li className = "mb-4"> <Twitter stroke-width="1.5" color = "#333333" size = {20}></Twitter> <a href="https://twitter.com/furquan101" target="_blank" rel="noopener noreferrer">@furquan101</a></li>
+        <li className = "listStyle mb-2"><Mail strokeWidth="1.5" color = "#333333" size = {20}></Mail> <a href="mailto:furquan101@gmail.com">Email me</a></li>
+        <li className = "mb-2"><Figma strokeWidth="1.5" color = "#333333" size = {20}></Figma> <a href="https://www.figma.com/@furquan101" target="_blank" rel="noopener noreferrer">@furquan101</a></li>
+        <li className = "mb-4"> <Twitter strokeWidth="1.5" color = "#333333" size = {20}></Twitter> <a href="https://twitter.com/furquan101" target="_blank" rel="noopener noreferrer">@furquan101</a></li>
         </ul>
         </div>
         <div className="offset-md-1 col-xs-6 col-md-3">

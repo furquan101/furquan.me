@@ -67,6 +67,7 @@ export const Home = () => (
     imgCardLarge={rsa}
     cardTitleName = {"Designing a smart, live, digital breakdown experience."}
     cardBodyText = {"When you breakdown in your vehicle, you are left in the cold about what's going on. We changed this experience to be completley digital in the Digital RSA project."}
+    buttonLink = {"/About"}
     />
    </Col>
  </Row>
@@ -103,6 +104,7 @@ export const Home = () => (
     imgCardLarge={fordPass}
     cardTitleName = {"Designing a global pro app from the ground up"}
     cardBodyText = {"Designing a dedicated app for our commercial vehicle customers that own small fleets and businesses."}
+  
     />
    </Col>
  </Row>
