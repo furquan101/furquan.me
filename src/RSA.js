@@ -19,10 +19,26 @@ import FinalMockup3 from  '../src/Components/Assets/Img/DigitalRSA.png'
 const Styles = styled.div`
 
 @media only screen and (max-width: 768px) {
+  .headerCopy {
+    font-size: 1.7rem !Important;
+  }
   .projectPicture{
     max-height:90vh !important;
     max-width:90vw !important;
     border-radius: 4px;
+ }
+
+ .userResearchPicture {
+  max-height:95vh !important;
+  max-width:100vw !important;
+  border-readius:4px;
+
+ }
+
+ .flowProjectPicture {
+  max-height:50vh !important;
+  max-width:100vw !important;
+
  }
 
 }
@@ -41,14 +57,14 @@ const Styles = styled.div`
 
   .flowProjectPicture {
      max-height:100vh;
-     max-width:100vw;
+     max-width:70vw;
      border-radius: 4px;
 
   }
 
   .userResearchPicture {
-    max-width: 600px;
-    max-height: 380px;
+    max-height:100vh;
+    max-width:36vw;
     border-radius: 4px;
 
   }
@@ -129,6 +145,14 @@ const Styles = styled.div`
     font-family: Open Sans, sans-serif;
     font-size: 1.1rem;
     color: #202020;
+
+  }
+
+  .explorationImage {
+
+    max-height:100vh;
+    max-width:90vw;
+    border-radius: 4px;
 
   }
 
@@ -236,10 +260,9 @@ export const RSA = () => (
       <Container>
 
         <Row className="mb-5">
-          <div className = "col-md-4">
+          <div className = "mx-auto col-md-4">
             <img className = "userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
           </div>
-
           <div className = "offset-md-3 col-md-5">
             <h3 className="headerCopy mb-2">User Research Insights</h3>
             <p className="researchCopy mb-4">I conducted user research with vehicle owners in the UK and Germany to understand the current breakdown experience, customer pain points and goals.</p>
@@ -248,44 +271,58 @@ export const RSA = () => (
             <li className="mb-3">Customers want to make sure they can get back on the road as quick as possible.</li>
             <li className="mb-3">Safety is really important for customers  just like Maslow's Hierarchy Of Needs.  </li>
             </ul>
-
           </div>
         </Row>
       
 
         <Row>
-        <h3 className="headerCopy mb-3">Mapping the UX Flow</h3>
-        <div className="uxFlowBodyCopy">
-        <p>I worked directly with our RSA partner ARC to map out how the end to end experience looks like when you breakdown. Depending on whether you have the FordPass app installed and you have data available on your phone you will seek a different experience.  
-           The flow also maps out what part of the flow “ARC” is handles and what part Ford handles. 
-        </p>
-        <p>
-        Based on our research users told us they usually phone up roadside assistance directly and seek assistance there. 
-        I wanted to allow users to continue a flow they’re familiar and enchance it. We do this by texting users a magic link after they finish their phone call with the RSA provider. 
-        </p>
-        <p>
-        The magic link takes them to the FordPass app showcasing the live recovery map with realtime status updates on the breakddown experience. The map allows the user to see if an engineer has been assigned to them, how far away the engineer is and estimated time of arrival
-        on a "Uber" stlye map.
-        </p>
-        </div>
-        <img className="flowProjectPicture mt-4" align="center" alt ="roadside assistance app" src={UXFlow} />
-        </Row>
+        <div className="col">
+          <h3 className="headerCopy mb-3">Mapping the UX Flow</h3>
+          <div className="uxFlowBodyCopy">
+          <p>I worked directly with our RSA partner ARC to map out how the end to end experience looks like when you breakdown. Depending on whether you have the FordPass app installed and you have data available on your phone you will seek a different experience.  
+            The flow also maps out what part of the flow “ARC” is handles and what part Ford handles. 
+          </p>
+          <p>
+          Based on our research users told us they usually phone up roadside assistance directly and seek assistance there. 
+          I wanted to allow users to continue a flow they’re familiar and enchance it. We do this by texting users a magic link after they finish their phone call with the RSA provider. 
+          </p>
+          <p>
+          The magic link takes them to the FordPass app showcasing the live recovery map with realtime status updates on the breakddown experience. The map allows the user to see if an engineer has been assigned to them, how far away the engineer is and estimated time of arrival
+          on a "Uber" stlye map.
+          </p>
+          </div>
+          </div>
+          </Row>
+
+          <Row>
+            <div className="col">
+            <img className="flowProjectPicture mt-4" align="center" alt ="roadside assistance app" src={UXFlow} />
+           </div>
+         </Row>
+        
      
        <Row>
+         <div className="col">
          <h3 className="mt-5 headerCopy">Exploring Design Concepts</h3>
+         </div>
        </Row>
 
-        <Row>
-          <img align="center" alt ="roadside assistance app" src={Exploration1} />
+        <Row className="mx-auto">
+          
+          <img  className ="explorationImage" align="center" alt ="roadside assistance app" src={Exploration1} />
+        
+        </Row>
+
+        <Row className="mx-auto">
+         <div className="col">
+          <img className ="explorationImage" align="center" alt ="roadside assistance app" src={Exploration2} />
+         </div>
         </Row>
 
         <Row>
-          <img align="center" alt ="roadside assistance app" src={Exploration2} />
-        </Row>
+        <div className="col">
 
-        <Row>
-
-        <div className="mb-5">
+         <div className="mb-5">
             <h3 className="headerCopy">Legal And Technical Design Challenges</h3>
             <p className="mt-3 legalBodyCopy">
             Working with our external partner "ARC" meant i had to take into consideration the technical constraints from both Ford and ARC as the designs evolved.
@@ -307,7 +344,7 @@ export const RSA = () => (
             <p className="legalBodyCopy">Before you call the RSA provider you have to confirm details about your vehicle. We thought displaying the vehicle error would be useful so the user has more tranparency of what's hapenning.
              However after working with our vehicle data engineer we wasn't able to provide the fault code of the car (1A)</p>
           </div>
-
+          </div>
           </Row>
       
 
