@@ -18,8 +18,13 @@ import FinalMockup3 from  '../src/Components/Assets/Img/DigitalRSA.png'
 
 const Styles = styled.div`
 
-.headerJumbotron {
-    
+@media only screen and (max-width: 768px) {
+  .projectPicture{
+    max-height:90vh !important;
+    max-width:90vw !important;
+    border-radius: 4px;
+ }
+
 }
 
 .headerJumbotronImage {
@@ -29,9 +34,16 @@ const Styles = styled.div`
 }
 
   .projectPicture{
-     max-width: 800px;
-     max-height: 450px;
+     max-height:50vh;
+     max-width:50vw;
      border-radius: 4px;
+  }
+
+  .flowProjectPicture {
+     max-height:100vh;
+     max-width:100vw;
+     border-radius: 4px;
+
   }
 
   .userResearchPicture {
@@ -185,7 +197,7 @@ export const RSA = () => (
             2 Android and iOS developers. We partnered with “ARC Europe” who deliver roadside assistance experiences.
             </p>
           </div>
-          <div className = "offset-1 col-lg-5 col-md-4">
+          <div className = "offset-md-1 col-lg-5 col-md-4">
           <img className = "projectPicture" alt ="roadside assistance app" src={RSAGif} />
           </div>
         </Row>
@@ -256,7 +268,7 @@ export const RSA = () => (
         on a "Uber" stlye map.
         </p>
         </div>
-        <img className="mt-4" align="center" alt ="roadside assistance app" src={UXFlow} />
+        <img className="flowProjectPicture mt-4" align="center" alt ="roadside assistance app" src={UXFlow} />
         </Row>
      
        <Row>
