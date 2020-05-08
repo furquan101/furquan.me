@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
+import Button from'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import fordVehicle from '../src/Components/Assets/Img/Fordpass.png';
+import { LinkContainer } from 'react-router-bootstrap'
+import RSAHeader from '../src/Components/Assets/Img/RSAHeader.png'
 import RSAGif from '../src/Components/Assets/Img/RSA.gif';
 import UXFlow from '../src/Components/Assets/Img/RSAflow.png'
 import Exploration1 from '../src/Components/Assets/Img/Exploration1.png';
@@ -16,6 +18,16 @@ import FinalMockup3 from  '../src/Components/Assets/Img/DigitalRSA.png'
 
 const Styles = styled.div`
 
+.headerJumbotron {
+    
+}
+
+.headerJumbotronImage {
+  width: 100%; 
+  height: 400px;
+  max-height: 20%;
+}
+
   .projectPicture{
      max-width: 800px;
      max-height: 450px;
@@ -24,7 +36,7 @@ const Styles = styled.div`
 
   .userResearchPicture {
     max-width: 600px;
-    max-height: 305px;
+    max-height: 380px;
     border-radius: 4px;
 
   }
@@ -47,13 +59,15 @@ const Styles = styled.div`
 
   .bodyCopy {
     font-family: Open Sans, sans-serif;
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     line-height: 26px;
     color: #202020;
   }
 
   .myRoleHeader {
-    background-color: #9665FF;
+    background-color: #7A56FF;
+    margin-top: 50px;
+    margin-bottom: 100px;
 
   }
 
@@ -66,12 +80,79 @@ const Styles = styled.div`
   }
 
   .myRoleBodyCopy {
-
     text-decoration:none;
+    font-size: 1.1rem;
     font-family: Open Sans, sans-serif;
     color: white;
     list-style-type: none;
   }
+
+  .whatIDidCopy {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    list-style-type: disc;
+    line-height: 2rem;
+    padding-left: 15px;
+
+  }
+  
+  .researchCopy {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.1rem;
+    color: #202020;
+
+  }
+
+  .researchListCopy {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.1rem;
+    color: #202020;
+    list-style-type: disc;
+    padding-left: 15px;
+
+  }
+
+  .uxFlowBodyCopy {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.1rem;
+    color: #202020;
+
+  }
+
+  .legalBodyCopy {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.1rem;
+    color: #202020;
+
+  }
+
+  .nextProjectHeader {
+    margin-top: 100px;
+    background-color: #7A56FF;
+    margin-bottom: 0px;
+  }
+
+  .nextProjectHeaderCopy {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  .nextProjectSubHeaderCopy {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.55rem;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+      }
 
 }
 
@@ -84,11 +165,10 @@ export const RSA = () => (
     
 <Styles>
 
-
-
-<Jumbotron className = "headerJumbotron">
+      <Container-fluid>
+        <img className = "headerJumbotronImage" alt ="roadside assistance app" src={RSAHeader} />
         <div className="mb-5"> </div>
-      </Jumbotron>
+      </Container-fluid>
 
       <Container>
         <Row className="mt-5">
@@ -102,7 +182,7 @@ export const RSA = () => (
             <h5 className="subHeaderCopy">The Team</h5>
             <p className="bodyCopy">
             On this project i was working with a UX designer, Product Manager.
-            2 Android developers and iOS developers. We partnered with “ARC Europe” who deliver roadside assistance experiences.
+            2 Android and iOS developers. We partnered with “ARC Europe” who deliver roadside assistance experiences.
             </p>
           </div>
           <div className = "offset-1 col-lg-5 col-md-4">
@@ -112,7 +192,6 @@ export const RSA = () => (
       </Container>
 
       <Jumbotron className = "myRoleHeader">
-        <div className="py-2">
           <Container>
             <Row>
               <div className="col-md-5">
@@ -128,57 +207,60 @@ export const RSA = () => (
               </div>
               <div className="offset-md-2 col-md-5">
                <h3 className="myRoleHeaderCopy">What i did</h3>
-               <ul className="myRoleBodyCopy">
+               <ul className="whatIDidCopy">
                  <li> Lead UI designer</li>
                  <li>Map out the UX flows</li>
                  <li>Research coordination</li>
                  <li>Executive presentations</li>
                  <li>Fostering relationships and understanding requirements with partners</li>
-                 <li>iOS and Android Development support</li>
+                 <li>iOS and Android Development and QA support</li>
                  
                </ul> 
               </div>
             </Row>
           </Container>
-        </div>
       </Jumbotron>
 
       <Container>
 
         <Row className="mb-5">
-          <div className = "col-md-5">
+          <div className = "col-md-4">
             <img className = "userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
           </div>
 
-          <div className = "offset-md-2 col-md-5">
-            <h3>User Research Insights</h3>
-            <p>I conducted user research to understand the current breakdown experience, customer pain points and goals.</p>
-            <p>Customers find the current breakdown experience frustrating due to the lack of communication and understanding of what's hapenning</p>
-            <p>Safety of vehicle is really important for customers, just like Maslow's Hierarchy Of Needs, safety is one of the most important aspects for vehicle ownership.   </p>
-            <p>Customers want to make sure they can get back on the road as quick as possible</p>
+          <div className = "offset-md-3 col-md-5">
+            <h3 className="headerCopy mb-2">User Research Insights</h3>
+            <p className="researchCopy mb-4">I conducted user research with vehicle owners in the UK and Germany to understand the current breakdown experience, customer pain points and goals.</p>
+            <ul className="researchListCopy">
+            <li className="mb-3">The current breakdown experience is "frustrating" due to a lack of communication, transparency and understanding of what's hapenning.</li>
+            <li className="mb-3">Customers want to make sure they can get back on the road as quick as possible.</li>
+            <li className="mb-3">Safety is really important for customers  just like Maslow's Hierarchy Of Needs.  </li>
+            </ul>
 
           </div>
         </Row>
+      
 
         <Row>
-       
-        <h3>Mapping the UX Flow</h3>
+        <h3 className="headerCopy mb-3">Mapping the UX Flow</h3>
+        <div className="uxFlowBodyCopy">
         <p>I worked directly with our RSA partner ARC to map out how the end to end experience looks like when you breakdown. Depending on whether you have the FordPass app installed and you have data available on your phone you will seek a different experience.  
-           The flow maps out what part of the flow “ARC” is handles and what part Ford handles. 
+           The flow also maps out what part of the flow “ARC” is handles and what part Ford handles. 
         </p>
         <p>
         Based on our research users told us they usually phone up roadside assistance directly and seek assistance there. 
-        I wanted to allow users to continue a flow they’re familiar and enchance it by adding the digital touch. We do this by texting users a magic link after they finish their phone call with the RSA provider. 
+        I wanted to allow users to continue a flow they’re familiar and enchance it. We do this by texting users a magic link after they finish their phone call with the RSA provider. 
         </p>
         <p>
         The magic link takes them to the FordPass app showcasing the live recovery map with realtime status updates on the breakddown experience. The map allows the user to see if an engineer has been assigned to them, how far away the engineer is and estimated time of arrival
         on a "Uber" stlye map.
         </p>
-        <img align="center" alt ="roadside assistance app" src={UXFlow} />
+        </div>
+        <img className="mt-4" align="center" alt ="roadside assistance app" src={UXFlow} />
         </Row>
      
        <Row>
-         <h3>Exploring Designs</h3>
+         <h3 className="mt-5 headerCopy">Exploring Design Concepts</h3>
        </Row>
 
         <Row>
@@ -192,34 +274,42 @@ export const RSA = () => (
         <Row>
 
         <div className="mb-5">
-            <h3>Technology and Legal Design Constraints</h3>
-            <p>
-              I was working with our external partner "ARC" to provide the RSA service, which meant i had to take into consideration the technical constraints they posed as the designs evolved. 
+            <h3 className="headerCopy">Legal And Technical Design Challenges</h3>
+            <p className="mt-3 legalBodyCopy">
+            Working with our external partner "ARC" meant i had to take into consideration the technical constraints from both Ford and ARC as the designs evolved.
             </p>
-            <p>Before you call the RSA provider you have to confirm your details. However after working with our vehicle data engineer we wasn't able to provide the fault code of the car (1A)</p>
-            <p> Due to the nature of the personal data we was handling, the legal team wanted us to make it clear to the user we are sending their data to an external partner, so i changed the hierarchy of the screens to fit this in. (1B, 1C).</p>
-            <p>
-             On the live recovery map we wanted the experience to feel more human, we tried to do this by providing a name and photo of the engineer and vehicle (2A). However due to technical constraints we wasn't able to provide the exact vehicle make and model for the rescue van, and a picture of the engineer. 
-             We removed this from the design and used the word "engineer" instead.
-             We also wasn't able to provide a direct phone number to call the engineer, however having a number to call the roadside assistance was still very important to include (2B, 2C).
+            <h5 className="mt-5 subHeaderCopy">No personal information DISPLAYED</h5>
+            <p className="legalBodyCopy">
+            On the live recovery map we wanted the experience to feel more human, we tried to do this by providing a name and photo of the engineer and vehicle (2A). 
+            However due to technical constraints we wasn't able to fetch this data from “ARC”. This meant we couldn't provide the exact vehicle make and model for the rescue van, and the name and picture of the engineer. 
             </p>
+            <p className="legalBodyCopy">
+            We removed this from the design and used the word "engineer" instead. We also wasn't able to provide a direct phone number to call the engineer, however having a number to call the roadside assistance was still very important to include (2B, 2C).
+            </p>
+            <h5 className="mt-5 subHeaderCopy">GDPR and sending personal data</h5>
+            <p className="legalBodyCopy">
+             To get the best breakdown experience possible we send over the fault code of the vehicle to the RSA provider and the location of the vehicle. This allows the RSA company to assist users in the best way possible if they already know the problem with your vehicle before they leave the garage. 
+            </p>
+            <p className="legalBodyCopy">The legal team wanted us to make it clear to the user we are sending their data to an external partner, so i changed the hierarchy of the screens to fit this in and making the user understand sending over their data is going to get them a faster recovery experience. (1B, 1C).</p>
+            <h5 className="mt-5 subHeaderCopy">Gathering vehicle data</h5>
+            <p className="legalBodyCopy">Before you call the RSA provider you have to confirm details about your vehicle. We thought displaying the vehicle error would be useful so the user has more tranparency of what's hapenning.
+             However after working with our vehicle data engineer we wasn't able to provide the fault code of the car (1A)</p>
           </div>
 
           </Row>
-          <Row>
-            <div className="col-md-10">
-            <h5>Main insights</h5>
-                <ul>
-                  <li>To confrom with GDPR users have to allow their data to be sent over to ARC to use the service</li>
-                  <li>Users that don't have the FordPass app installed can use this service</li>
-                  <li>ARC can provide realtime updates of the van location and status </li>
-                  <li>ARC are not able to provide the assigned breakdown engineer's name or phone number</li>
-                </ul>
-              </div>
-         </Row>
+      
 
          <Row>
-           <h3>Final Design</h3>
+           <h3 className="headerCopy mb-3">Refinement</h3>
+           <p className="legalBodyCopy">When creating the final soloution we wanted to bring the designs more in brand and consistent with the FordPass app. To do this on the live recovery map we made the card consistent with the ones found on the “Find” map. 
+           </p>
+           <p className="legalBodyCopy"> 
+              The cards are smaller and found on the bottom of the map making them easy for the user to interact with and continue the flow. 
+              This also helped a lot with the hierarchy of the screen, making it a lot easier to see the recovery map.
+          </p>
+         </Row>
+         <Row>
+         <h3 className="headerCopy mt-5 mb-3">Final Soloution</h3>
          </Row>
 
         <Row className="mb-5">
@@ -232,6 +322,29 @@ export const RSA = () => (
         <img alt ="Final soloution" src={FinalMockup3} />
         </Row>
       </Container>
+
+      <Jumbotron className="nextProjectHeader">
+        <Container>
+            <Row>
+            
+            <div className="col-lg-6 md-12">
+              <h3 className ="nextProjectHeaderCopy">Next Project</h3>
+              </div>
+            </Row>
+                <Row>
+                <div className="col-lg-6 col-12">
+                    <p className="nextProjectSubHeaderCopy">FordPass Pro</p>
+                </div>
+                </Row> 
+                <Row>
+                <div className="col-lg-6 col-12">
+                    <LinkContainer to = "/About"> 
+                    <Button className = "buttonStyling" variant="outline-light">View Project</Button>
+                    </LinkContainer>
+                </div>
+                </Row>
+        </Container>
+        </Jumbotron>
 
 
      
