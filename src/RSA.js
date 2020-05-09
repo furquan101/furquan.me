@@ -11,9 +11,9 @@ import UXFlow from '../src/Components/Assets/Img/RSAflow.png'
 import Exploration1 from '../src/Components/Assets/Img/Exploration1.png';
 import Exploration2 from '../src/Components/Assets/Img/Exploration2.png';
 import Userresearch from '../src/Components/Assets/Img/Research.jpg'
-import FinalMockup1 from '../src/Components/Assets/Img/RSAGoldIphone.png'
+import FinalMockup1 from '../src/Components/Assets/Img/DigitalRSA.png'
 import FinalMockup2 from  '../src/Components/Assets/Img/RSAHand.png'
-import FinalMockup3 from  '../src/Components/Assets/Img/DigitalRSA.png'
+import FinalMockup3 from  '../src/Components/Assets/Img/RSAGoldIphone.png'
 
 
 const Styles = styled.div`
@@ -30,7 +30,7 @@ const Styles = styled.div`
 
  .userResearchPicture {
   max-height:95vh !important;
-  max-width:100vw !important;
+  max-width:90vw !important;
   border-readius:4px;
 
  }
@@ -44,9 +44,10 @@ const Styles = styled.div`
 }
 
 .headerJumbotronImage {
-  width: 100%; 
-  height: 400px;
+  width: 100vw; 
+  height: 750px;
   max-height: 20%;
+  margin-bottom: 20px;
 }
 
   .projectPicture{
@@ -64,7 +65,7 @@ const Styles = styled.div`
 
   .userResearchPicture {
     max-height:100vh;
-    max-width:36vw;
+    max-width:32vw;
     border-radius: 4px;
 
   }
@@ -151,7 +152,7 @@ const Styles = styled.div`
   .explorationImage {
 
     max-height:100vh;
-    max-width:90vw;
+    max-width:70vw;
     border-radius: 4px;
 
   }
@@ -160,7 +161,12 @@ const Styles = styled.div`
     font-family: Open Sans, sans-serif;
     font-size: 1.1rem;
     color: #202020;
+  }
 
+  .finalSoloutionImage {
+    max-height:100vh;
+    max-width:70vw;
+    border-radius: 4px;
   }
 
   .nextProjectHeader {
@@ -188,7 +194,14 @@ const Styles = styled.div`
     line-height: 150%;
     letter-spacing: 0.01em;
     color: #FFFFFF;
-      }
+    }
+
+    .mt-6 {
+      margin-top: 60px;
+    }
+    .mt-8 {
+      margin-top: 80px;
+    }
 
 }
 
@@ -260,14 +273,14 @@ export const RSA = () => (
       <Container>
 
         <Row className="mb-5">
-          <div className = "mx-auto col-md-4">
+          <div className = "mx-auto col-md-3">
             <img className = "userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
           </div>
-          <div className = "offset-md-3 col-md-5">
-            <h3 className="headerCopy mb-2">User Research Insights</h3>
-            <p className="researchCopy mb-4">I conducted user research with vehicle owners in the UK and Germany to understand the current breakdown experience, customer pain points and goals.</p>
+          <div className = "offset-md-4 col-md-5">
+            <h3 className="headerCopy mb-3">User Research Insights</h3>
+            <p className="researchCopy mb-4">I conducted user research with vehicle owners in the UK and Germany to understand customer pain points and goals.</p>
             <ul className="researchListCopy">
-            <li className="mb-3">The current breakdown experience is "frustrating" due to a lack of communication, transparency and understanding of what's hapenning.</li>
+            <li className="mb-3">The breakdown experience is "frustrating" due to a lack of communication, transparency and understanding of what's hapenning.</li>
             <li className="mb-3">Customers want to make sure they can get back on the road as quick as possible.</li>
             <li className="mb-3">Safety is really important for customers  just like Maslow's Hierarchy Of Needs.  </li>
             </ul>
@@ -277,10 +290,10 @@ export const RSA = () => (
 
         <Row>
         <div className="col">
-          <h3 className="headerCopy mb-3">Mapping the UX Flow</h3>
+          <h3 className="mt-3 headerCopy mb-3">Mapping the UX Flow</h3>
           <div className="uxFlowBodyCopy">
           <p>I worked directly with our RSA partner ARC to map out how the end to end experience looks like when you breakdown. Depending on whether you have the FordPass app installed and you have data available on your phone you will seek a different experience.  
-            The flow also maps out what part of the flow “ARC” is handles and what part Ford handles. 
+            The flow also maps out what part of the flow “ARC” handles and what part Ford handles. 
           </p>
           <p>
           Based on our research users told us they usually phone up roadside assistance directly and seek assistance there. 
@@ -295,7 +308,7 @@ export const RSA = () => (
           </Row>
 
           <Row>
-            <div className="col">
+           <div className="col">
             <img className="flowProjectPicture mt-4" align="center" alt ="roadside assistance app" src={UXFlow} />
            </div>
          </Row>
@@ -303,14 +316,14 @@ export const RSA = () => (
      
        <Row>
          <div className="col">
-         <h3 className="mt-5 headerCopy">Exploring Design Concepts</h3>
+         <h3 className="mt-8 headerCopy">Exploring Design Concepts</h3>
          </div>
        </Row>
 
         <Row className="mx-auto">
-          
+         <div className="col">
           <img  className ="explorationImage" align="center" alt ="roadside assistance app" src={Exploration1} />
-        
+          </div>
         </Row>
 
         <Row className="mx-auto">
@@ -321,13 +334,9 @@ export const RSA = () => (
 
         <Row>
         <div className="col">
-
          <div className="mb-5">
-            <h3 className="headerCopy">Legal And Technical Design Challenges</h3>
-            <p className="mt-3 legalBodyCopy">
-            Working with our external partner "ARC" meant i had to take into consideration the technical constraints from both Ford and ARC as the designs evolved.
-            </p>
-            <h5 className="mt-5 subHeaderCopy">No personal information DISPLAYED</h5>
+            <h3 className="mt-8 headerCopy">Legal And Technical Design Challenges</h3>
+            <h5 className="mt-4 subHeaderCopy">No personal information DISPLAYED</h5>
             <p className="legalBodyCopy">
             On the live recovery map we wanted the experience to feel more human, we tried to do this by providing a name and photo of the engineer and vehicle (2A). 
             However due to technical constraints we wasn't able to fetch this data from “ARC”. This meant we couldn't provide the exact vehicle make and model for the rescue van, and the name and picture of the engineer. 
@@ -349,27 +358,38 @@ export const RSA = () => (
       
 
          <Row>
-           <h3 className="headerCopy mb-3">Refinement</h3>
+         <div className="col">
+           <h3 className="mt-4 headerCopy mb-3">Refinement</h3>
            <p className="legalBodyCopy">When creating the final soloution we wanted to bring the designs more in brand and consistent with the FordPass app. To do this on the live recovery map we made the card consistent with the ones found on the “Find” map. 
            </p>
            <p className="legalBodyCopy"> 
               The cards are smaller and found on the bottom of the map making them easy for the user to interact with and continue the flow. 
               This also helped a lot with the hierarchy of the screen, making it a lot easier to see the recovery map.
           </p>
+          </div>
          </Row>
          <Row>
-         <h3 className="headerCopy mt-5 mb-3">Final Soloution</h3>
+          <div className="col">
+           <h3 className="headerCopy mt-8 mb-4">Final Soloution</h3>
+         </div>
          </Row>
 
         <Row className="mb-5">
-        <img alt ="Final soloution" src={FinalMockup1} />
+         <div className="col">
+         <img className="finalSoloutionImage" alt ="Final soloution" src={FinalMockup1} />
+         </div>
         </Row>
         <Row className="mb-5">
-        <img alt ="Final soloution" src={FinalMockup2} />
+         <div className="col">
+         <img className="finalSoloutionImage" alt ="Final soloution" src={FinalMockup2} />
+         </div>
         </Row>
-        <Row className="mb-5">
-        <img alt ="Final soloution" src={FinalMockup3} />
+        <Row className="mb-2">
+         <div className="col">
+         <img className="finalSoloutionImage" alt ="Final soloution" src={FinalMockup3} />
+         </div>
         </Row>
+        
       </Container>
 
       <Jumbotron className="nextProjectHeader">
