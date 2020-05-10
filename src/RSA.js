@@ -22,11 +22,27 @@ const Styles = styled.div`
   .headerCopy {
     font-size: 1.7rem !Important;
   }
+
+  .headerJumbotronImage{
+    max-width: 100vw !important;
+    max-height: 35vh !Important;
+  }
+  
+  .headerCopy {
+    font-size: 1.5rem !important;
+    
+  }
+
   .projectPicture{
     max-height:90vh !important;
     max-width:90vw !important;
     border-radius: 4px;
  }
+
+ .myRoleHeaderCopy {
+   font-size: 1.5rem !important;
+ }
+
 
  .userResearchPicture {
   max-height:95vh !important;
@@ -37,11 +53,20 @@ const Styles = styled.div`
 
  .flowProjectPicture {
   max-height:50vh !important;
-  max-width:100vw !important;
+  max-width:90vw !important;
+
+ }
+
+ .finalSoloutionImage {
+  max-height:80vh !important;
+  max-width:90vw !important;
 
  }
 
 }
+
+
+
 
 .headerJumbotronImage {
   width: 100vw; 

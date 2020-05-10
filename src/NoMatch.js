@@ -23,7 +23,7 @@ const Styles = styled.div`
     font-family: Open Sans, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     line-height: 150%;
     display: flex;
     letter-spacing: 0.01em;
@@ -35,9 +35,7 @@ const Styles = styled.div`
      max-height: 95vh;
  }
 
- .returnCopy:hover {
-    font-size: 1.55rem;
- }
+ 
 
 `;
 
@@ -49,7 +47,7 @@ export const NoMatch = () => (
   <Row>
   <div className = "col-md-8 mx-auto">
    <h1 className="headerCopy mb-2">
-    Sorry, Tom couldn’t find that page.
+    Sorry, Spencer couldn’t find that page.
    </h1>
   </div>
  </Row>
