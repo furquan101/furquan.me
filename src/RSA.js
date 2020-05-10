@@ -4,16 +4,16 @@ import Container from 'react-bootstrap/Container';
 import Button from'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import { LinkContainer } from 'react-router-bootstrap'
-import RSAHeader from '../src/Components/Assets/Img/RSAHeader.png'
+import { LinkContainer } from 'react-router-bootstrap';
+import RSAHeader from '../src/Components/Assets/Img/RSAHeader.png';
 import RSAGif from '../src/Components/Assets/Img/RSA.gif';
 import UXFlow from '../src/Components/Assets/Img/RSAflow.png'
 import Exploration1 from '../src/Components/Assets/Img/Exploration1.png';
 import Exploration2 from '../src/Components/Assets/Img/Exploration2.png';
-import Userresearch from '../src/Components/Assets/Img/Research.jpg'
-import FinalMockup1 from '../src/Components/Assets/Img/DigitalRSA.png'
-import FinalMockup2 from  '../src/Components/Assets/Img/RSAHand.png'
-import FinalMockup3 from  '../src/Components/Assets/Img/RSAGoldIphone.png'
+import Userresearch from '../src/Components/Assets/Img/Research.jpg';
+import FinalMockup1 from '../src/Components/Assets/Img/DigitalRSA.png';
+import FinalMockup2 from  '../src/Components/Assets/Img/RSAHand.png';
+import FinalMockup3 from  '../src/Components/Assets/Img/RSAGoldIphone.png';
 
 
 const Styles = styled.div`
@@ -215,7 +215,8 @@ export const RSA = () => (
 <Styles>
 
       <Container-fluid>
-        <img className = "headerJumbotronImage" alt ="roadside assistance app" src={RSAHeader} />
+        <img className = "headerJumbotronImage" 
+        alt ="roadside assistance app" src={RSAHeader} />
         <div className="mb-5"> </div>
       </Container-fluid>
 
@@ -274,7 +275,7 @@ export const RSA = () => (
 
         <Row className="mb-5">
           <div className = "mx-auto col-md-3">
-            <img loading="lazy" className = "userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
+            <img className = "userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
           </div>
           <div className = "offset-md-4 col-md-5">
             <h3 className="mt-4 headerCopy mb-3">User Research Insights</h3>
