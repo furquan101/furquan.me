@@ -277,7 +277,7 @@ export const RSA = () => (
             <img className = "userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
           </div>
           <div className = "offset-md-4 col-md-5">
-            <h3 className="headerCopy mb-3">User Research Insights</h3>
+            <h3 className="mt-4 headerCopy mb-3">User Research Insights</h3>
             <p className="researchCopy mb-4">I conducted user research with vehicle owners in the UK and Germany to understand customer pain points and goals.</p>
             <ul className="researchListCopy">
             <li className="mb-3">The breakdown experience is "frustrating" due to a lack of communication, transparency and understanding of what's hapenning.</li>
