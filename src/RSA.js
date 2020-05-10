@@ -274,7 +274,7 @@ export const RSA = () => (
 
         <Row className="mb-5">
           <div className = "mx-auto col-md-3">
-            <img className = "userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
+            <img loading="lazy" className = "userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
           </div>
           <div className = "offset-md-4 col-md-5">
             <h3 className="mt-4 headerCopy mb-3">User Research Insights</h3>
@@ -309,7 +309,7 @@ export const RSA = () => (
 
           <Row>
            <div className="col">
-            <img className="flowProjectPicture mt-4" align="center" alt ="roadside assistance app" src={UXFlow} />
+            <img loading="lazy" className="flowProjectPicture mt-4" align="center" alt ="roadside assistance app" src={UXFlow} />
            </div>
          </Row>
         
@@ -322,13 +322,13 @@ export const RSA = () => (
 
         <Row className="mx-auto">
          <div className="col">
-          <img  className ="explorationImage" align="center" alt ="roadside assistance app" src={Exploration1} />
+          <img loading="lazy" className ="explorationImage" align="center" alt ="roadside assistance app" src={Exploration1} />
           </div>
         </Row>
 
         <Row className="mx-auto">
          <div className="col">
-          <img className ="explorationImage" align="center" alt ="roadside assistance app" src={Exploration2} />
+          <img loading="lazy" className ="explorationImage" align="center" alt ="roadside assistance app" src={Exploration2} />
          </div>
         </Row>
 
@@ -376,17 +376,17 @@ export const RSA = () => (
 
         <Row className="mb-5">
          <div className="col">
-         <img className="finalSoloutionImage" alt ="Final soloution" src={FinalMockup1} />
+         <img loading="lazy" className="finalSoloutionImage" alt ="Final soloution" src={FinalMockup1} />
          </div>
         </Row>
         <Row className="mb-5">
          <div className="col">
-         <img className="finalSoloutionImage" alt ="Final soloution" src={FinalMockup2} />
+         <img loading="lazy" className="finalSoloutionImage" alt ="Final soloution" src={FinalMockup2} />
          </div>
         </Row>
         <Row className="mb-2">
          <div className="col">
-         <img className="finalSoloutionImage" alt ="Final soloution" src={FinalMockup3} />
+         <img loading="lazy" className="finalSoloutionImage" alt ="Final soloution" src={FinalMockup3} />
          </div>
         </Row>
         
