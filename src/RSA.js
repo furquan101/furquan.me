@@ -23,26 +23,43 @@ const Styles = styled.div`
     font-size: 1.7rem !Important;
   }
 
-  .headerJumbotronImage{
-    max-width: 100vw !important;
-    max-height: 35vh !Important;
-  }
   
   .headerCopy {
     font-size: 1.5rem !important;
     
   }
 
-  .projectPicture{
-    max-height:90vh !important;
-    max-width:90vw !important;
-    border-radius: 4px;
- }
+  .subHeaderCopy{
+    font-size: 1rem !important;
+  }
+
+  .bodyCopy {
+    font-size: 0.95rem !important;
+  }
+    
+
 
  .myRoleHeaderCopy {
    font-size: 1.5rem !important;
  }
 
+ .myRoleBodyCopy {
+   font-size: 0.95rem !Important;
+ }
+
+ .whatIDidCopy {
+  font-size: 0.95rem !Important;
+ }
+
+ .researchCopy {
+  font-size: 0.95rem !Important;
+ }
+
+
+ .headerJumbotronImage{
+  max-width: 100vw !important;
+  max-height: 35vh !Important;
+}
 
  .userResearchPicture {
   max-height:95vh !important;
@@ -50,6 +67,11 @@ const Styles = styled.div`
   border-readius:4px;
 
  }
+ .projectPicture{
+  max-height:90vh !important;
+  max-width:90vw !important;
+  border-radius: 4px;
+}
 
  .flowProjectPicture {
   max-height:50vh !important;
@@ -299,10 +321,10 @@ export const RSA = () => (
       <Container>
 
         <Row className="mb-5">
-          <div className = "mx-auto col-md-3">
+          <div className = "col-md-5">
             <img className = "userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
           </div>
-          <div className = "offset-md-4 col-md-5">
+          <div className = "col-md-5">
             <h3 className="mt-4 headerCopy mb-3">User Research Insights</h3>
             <p className="researchCopy mb-4">I conducted user research with vehicle owners in the UK and Germany to understand customer pain points and goals.</p>
             <ul className="researchListCopy">
