@@ -1,7 +1,6 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import styled from 'styled-components';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
@@ -122,11 +121,11 @@ export const BigCard = props =>(
 <Card className = "mx-2 mb-5">
   <Row>
   <div className ="col-lg-6">
-      <Card.Img className ="cardImage" src = {props.imgCardLarge}/>
+      <Card.Img className ="cardImage" src = {props.imgCardLarge} alt="projects i've worked on"/>
     </div>
     <div className ="col-lg-6">
     <Card.Body>
-    <Image className = "projectLogo float-right" src={props.imgProjectLogo}  />
+    <Image className = "projectLogo float-right" src={props.imgProjectLogo} alt ="project logo" />
     <Card.Title className = "cardTitleStyling">
       {props.cardTitleName} 
     </Card.Title>

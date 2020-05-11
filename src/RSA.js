@@ -62,7 +62,7 @@ const Styles = styled.div`
 
  .headerJumbotronImage{
   max-width: 100vw !important;
-  max-height: 35vh !Important;
+  max-height: 32vh !Important;
 }
 
  .userResearchPicture {
