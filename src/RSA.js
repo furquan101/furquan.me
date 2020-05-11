@@ -96,6 +96,10 @@ const Styles = styled.div`
 
  }
 
+ .nextProjectSubHeaderCopy {
+   font-size: 1.9rem !Important;
+ }
+
 }
 
 
