@@ -133,7 +133,7 @@ export const BigCard = props =>(
     <Card.Text className = "cardBodyStyling mb-3">
     {props.cardBodyText} 
     </Card.Text>
-    <LinkContainer to= "/RSA">
+    <LinkContainer to= {props.cardLink}>
     <Button block className = "buttonStyling" variant="outline-dark">Read more</Button>
     </LinkContainer>
   </Card.Body>

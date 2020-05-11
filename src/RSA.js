@@ -8,8 +8,12 @@ import { LinkContainer } from 'react-router-bootstrap';
 import RSAHeader from '../src/Components/Assets/Img/RSAHeader.png';
 import RSAGif from '../src/Components/Assets/Img/RSA.gif';
 import UXFlow from '../src/Components/Assets/Img/RSAflow.png'
-import Exploration1 from '../src/Components/Assets/Img/Exploration1.png';
-import Exploration2 from '../src/Components/Assets/Img/Exploration2.png';
+import CallingRSA1 from '../src/Components/Assets/Img/CallingRSA1.jpg';
+import CallingRSA2 from '../src/Components/Assets/Img/CallingRSA2.jpg';
+import CallingRSA3 from '../src/Components/Assets/Img/CallingRSA3.jpg';
+import RecoveryRSAMap1 from '../src/Components/Assets/Img/RecoveryRSAMap1.jpg';
+import RecoveryRSAMap2 from '../src/Components/Assets/Img/RecoveryRSAMap2.jpg';
+import RecoveryRSAMap3 from '../src/Components/Assets/Img/RecoveryRSAMap3.jpg';
 import Userresearch from '../src/Components/Assets/Img/Research.jpg';
 import FinalMockup1 from '../src/Components/Assets/Img/DigitalRSA.png';
 import FinalMockup2 from  '../src/Components/Assets/Img/RSAHand.png';
@@ -78,6 +82,13 @@ const Styles = styled.div`
   max-width:90vw !important;
 
  }
+
+ .callingRSAImage {
+  max-height:100vh !important;
+  max-width:70vw !important;
+  border-radius: 4px;
+
+}
 
  .finalSoloutionImage {
   max-height:80vh !important;
@@ -196,6 +207,13 @@ const Styles = styled.div`
 
   }
 
+  .callingRSAImage {
+    max-height:100vh;
+    max-width:20vw;
+    border-radius: 4px;
+
+  }
+
   .explorationImage {
 
     max-height:100vh;
@@ -269,7 +287,7 @@ export const RSA = () => (
 
       <Container>
         <Row className="mt-5">
-          <div className="col-md-6 mb-5">
+          <div className="col-lg-6 mb-5">
             <h3 className="headerCopy">Project Overview</h3>
             <h5 className="mt-4 subHeaderCopy">Problem</h5>
             <p className="bodyCopy mb-4">When you breakdown in your vehicle, the current RSA (roadside assistance) experience is very analogue. This means customer's are often left unsure when they will recieve help and what's wrong with their vehicle.
@@ -282,7 +300,7 @@ export const RSA = () => (
             2 Android and iOS developers. We partnered with “ARC Europe” who deliver roadside assistance experiences.
             </p>
           </div>
-          <div className = "offset-md-1 col-lg-5 col-md-4">
+          <div className = "offset-lg-1 col-lg-5 col-md-12">
           <img className = "projectPicture" alt ="roadside assistance app" src={RSAGif} />
           </div>
         </Row>
@@ -321,11 +339,11 @@ export const RSA = () => (
       <Container>
 
         <Row className="mb-5">
-          <div className = "col-md-5">
-            <img className = "userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
+          <div className = "col-md-4 col-lg-4">
+            <img className = "mb-4 userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
           </div>
-          <div className = "col-md-5">
-            <h3 className="mt-4 headerCopy mb-3">User Research Insights</h3>
+          <div className = "col-md-12 offset-lg-2 col-lg-6">
+            <h3 className="headerCopy mb-3">User Research Insights</h3>
             <p className="researchCopy mb-4">I conducted user research with vehicle owners in the UK and Germany to understand customer pain points and goals.</p>
             <ul className="researchListCopy">
             <li className="mb-3">The breakdown experience is "frustrating" due to a lack of communication, transparency and understanding of what's hapenning.</li>
@@ -368,17 +386,44 @@ export const RSA = () => (
          </div>
        </Row>
 
-        <Row className="mx-auto">
-         <div className="col">
-          <img loading="lazy" className ="explorationImage" align="center" alt ="roadside assistance app" src={Exploration1} />
+       <Row>
+       <div className="col mt-4 subHeaderCopy">
+        <h5>Calling Roadside Assistance Exploration:</h5>
+       </div>
+       </Row>
+
+       <Row className="mx-auto">
+         <div className="col-lg-4">
+          <img loading="lazy" className ="callingRSAImage"  alt ="roadside assistance app" src={CallingRSA1} />
+          </div>
+          <div className="col-lg-4">
+          <img loading="lazy"  className ="callingRSAImage" alt ="roadside assistance app" src={CallingRSA2} />
+          </div>
+          <div className="col-lg-4">
+          <img loading="lazy" className ="callingRSAImage" alt ="roadside assistance app" src={CallingRSA3} />
           </div>
         </Row>
 
-        <Row className="mx-auto">
-         <div className="col">
-          <img loading="lazy" className ="explorationImage" align="center" alt ="roadside assistance app" src={Exploration2} />
-         </div>
+        <Row>
+       <div className="col mt-4 subHeaderCopy">
+        <h5>Live Recovery Map Exploration:</h5>
+       </div>
+       </Row>
+
+       <Row className="mx-auto">
+         <div className="col-lg-4">
+          <img loading="lazy"  className ="callingRSAImage"  alt ="roadside assistance app" src={RecoveryRSAMap1} />
+          </div>
+          <div className="col-lg-4">
+          <img loading="lazy"  className ="callingRSAImage" alt ="roadside assistance app" src={RecoveryRSAMap2} />
+          </div>
+          <div className="col-lg-4">
+          <img loading="lazy" className ="callingRSAImage" alt ="roadside assistance app" src={RecoveryRSAMap3} />
+          </div>
         </Row>
+
+
+      
 
         <Row>
         <div className="col">
