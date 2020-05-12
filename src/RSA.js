@@ -67,19 +67,19 @@ const Styles = styled.div`
 
  .userResearchPicture {
   max-height:95vh !important;
-  max-width:90vw !important;
+  max-width:82vw !important;
   border-readius:4px;
 
  }
  .projectPicture{
   max-height:90vh !important;
-  max-width:90vw !important;
+  max-width:82vw !important;
   border-radius: 4px;
 }
 
  .flowProjectPicture {
   max-height:50vh !important;
-  max-width:90vw !important;
+  max-width:82vw !important;
 
  }
 
@@ -92,7 +92,7 @@ const Styles = styled.div`
 
  .finalSoloutionImage {
   max-height:80vh !important;
-  max-width:90vw !important;
+  max-width:82vw !important;
 
  }
 

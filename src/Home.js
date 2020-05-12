@@ -29,7 +29,6 @@ const Styles = styled.div`
 
 
 .headerSpacing {
-    
   padding-top: 3.5rem;
         
     }

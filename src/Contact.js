@@ -3,22 +3,33 @@ import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import contactPicture from '../src/Components/Assets/Img/ContactMe.png';
-import { LinkContainer } from 'react-router-bootstrap';
 
 
 const Styles = styled.div`
 
 
+
 @media only screen and (max-width: 768px) {
     
-    .headerCopy {
+    .headerCopyStyle {
         margin-top: 75px !important;
-        font-size: 2rem !important;
+        font-size: 1.8rem !important;
+    }
+
+    .bodyCopyStyle {
+        font-size: 1.1rem !important;
+    }
+
+    .contactPicture {
+        max-width: 90vw !important;
+        max-height: 55vh !important;
+        margin-top: 40px;
     }
   
   }
 
  .headerCopyStyle {
+    margin-top: -20px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
@@ -37,7 +48,6 @@ const Styles = styled.div`
     font-size: 1.2rem;
     line-height: 150%; 
     letter-spacing: 0.015em;
-    
     color: #000000;
     
 
@@ -46,9 +56,16 @@ const Styles = styled.div`
 
  .contactPicture {
      max-width: 55vw;
-     max-height: 50vh;
-     margin-top: 50px;
+     max-height: 55vh;
+     margin-top: 40px;
  }
+
+ ul {
+    padding: 0px;
+ }
+ ul li{
+    display: inline;
+  }
 
  .listStyle a{
     text-decoration: none;
@@ -59,13 +76,19 @@ const Styles = styled.div`
     line-height: 150%;
     letter-spacing: 0.015em;
     text-transform: uppercase;
-    
+    display: inline;
+    margin-right: 32px;
+    padding: 0px;
     color: #000000;
     
  }
 
  .listStyle a:hover {
-    font-size: 1.15rem;
+    color: #9665FF;
+ }
+
+ .listStyle {
+     margin-bottom: 100px;
  }
  
 
@@ -96,10 +119,10 @@ export const Contact = () => (
   </div>
  </Row>
 
- <Row className="mt-4">
-  <div className = "col-md-12 listStyle">
-   <ul>
-   <li className = "listStyle mb-2"><a href="mailto:furquan101@gmail.com">Email me</a></li>    
+ <Row className="mt-2">
+  <div className = "col-md-12">
+   <ul className="listStyle">
+   <li className = "mb-2"><a href="mailto:furquan101@gmail.com">Email me</a></li>    
    <li className = "mb-1"><a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/furquan101/">LinkedIn</a></li>
    <li className = "mb-1"><a rel="noopener noreferrer" target="_blank" href="https://twitter.com/furquan101">Twitter</a></li>
    </ul>
