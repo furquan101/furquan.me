@@ -1,9 +1,111 @@
 import React from 'react'
+import styled from 'styled-components';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import contactPicture from '../src/Components/Assets/Img/ContactMe.png';
+import { LinkContainer } from 'react-router-bootstrap';
+
+
+const Styles = styled.div`
+
+
+@media only screen and (max-width: 768px) {
+    
+    .headerCopy {
+        margin-top: 75px !important;
+        font-size: 2rem !important;
+    }
+  
+  }
+
+ .headerCopyStyle {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #000000;
+  
+
+ }
+
+ .bodyCopyStyle {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 150%; 
+    letter-spacing: 0.015em;
+    
+    color: #000000;
+    
+
+ }
+
+
+ .contactPicture {
+     max-width: 55vw;
+     max-height: 50vh;
+     margin-top: 50px;
+ }
+
+ .listStyle a{
+    text-decoration: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 150%;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    
+    color: #000000;
+    
+ }
+
+ .listStyle a:hover {
+    font-size: 1.15rem;
+ }
+ 
+
+`;
 
 export const Contact = () => (
 
-<h1>
-You can contact me anytime using the form below. 
-</h1>
+<Styles>
 
+<Container>
+  <Row>
+  <div className = "offset-md-8 col-md-4 mx-auto">
+  <img className = "contactPicture" alt ="404 cat" src={contactPicture}/>
+  </div>
+ </Row>
+ <Row>
+  <div className = "col-md-12 mx-auto">
+  <h1 className = "headerCopyStyle"> Contact Furquan <span aria-label="waving hand" role="img">👋</span></h1>
+  </div>
+ </Row>
+
+ <Row>
+  <div className = "col-md-12 mx-auto">
+  <p className = "bodyCopyStyle"> 
+  Let's open the conversation and see what we could do together. I'm always interested in new ideas, opportunities or
+  hearing what you're working on, so drop us a message and say hello.
+  </p>
+  </div>
+ </Row>
+
+ <Row className="mt-4">
+  <div className = "col-md-12 listStyle">
+   <ul>
+   <li className = "listStyle mb-2"><a href="mailto:furquan101@gmail.com">Email me</a></li>    
+   <li className = "mb-1"><a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/furquan101/">LinkedIn</a></li>
+   <li className = "mb-1"><a rel="noopener noreferrer" target="_blank" href="https://twitter.com/furquan101">Twitter</a></li>
+   </ul>
+  </div>
+ </Row>
+
+</Container>
+</Styles>
 )

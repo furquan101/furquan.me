@@ -304,7 +304,7 @@ export const RSA = () => (
             2 Android and iOS developers. We partnered with “ARC Europe” who deliver roadside assistance experiences.
             </p>
           </div>
-          <div className = "offset-lg-1 col-lg-5 col-md-12">
+          <div className = "offset-lg-1 col-lg-5 col-md-12 col-sm-12 col-xs-12">
           <img className = "projectPicture" alt ="roadside assistance app" src={RSAGif} />
           </div>
         </Row>
