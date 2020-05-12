@@ -57,7 +57,7 @@ const Styles = styled.div`
 
 .bodyHeaderText {
     font-family: Open-Sans, sans-serif;
-    font-size: 1rem;
+    font-size: 1.02rem;
     line-height: 26px;
     color: #202020;
 }

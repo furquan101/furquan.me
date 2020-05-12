@@ -32,16 +32,11 @@ const Styles = styled.div`
     font-size: 1.45rem;
     letter-spacing: 0.015em;
     color: black;
+    text-decoration: none;
 
   }
 
-  .navbar-brand: hover {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0.5em;
-    
-  }
-
+  
 
   .nav-link {
     color: #202020 !important;
@@ -56,15 +51,13 @@ const Styles = styled.div`
   
   }
 
-  .nav-link:hover{
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0.5em;
-
-  }
-
   .navbar-toggler {
     border-color: white;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left:0px;
+    padding-right:0px;
   }
  
   
@@ -74,7 +67,7 @@ export const NavigationBar = () => (
   <Styles>
     <Navbar collapseOnSelect className="py-4 px-3" expand="lg">
       <Container>
-      <Navbar.Brand href="/">Furquan Ahmad</Navbar.Brand>
+      <Navbar.Brand className="hvr-underline-from-left" href="/">Furquan Ahmad</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
 
@@ -82,25 +75,25 @@ export const NavigationBar = () => (
         <Nav id="nav-list-style" className="ml-auto navLinks">
           
           <LinkContainer to = "/"> 
-          <Nav.Link className="mr-1">Portfolio</Nav.Link>
+          <Nav.Link className="hvr-underline-from-left mr-4">Portfolio</Nav.Link>
           </LinkContainer>
 
-            <Nav.Link className="mr-1" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1xIkkqduMqnDCDkj35yex8qKkD70O6hic/view?usp=sharing">
+            <Nav.Link className="hvr-underline-from-left mr-4" rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1xIkkqduMqnDCDkj35yex8qKkD70O6hic/view?usp=sharing">
              Resume
             </Nav.Link>
           
 
-           <Nav.Link className="mr-1" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/furquan-ahmad-2528a44b/">
+           <Nav.Link className="hvr-underline-from-left mr-4" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/furquan-ahmad-2528a44b/">
             LinkedIn
            </Nav.Link>
           
 
           <LinkContainer to = "/About"> 
-           <Nav.Link className="mr-1">About</Nav.Link>
+           <Nav.Link className="hvr-underline-from-left mr-4">About</Nav.Link>
           </LinkContainer>
 
           <LinkContainer to = "/Contact"> 
-           <Nav.Link className="mr-1">Contact</Nav.Link>
+           <Nav.Link className="hvr-underline-from-left mr-4">Contact</Nav.Link>
           </LinkContainer>
         </Nav>
       </Navbar.Collapse>

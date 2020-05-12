@@ -41,7 +41,6 @@
     }
 
     .footerList {
-
         list-style-type: none;
 
     }
@@ -55,6 +54,11 @@
         text-decoration: underline;
         text-decoration-thickness: 1.5px;
         text-underline-offset: 0.5em;
+        color: black !important;
+        -webkit-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
     }
 
 

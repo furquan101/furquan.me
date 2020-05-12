@@ -25,72 +25,86 @@ const Styles = styled.div`
         max-height: 55vh !important;
         margin-top: 40px;
     }
-  
-  }
 
- .headerCopyStyle {
-    margin-top: -20px;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 2.5rem;
-    line-height: 150%;
-    letter-spacing: 0.01em;
-    color: #000000;
+}
   
 
- }
+    .listStyle {
+        margin-bottom: 50px !important;
+    }
 
- .bodyCopyStyle {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.2rem;
-    line-height: 150%; 
-    letter-spacing: 0.015em;
-    color: #000000;
+    .listStyle a {
+        font-size: 1rem !important;
+    }
+  
+
+    .headerCopyStyle {
+        margin-top: 10px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.5rem;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: #000000;
     
 
- }
+    }
+
+    .bodyCopyStyle {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.2rem;
+        line-height: 150%; 
+        letter-spacing: 0.015em;
+        color: #000000;
+        
+
+    }
 
 
- .contactPicture {
-     max-width: 55vw;
-     max-height: 55vh;
-     margin-top: 40px;
- }
+    .contactPicture {
+        max-width: 55vw;
+        max-height: 48vh;
+        margin-top: 60px;
+    }
 
- ul {
-    padding: 0px;
- }
- ul li{
-    display: inline;
-  }
+    ul {
+        padding: 0px;
+    }
 
- .listStyle a{
-    text-decoration: none;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.1rem;
-    line-height: 150%;
-    letter-spacing: 0.015em;
-    text-transform: uppercase;
-    display: inline;
-    margin-right: 32px;
-    padding: 0px;
-    color: #000000;
+    ul li {
+        display: inline;
+    }
+
+    .listStyle {
+        margin-bottom: 100px;
+    }
+
+
+    .listStyle a{
+        text-decoration: none;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.1rem;
+        line-height: 150%;
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        display: inline;
+        padding: 0px;
+        color: #000000;
     
- }
+    }
 
- .listStyle a:hover {
-    color: #9665FF;
- }
+    .listStyle a:hover {
+        transition-duration: 0.3s;
+        color: #2E2E2E;
+    }
 
- .listStyle {
-     margin-bottom: 100px;
- }
- 
+   
+   
 
 `;
 
@@ -119,12 +133,12 @@ export const Contact = () => (
   </div>
  </Row>
 
- <Row className="mt-2">
+ <Row className="mt-2 mb-5">
   <div className = "col-md-12">
    <ul className="listStyle">
-   <li className = "mb-2"><a href="mailto:furquan101@gmail.com">Email me</a></li>    
-   <li className = "mb-1"><a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/furquan101/">LinkedIn</a></li>
-   <li className = "mb-1"><a rel="noopener noreferrer" target="_blank" href="https://twitter.com/furquan101">Twitter</a></li>
+   <li className = "hvr-underline-from-left mr-4"><a href="mailto:furquan101@gmail.com">Email me</a></li>    
+   <li className = "hvr-underline-from-left mr-4"><a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/furquan101/">LinkedIn</a></li>
+   <li className = "hvr-underline-from-left mr-4"><a rel="noopener noreferrer" target="_blank" href="https://twitter.com/furquan101">Twitter</a></li>
    </ul>
   </div>
  </Row>
