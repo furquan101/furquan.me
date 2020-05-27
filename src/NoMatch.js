@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import the404Cat from '../src/Components/Assets/Img/404.svg';
-import { LinkContainer } from 'react-router-bootstrap';
 
 
 const Styles = styled.div`

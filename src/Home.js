@@ -6,7 +6,10 @@ import styled from 'styled-components';
 import {BigCard} from './Components/BigCard';
 import fordPass from '../src/Components/Assets/Img/Fordpass.png';
 import fordLogo from '../src/Components/Assets/Img/FordLogo.svg';
+import FPPLogo from '../src/Components/Assets/Img/FordLogo.svg';
 import rsa from '../src/Components/Assets/Img/RSA.jpg';
+import FPP from  '../src/Components/Assets/Img/FPP.png';
+import FordTransitDark from  '../src/Components/Assets/Img/FordTransitDark.jpg';
 import './App.css';
 
 
@@ -102,10 +105,10 @@ export const Home = () => (
   <Col>
   <BigCard 
     imgProjectLogo={fordLogo}
-    imgCardLarge={fordPass}
-    cardTitleName = {"Designing a global pro app from the ground up"}
-    cardBodyText = {"Designing a dedicated app for our commercial vehicle customers that own small fleets and businesses."}
-    cardLink = {"/Contact"}
+    imgCardLarge={FordTransitDark}
+    cardTitleName = {"Managing your fleet on the go"}
+    cardBodyText = {"The FordPass Pro project is about helping fleet managers to manage the health and maintenace of their Ford vehicles on the move. Allowing them to be more proactive when it comes to vehicle maintenace."}
+    cardLink = {"/FordPassPro"}
     />
    </Col>
  </Row>

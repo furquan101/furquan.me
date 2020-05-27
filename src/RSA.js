@@ -343,10 +343,10 @@ export const RSA = () => (
       <Container>
 
         <Row className="mb-5">
-          <div className = "col-md-4 col-lg-4">
+          <div className = "col-md-4 col-lg-6 col-xl-4 ">
             <img className = "mb-4 userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
           </div>
-          <div className = "col-md-12 offset-lg-2 col-lg-6">
+          <div className = "col-md-12 col-lg-6 col-xl-8">
             <h3 className="headerCopy mb-3">User Research Insights</h3>
             <p className="researchCopy mb-4">I conducted user research with vehicle owners in the UK and Germany to understand customer pain points and goals.</p>
             <ul className="researchListCopy">
