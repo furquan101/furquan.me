@@ -78,7 +78,7 @@ const Styles = styled.div`
 }
 
  .userResearchPicture {
-  height:100% !important;
+  height:auto;
   max-width:100% !important;
   border-readius:4px;
 
