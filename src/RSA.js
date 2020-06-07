@@ -71,6 +71,9 @@ const Styles = styled.div`
   font-size: 0.95rem !Important;
  }
 
+ .takeawayHeaderCopy {
+  font-size: 1.5rem !Important;
+ }
 
  .headerJumbotronImage{
   max-width: 100vw !important;
@@ -349,7 +352,7 @@ export const RSA = () => (
 
       <Container>
         <Row className="mt-5">
-          <div className="col-lg-6 mb-5">
+          <div className="col-lg-12 col-xl-6 mb-5">
             <h3 className="headerCopy">Project Overview</h3>
             <h5 className="mt-4 subHeaderCopy">Problem</h5>
             <p className="bodyCopy mb-4">When you breakdown in your vehicle, the current RSA (roadside assistance) experience is very analogue. This means customer's are often left unsure when they will recieve help and what's wrong with their vehicle.
@@ -362,7 +365,7 @@ export const RSA = () => (
             2 Android and iOS developers. We partnered with “ARC Europe” who deliver roadside assistance experiences.
             </p>
           </div>
-          <div className = "offset-lg-1 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+          <div className = "col-lg-12 offset-xl-1 col-xl-5 col-md-12 col-sm-12 col-xs-12">
           <img className = "projectPicture" alt ="roadside assistance app" src={RSAGif} />
           </div>
         </Row>
@@ -401,10 +404,10 @@ export const RSA = () => (
       <Container>
 
         <Row className="mb-5">
-          <div className = "col-md-4 col-lg-6 col-xl-7 ">
+          <div className = "col-md-12 col-lg-7 col-xl-7 ">
             <img className = "mb-4 userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
           </div>
-          <div className = "col-lg-6 col-xl-5">
+          <div className = "col-lg-5 col-xl-5">
             <h3 className="headerCopy mb-3">User Research Insights</h3>
             <p className="researchCopy mb-4">I conducted user interviews with vehicle owners in the UK and Germany to understand customer pain points and goals.</p>
             <h5>Key Insights</h5>
