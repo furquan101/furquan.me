@@ -59,6 +59,14 @@ const Styles = styled.div`
   font-size: 0.95rem !Important;
  }
 
+ .researchListCopy {
+  font-size: 0.95rem !Important;
+ }
+
+ .legalBodyCopy {
+  font-size: 0.95rem !Important;
+ }
+
 
  .headerJumbotronImage{
   max-width: 100vw !important;
@@ -66,11 +74,16 @@ const Styles = styled.div`
 }
 
  .userResearchPicture {
-  max-height:95vh !important;
-  max-width:82vw !important;
+  max-height:100% !important;
+  max-width:100% !important;
   border-readius:4px;
 
  }
+
+ .myRoleHeader {
+   margin-bottom: 50px!Important;
+ }
+
  .projectPicture{
   max-height:90vh !important;
   max-width:82vw !important;
@@ -106,15 +119,14 @@ const Styles = styled.div`
 
 
 .headerJumbotronImage {
-  width: 100vw; 
-  height: 750px;
-  max-height: 20%;
+  max-width: 100%; 
+  height: auto;
   margin-bottom: 20px;
 }
 
   .projectPicture{
-     max-height:50vh;
-     max-width:50vw;
+     max-height: 50vh;
+     max-width:100vw;
      border-radius: 4px;
   }
 
@@ -126,8 +138,8 @@ const Styles = styled.div`
   }
 
   .userResearchPicture {
-    max-height:100vh;
-    max-width:32vw;
+    max-height:auto;
+    max-width:100%;
     border-radius: 4px;
 
   }
@@ -233,8 +245,8 @@ const Styles = styled.div`
   }
 
   .finalSoloutionImage {
-    max-height:100vh;
-    max-width:70vw;
+    height: auto;
+    max-width:100%;
     border-radius: 4px;
   }
 
@@ -297,7 +309,7 @@ export const RSA = () => (
             <p className="bodyCopy mb-4">When you breakdown in your vehicle, the current RSA (roadside assistance) experience is very analogue. This means customer's are often left unsure when they will recieve help and what's wrong with their vehicle.
             </p> 
             <h5 className="subHeaderCopy"> Goal</h5>
-            <p className="bodyCopy mb-4"> The goal of the Digital RSA project was to improve the breakdown experience in Europe by making it live and digital. We would use live data from the modem of the vehicle to achieve this goal. </p>
+            <p className="bodyCopy mb-4"> The goal of the Digital RSA project was to improve the breakdown experience in Europe by making it live and digital. We would use live data from the modem of the vehicle and add the feature to the FordPass app to achieve this goal.  </p>
             <h5 className="subHeaderCopy">The Team</h5>
             <p className="bodyCopy">
             On this project i was working with a UX designer, Product Manager.
@@ -346,7 +358,7 @@ export const RSA = () => (
           <div className = "col-md-4 col-lg-6 col-xl-4 ">
             <img className = "mb-4 userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
           </div>
-          <div className = "col-md-12 col-lg-6 col-xl-8">
+          <div className = "col-lg-6 col-xl-8">
             <h3 className="headerCopy mb-3">User Research Insights</h3>
             <p className="researchCopy mb-4">I conducted user research with vehicle owners in the UK and Germany to understand customer pain points and goals.</p>
             <ul className="researchListCopy">
@@ -362,17 +374,23 @@ export const RSA = () => (
         <div className="col">
           <h3 className="mt-3 headerCopy mb-3">Mapping the UX Flow</h3>
           <div className="uxFlowBodyCopy">
-          <p>I worked directly with our RSA partner ARC to map out how the end to end experience looks like when you breakdown. Depending on whether you have the FordPass app installed and you have data available on your phone you will seek a different experience.  
-            The flow also maps out what part of the flow “ARC” handles and what part Ford handles. 
+          <p>I worked directly with our RSA partner ARC to map the end to end experience when you breakdown. Depending on whether you have the FordPass app installed and you have internet available on your phone you will seek a different experience.  
           </p>
-          <p>
-          Based on our research users told us they usually phone up roadside assistance directly and seek assistance there. 
-          I wanted to allow users to continue a flow they’re familiar and enchance it. We do this by texting users a magic link after they finish their phone call with the RSA provider. 
-          </p>
-          <p>
-          The magic link takes them to the FordPass app showcasing the live recovery map with realtime status updates on the breakddown experience. The map allows the user to see if an engineer has been assigned to them, how far away the engineer is and estimated time of arrival
-          on a "Uber" stlye map.
-          </p>
+          <ul>
+          <li className="mt-3">
+            Based on our research users told us they usually phone up roadside assistance directly and seek assistance there. 
+          </li>
+          <li className="mt-3">
+            To allow users to continue a flow they’re familiar we text users a magic link after they finish their phone call with the RSA provider. 
+          </li>
+          <li className="mt-3">
+           The magic link we send takes users to the FordPass app showcasing the live recovery map with realtime status updates on the breakdown experience. 
+          </li>
+          <li className="mt-3">
+           The map allows the user to see if an engineer has been assigned to them, how far away the engineer is and estimated time of arrival
+           on a "Uber" stlye map.
+          </li>
+          </ul>
           </div>
           </div>
           </Row>
@@ -433,41 +451,48 @@ export const RSA = () => (
         <div className="col">
          <div className="mb-5">
             <h3 className="mt-8 headerCopy">Legal And Technical Design Challenges</h3>
-            <h5 className="mt-4 subHeaderCopy">No personal information DISPLAYED</h5>
-            <p className="legalBodyCopy">
+            <h5 className="mt-4 subHeaderCopy">No personal information displayed</h5>
+            <ul>
+            <li className="legalBodyCopy mt-3">
             On the live recovery map we wanted the experience to feel more human, we tried to do this by providing a name and photo of the engineer and vehicle (2A). 
-            However due to technical constraints we wasn't able to fetch this data from “ARC”. This meant we couldn't provide the exact vehicle make and model for the rescue van, and the name and picture of the engineer. 
-            </p>
-            <p className="legalBodyCopy">
-            We removed this from the design and used the word "engineer" instead. We also wasn't able to provide a direct phone number to call the engineer, however having a number to call the roadside assistance was still very important to include (2B, 2C).
-            </p>
+           </li>
+           <li className="legalBodyCopy mt-3">
+            Due to technical constraints we wasn't able to fetch certain data from “ARC”. 
+            We couldn't provide the exact vehicle make and model for the rescue van the name, picture and phone number of the engineer. 
+          </li>
+          <li className="legalBodyCopy mt-3">
+            I removed this from the design and used the word "engineer" instead. 
+            We also wasn't able to provide a direct phone number to call the engineer, however having a number to call the roadside assistance was still very important to include (2B, 2C).
+          </li>
+          </ul>
             <h5 className="mt-5 subHeaderCopy">GDPR and sending personal data</h5>
-            <p className="legalBodyCopy">
+          <ul>
+            <li className="legalBodyCopy mt-3">
              To get the best breakdown experience possible we send over the fault code of the vehicle to the RSA provider and the location of the vehicle. This allows the RSA company to assist users in the best way possible if they already know the problem with your vehicle before they leave the garage. 
-            </p>
-            <p className="legalBodyCopy">The legal team wanted us to make it clear to the user we are sending their data to an external partner, so i changed the hierarchy of the screens to fit this in and making the user understand sending over their data is going to get them a faster recovery experience. (1B, 1C).</p>
+            </li>
+            <li className="legalBodyCopy mt-3">The legal team wanted us to make it clear to the user we are sending their data to an external partner, so i changed the hierarchy of the screens to fit this in and making the user understand sending over their data is going to get them a faster recovery experience. (1B, 1C).
+            </li>
+          </ul>
             <h5 className="mt-5 subHeaderCopy">Gathering vehicle data</h5>
-            <p className="legalBodyCopy">Before you call the RSA provider you have to confirm details about your vehicle. We thought displaying the vehicle error would be useful so the user has more tranparency of what's hapenning.
-             However after working with our vehicle data engineer we wasn't able to provide the fault code of the car (1A)</p>
+          <ul>
+            <li className="legalBodyCopy mt-3">Before you call the RSA provider you have to confirm details about your vehicle. We thought displaying the vehicle error would be useful so the user has more tranparency of what's hapenning.
+             However after working with our vehicle data engineer we wasn't able to provide the fault code of the car (1A)
+            </li>
+          </ul>
           </div>
           </div>
           </Row>
       
-
          <Row>
-         <div className="col">
-           <h3 className="mt-4 headerCopy mb-3">Refinement</h3>
+          <div className="col">
+           <h3 className="headerCopy mt-4 mb-4">Final Soloution</h3>
            <p className="legalBodyCopy">When creating the final soloution we wanted to bring the designs more in brand and consistent with the FordPass app. To do this on the live recovery map we made the card consistent with the ones found on the “Find” map. 
            </p>
            <p className="legalBodyCopy"> 
               The cards are smaller and found on the bottom of the map making them easy for the user to interact with and continue the flow. 
               This also helped a lot with the hierarchy of the screen, making it a lot easier to see the recovery map.
           </p>
-          </div>
-         </Row>
-         <Row>
-          <div className="col">
-           <h3 className="headerCopy mt-8 mb-4">Final Soloution</h3>
+
          </div>
          </Row>
 
@@ -489,6 +514,34 @@ export const RSA = () => (
         
       </Container>
 
+      <Jumbotron className="contactJumbotron">
+        <Container>
+            <Row>
+            
+            <div className="col-lg-6 md-12">
+              <h3 className ="contactHeader">My Key Takeaways.</h3>
+              </div>
+            </Row>
+                <Row>
+                  <div className="col-lg-4 col-md-4">
+                     <hr className="contactLine mt-2 mb-4"></hr>
+                  </div>
+                </Row>
+                <Row>
+                <div className="col-lg-8 col-12">
+                  <ul>
+                    <li className="contactText">Working closely with the development team and the RSA partner from the start of the project helped me understand what we could acheive to design a live breakdown experience.
+                    </li>
+                    <li className="contactText">I would like to make data driven design decisions to understand how customers are engaging with RSA providers when they breakdown.
+                    </li>
+                    <li className="contactText">Working closely with the development team and the RSA partner from the start of the project helped me understand what we could acheive to design a live breakdown experience.
+                    </li>
+                  </ul>
+                </div>
+                </Row> 
+        </Container>
+        </Jumbotron>
+
       <Jumbotron className="nextProjectHeader">
         <Container>
             <Row>
@@ -504,7 +557,7 @@ export const RSA = () => (
                 </Row> 
                 <Row>
                 <div className="col-lg-6 col-12">
-                    <LinkContainer to = "/About"> 
+                    <LinkContainer to = "/FordPassPro"> 
                     <Button className = "buttonStyling" variant="outline-light">View Project</Button>
                     </LinkContainer>
                 </div>
