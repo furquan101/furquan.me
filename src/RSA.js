@@ -63,6 +63,10 @@ const Styles = styled.div`
   font-size: 0.95rem !Important;
  }
 
+ .uxFlowBodyCopy {
+  font-size: 0.95rem !Important;w
+ }
+
  .legalBodyCopy {
   font-size: 0.95rem !Important;
  }
@@ -74,7 +78,7 @@ const Styles = styled.div`
 }
 
  .userResearchPicture {
-  max-height:100% !important;
+  height:100% !important;
   max-width:100% !important;
   border-readius:4px;
 
@@ -138,7 +142,7 @@ const Styles = styled.div`
   }
 
   .userResearchPicture {
-    max-height:auto;
+    height:auto;
     max-width:100%;
     border-radius: 4px;
 
@@ -202,14 +206,14 @@ const Styles = styled.div`
   
   .researchCopy {
     font-family: Open Sans, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     color: #202020;
 
   }
 
   .researchListCopy {
     font-family: Open Sans, sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     color: #202020;
     list-style-type: disc;
     padding-left: 15px;
@@ -221,6 +225,10 @@ const Styles = styled.div`
     font-size: 1.1rem;
     color: #202020;
 
+  }
+
+  .uxFlowListStyle {
+    padding-left: 15px;
   }
 
   .callingRSAImage {
@@ -244,14 +252,52 @@ const Styles = styled.div`
     color: #202020;
   }
 
+  .legalListStyle {
+    padding-left: 15px;
+  }
+
   .finalSoloutionImage {
     height: auto;
     max-width:100%;
     border-radius: 4px;
   }
 
+  .takeawayJumbotron {
+    background-color: #F7F7F7;
+    margin-top: 50px;
+  }
+
+  .takeawayHeaderCopy {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 150%;
+  
+  }
+
+  .takeawayLine {
+    border-top: 2px solid;
+    color: black;
+  }
+
+  .takeawayListStyle {
+    padding-left: 15px;
+  }
+
+  .takeawayListText {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0.015em;
+    color: #000000;
+
+  }
+
   .nextProjectHeader {
-    margin-top: 100px;
+    margin-top: 50px;
     background-color: #7A56FF;
     margin-bottom: 0px;
   }
@@ -355,14 +401,15 @@ export const RSA = () => (
       <Container>
 
         <Row className="mb-5">
-          <div className = "col-md-4 col-lg-6 col-xl-4 ">
+          <div className = "col-md-4 col-lg-6 col-xl-7 ">
             <img className = "mb-4 userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
           </div>
-          <div className = "col-lg-6 col-xl-8">
+          <div className = "col-lg-6 col-xl-5">
             <h3 className="headerCopy mb-3">User Research Insights</h3>
-            <p className="researchCopy mb-4">I conducted user research with vehicle owners in the UK and Germany to understand customer pain points and goals.</p>
+            <p className="researchCopy mb-4">I conducted user interviews with vehicle owners in the UK and Germany to understand customer pain points and goals.</p>
+            <h5>Key Insights</h5>
             <ul className="researchListCopy">
-            <li className="mb-3">The breakdown experience is "frustrating" due to a lack of communication, transparency and understanding of what's hapenning.</li>
+            <li className="mb-3">Customers find the breakdown experience "frustrating" due to a lack of communication, transparency and understanding of what's hapenning.</li>
             <li className="mb-3">Customers want to make sure they can get back on the road as quick as possible.</li>
             <li className="mb-3">Safety is really important for customers  just like Maslow's Hierarchy Of Needs.  </li>
             </ul>
@@ -376,7 +423,7 @@ export const RSA = () => (
           <div className="uxFlowBodyCopy">
           <p>I worked directly with our RSA partner ARC to map the end to end experience when you breakdown. Depending on whether you have the FordPass app installed and you have internet available on your phone you will seek a different experience.  
           </p>
-          <ul>
+          <ul className="uxFlowListStyle">
           <li className="mt-3">
             Based on our research users told us they usually phone up roadside assistance directly and seek assistance there. 
           </li>
@@ -451,8 +498,8 @@ export const RSA = () => (
         <div className="col">
          <div className="mb-5">
             <h3 className="mt-8 headerCopy">Legal And Technical Design Challenges</h3>
-            <h5 className="mt-4 subHeaderCopy">No personal information displayed</h5>
-            <ul>
+            <h5 className="mt-5 subHeaderCopy">No personal information displayed</h5>
+            <ul className="legalListStyle">
             <li className="legalBodyCopy mt-3">
             On the live recovery map we wanted the experience to feel more human, we tried to do this by providing a name and photo of the engineer and vehicle (2A). 
            </li>
@@ -466,7 +513,7 @@ export const RSA = () => (
           </li>
           </ul>
             <h5 className="mt-5 subHeaderCopy">GDPR and sending personal data</h5>
-          <ul>
+          <ul className="legalListStyle">
             <li className="legalBodyCopy mt-3">
              To get the best breakdown experience possible we send over the fault code of the vehicle to the RSA provider and the location of the vehicle. This allows the RSA company to assist users in the best way possible if they already know the problem with your vehicle before they leave the garage. 
             </li>
@@ -474,8 +521,8 @@ export const RSA = () => (
             </li>
           </ul>
             <h5 className="mt-5 subHeaderCopy">Gathering vehicle data</h5>
-          <ul>
-            <li className="legalBodyCopy mt-3">Before you call the RSA provider you have to confirm details about your vehicle. We thought displaying the vehicle error would be useful so the user has more tranparency of what's hapenning.
+          <ul className="legalListStyle">
+            <li className="legalBodyCopy mt-3">Before you call the RSA provider you have to confirm details about your vehicle. We thought displaying the vehicle error would be useful so the user has more transparency of what's hapenning.
              However after working with our vehicle data engineer we wasn't able to provide the fault code of the car (1A)
             </li>
           </ul>
@@ -514,27 +561,27 @@ export const RSA = () => (
         
       </Container>
 
-      <Jumbotron className="contactJumbotron">
+      <Jumbotron className="takeawayJumbotron">
         <Container>
             <Row>
             
             <div className="col-lg-6 md-12">
-              <h3 className ="contactHeader">My Key Takeaways.</h3>
+              <h3 className ="takeawayHeaderCopy">My Key Takeaways</h3>
               </div>
             </Row>
                 <Row>
                   <div className="col-lg-4 col-md-4">
-                     <hr className="contactLine mt-2 mb-4"></hr>
+                     <hr className="takeawayLine mt-2 mb-4"></hr>
                   </div>
                 </Row>
                 <Row>
                 <div className="col-lg-8 col-12">
-                  <ul>
-                    <li className="contactText">Working closely with the development team and the RSA partner from the start of the project helped me understand what we could acheive to design a live breakdown experience.
+                  <ul className="takeawayListStyle">
+                    <li className="takeawayListText mt-2">When you breakdown it’s not a homogenous experience for everyone, so focusing on improving one common area of the breakdown experience worked out really well.
                     </li>
-                    <li className="contactText">I would like to make data driven design decisions to understand how customers are engaging with RSA providers when they breakdown.
+                    <li className="takeawayListText mt-3">I would like to make data driven design decisions to understand how customers are engaging with RSA providers when they breakdown.
                     </li>
-                    <li className="contactText">Working closely with the development team and the RSA partner from the start of the project helped me understand what we could acheive to design a live breakdown experience.
+                    <li className="takeawayListText mt-3">Working closely with the development team and the RSA partner from the start of the project helped me understand what we could acheive to design a live breakdown experience.
                     </li>
                   </ul>
                 </div>
