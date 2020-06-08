@@ -5,7 +5,7 @@ import Button from'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import { LinkContainer } from 'react-router-bootstrap';
-import RSAHeader from '../src/Components/Assets/Img/RSAHeader.png';
+import RSAHeader from '../src/Components/Assets/Img/RSAHeader.jpg';
 import RSAGif from '../src/Components/Assets/Img/RSA.gif';
 import UXFlow from '../src/Components/Assets/Img/RSAflow.png'
 import CallingRSA1 from '../src/Components/Assets/Img/CallingRSA1.jpg';
@@ -77,7 +77,7 @@ const Styles = styled.div`
 
  .headerJumbotronImage{
   max-width: 100vw !important;
-  max-height: 32vh !Important;
+  height: auto !Important;
 }
 
  .userResearchPicture {
@@ -138,8 +138,8 @@ const Styles = styled.div`
   }
 
   .flowProjectPicture {
-     max-height:100vh;
-     max-width:70vw;
+     height:auto;
+     max-width:100%;
      border-radius: 4px;
 
   }
@@ -235,8 +235,8 @@ const Styles = styled.div`
   }
 
   .callingRSAImage {
-    max-height:100vh;
-    max-width:20vw;
+    height: auto;
+    width: 100%;
     border-radius: 4px;
 
   }
@@ -352,7 +352,7 @@ export const RSA = () => (
 
       <Container>
         <Row className="mt-5">
-          <div className="col-lg-12 col-xl-6 mb-5">
+          <div className="col-md-5 col-xl-6 mb-5">
             <h3 className="headerCopy">Project Overview</h3>
             <h5 className="mt-4 subHeaderCopy">Problem</h5>
             <p className="bodyCopy mb-4">When you breakdown in your vehicle, the current RSA (roadside assistance) experience is very analogue. This means customer's are often left unsure when they will recieve help and what's wrong with their vehicle.
@@ -365,7 +365,7 @@ export const RSA = () => (
             2 Android and iOS developers. We partnered with “ARC Europe” who deliver roadside assistance experiences.
             </p>
           </div>
-          <div className = "col-lg-12 offset-xl-1 col-xl-5 col-md-12 col-sm-12 col-xs-12">
+          <div className = "offset-xl-1 col-xl-5 col-md-7 col-sm-12 col-xs-12">
           <img className = "projectPicture" alt ="roadside assistance app" src={RSAGif} />
           </div>
         </Row>
