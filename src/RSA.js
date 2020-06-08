@@ -76,8 +76,8 @@ const Styles = styled.div`
  }
 
  .headerJumbotronImage{
-  max-width: 100vw !important;
   height: auto !Important;
+  margin-bottom: 0px!important;
 }
 
  .userResearchPicture {
@@ -92,8 +92,8 @@ const Styles = styled.div`
  }
 
  .projectPicture{
-  max-height:90vh !important;
-  max-width:82vw !important;
+  height:auto !important;
+  width:100% !important;
   border-radius: 4px;
 }
 
@@ -104,15 +104,15 @@ const Styles = styled.div`
  }
 
  .callingRSAImage {
-  max-height:100vh !important;
-  max-width:70vw !important;
+  height:auto !important;
+  width:100% !important;
   border-radius: 4px;
 
 }
 
  .finalSoloutionImage {
-  max-height:80vh !important;
-  max-width:82vw !important;
+  height:auto !important;
+  max-width:100% !important;
 
  }
 
