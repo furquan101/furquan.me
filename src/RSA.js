@@ -38,7 +38,7 @@ const Styles = styled.div`
   }
 
   .bodyCopy {
-    font-size: 0.95rem !important;
+    font-size: 0.97rem !important;
   }
     
 
@@ -48,27 +48,27 @@ const Styles = styled.div`
  }
 
  .myRoleBodyCopy {
-   font-size: 0.95rem !Important;
+   font-size: 0.97rem !Important;
  }
 
  .whatIDidCopy {
-  font-size: 0.95rem !Important;
+  font-size: 0.97rem !Important;
  }
 
  .researchCopy {
-  font-size: 0.95rem !Important;
+  font-size: 0.97rem !Important;
  }
 
  .researchListCopy {
-  font-size: 0.95rem !Important;
+  font-size: 0.97rem!Important;
  }
 
  .uxFlowBodyCopy {
-  font-size: 0.95rem !Important;w
+  font-size: 0.97rem !Important;w
  }
 
  .legalBodyCopy {
-  font-size: 0.95rem !Important;
+  font-size: 0.97rem!Important;
  }
 
  .takeawayHeaderCopy {
