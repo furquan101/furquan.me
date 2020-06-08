@@ -128,7 +128,7 @@ export const Contact = () => (
   <div className = "col-md-12 mx-auto">
   <p className = "bodyCopyStyle"> 
   Let's open the conversation and see what we could do together. I'm always interested in new ideas, opportunities or
-  hearing what you're working on, so drop us a message and say hello.
+  hearing what you're working on, so drop me a message and say hello.
   </p>
   </div>
  </Row>

@@ -386,7 +386,7 @@ export const RSA = () => (
                </div>
               </div>
               <div className="offset-md-2 col-md-5">
-               <h3 className="myRoleHeaderCopy">What i did</h3>
+               <h3 className="myRoleHeaderCopy">What I Did</h3>
                <ul className="whatIDidCopy">
                  <li> Lead UI designer</li>
                  <li>Map out the UX flows</li>
@@ -535,8 +535,8 @@ export const RSA = () => (
       
          <Row>
           <div className="col">
-           <h3 className="headerCopy mt-4 mb-4">Final Soloution</h3>
-           <p className="legalBodyCopy">When creating the final soloution we wanted to bring the designs more in brand and consistent with the FordPass app. To do this on the live recovery map we made the card consistent with the ones found on the “Find” map. 
+           <h3 className="headerCopy mt-4 mb-4">Final Solution</h3>
+           <p className="legalBodyCopy">When creating the final solution we wanted to bring the designs more in brand and consistent with the FordPass app. To do this on the live recovery map we made the card consistent with the ones found on the “Find” map. 
            </p>
            <p className="legalBodyCopy"> 
               The cards are smaller and found on the bottom of the map making them easy for the user to interact with and continue the flow. 
