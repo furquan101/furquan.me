@@ -14,12 +14,7 @@ import ReactGA from 'react-ga';
 
 class App extends Component {
   render() {
-    function initializeReactGA() {
-      ReactGA.initialize('UA-45398925-1');
-      ReactGA.pageview('/homepage');
-  }
     return (
-      
       <React.Fragment>
         <Router>
           
