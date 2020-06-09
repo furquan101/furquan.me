@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './Home';
 import { About } from './About';
@@ -9,15 +9,17 @@ import {FordPassPro} from './FordPassPro';
 import { NavigationBar } from './Components/NavBar';
 import {Footer} from './Components/Footer';
 import ScrollToTop from './Components/ScrollToTop';
-
-
-
-
+import ReactGA from 'react-ga';
 
 
 class App extends Component {
   render() {
+    function initializeReactGA() {
+      ReactGA.initialize('UA-45398925-1');
+      ReactGA.pageview('/homepage');
+  }
     return (
+      
       <React.Fragment>
         <Router>
           
