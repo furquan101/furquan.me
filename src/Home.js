@@ -55,7 +55,7 @@ export const Home = () => (
  <Row>  
    <Col>
     <h1 className="headerStyling mb-2">
-    I’m a digital product designerr, inspired by culture and community.
+    I’m a digital product designer, inspired by culture and community.
     </h1>
     </Col>
  </Row>
