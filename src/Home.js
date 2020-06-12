@@ -73,6 +73,17 @@ export const Home = () => (
    </Col>
  </Row>
 
+ <Row> 
+  <Col>
+  <BigCard 
+    imgProjectLogo={fordLogo}
+    imgCardLarge={FordTransitDark}
+    cardTitleName = {"Managing your fleet health and security remotely on the go."}
+    cardBodyText = {"The FordPass Pro project is about helping fleet managers to manage the health and maintenace of their Ford vehicles on the move. Allowing them to be more proactive when it comes to vehicle maintenace."}
+    cardLink = {"/FordPassPro"}
+    />
+   </Col>
+ </Row>
 
  <Row> 
   <Col>
@@ -101,17 +112,7 @@ export const Home = () => (
  </Row>
 
 
- <Row> 
-  <Col>
-  <BigCard 
-    imgProjectLogo={fordLogo}
-    imgCardLarge={FordTransitDark}
-    cardTitleName = {"Managing your fleet on the go"}
-    cardBodyText = {"The FordPass Pro project is about helping fleet managers to manage the health and maintenace of their Ford vehicles on the move. Allowing them to be more proactive when it comes to vehicle maintenace."}
-    cardLink = {"/FordPassPro"}
-    />
-   </Col>
- </Row>
+ 
 
 
 </Container>
