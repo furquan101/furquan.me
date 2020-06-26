@@ -556,11 +556,18 @@ export const RSA = () => (
          <img loading="lazy" className="finalSoloutionImage" alt ="Final soloution" src={FinalMockup2} />
          </div>
         </Row>
-        <Row className="mb-2">
+        <Row className="mb-5">
          <div className="col">
          <img loading="lazy" className="finalSoloutionImage" alt ="Final soloution" src={FinalMockup3} />
          </div>
         </Row>
+        <Row>
+        <div className="col-12 mb-2">
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dAuwY0OFkdQ" allowfullscreen></iframe>
+        </div>
+        </div>
+      </Row>
         
       </Container>
 
@@ -606,14 +613,11 @@ export const RSA = () => (
                 </div>
                 </Row> 
                 <Row>
-                <div className="col-lg-6 col-12">
+                <div className="col-12">
                     <LinkContainer to = "/FordPassPro"> 
                     <Button className = "buttonStyling" variant="outline-light">View Project</Button>
                     </LinkContainer>
                 </div>
-                </Row>
-                <Row>
-                  
                 </Row>
         </Container>
         </Jumbotron>

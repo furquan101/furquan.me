@@ -6,9 +6,9 @@ import styled from 'styled-components';
 import {BigCard} from './Components/BigCard';
 import fordPass from '../src/Components/Assets/Img/Fordpass.png';
 import fordLogo from '../src/Components/Assets/Img/FordLogo.svg';
-import FPPLogo from '../src/Components/Assets/Img/FordLogo.svg';
+import FPPLogo from '../src/Components/Assets/Img/FPPLogo.svg';
 import rsa from '../src/Components/Assets/Img/RSA.jpg';
-import FPP from  '../src/Components/Assets/Img/FPP.png';
+import LMD from '../src/Components/Assets/Img/LMD.jpg';
 import FordTransitDark from  '../src/Components/Assets/Img/FordTransitDark.jpg';
 import './App.css';
 
@@ -76,14 +76,29 @@ export const Home = () => (
  <Row> 
   <Col>
   <BigCard 
-    imgProjectLogo={fordLogo}
+    imgProjectLogo={FPPLogo}
     imgCardLarge={FordTransitDark}
-    cardTitleName = {"Managing your fleet health and security remotely on the go."}
+    cardTitleName = {"Managing your fleet health and security remotely."}
     cardBodyText = {"The FordPass Pro project is about helping fleet managers to manage the health and maintenace of their Ford vehicles on the move. Allowing them to be more proactive when it comes to vehicle maintenace."}
     cardLink = {"/FordPassPro"}
     />
    </Col>
  </Row>
+
+
+
+ <Row> 
+  <Col>
+  <BigCard 
+    imgProjectLogo={FPPLogo}
+    imgCardLarge={LMD}
+    cardTitleName = {"Creating a scaleable delivery network in mega cities"}
+    cardBodyText = {"The Last Mile project is a new urban multimodal goods delivery system. We aim to reduce city congestion, improves air quality and drive up productivity of delivery vans. "}
+    cardLink = {"/About"}
+   />
+   </Col>
+ </Row>
+
 
  <Row> 
   <Col>
@@ -98,18 +113,6 @@ export const Home = () => (
    </Col>
  </Row>
 
-
- <Row> 
-  <Col>
-  <BigCard 
-    imgProjectLogo={fordLogo}
-    imgCardLarge={fordPass}
-    cardTitleName = {"Creating a scaleable delivery network in mega cities"}
-    cardBodyText = {"The Last Mile project is a new urban multimodal goods delivery system. We aim to reduce city congestion, improves air quality and drive up productivity of delivery vans. "}
-    cardLink = {"/About"}
-   />
-   </Col>
- </Row>
 
 
  

@@ -106,8 +106,8 @@ const Styles = styled.div`
 }
 
 .projectLogo {
-  width: 120px;
-  height: 50px;
+  width: auto;
+  height: auto;
 
 }
 
