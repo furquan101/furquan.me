@@ -501,7 +501,7 @@ export const RSA = () => (
         <div className="col">
          <div className="mb-5">
             <h3 className="mt-8 headerCopy">Legal And Technical Design Challenges</h3>
-            <h5 className="mt-5 subHeaderCopy">No personal information displayed</h5>
+            <h5 className="mt-5 subHeaderCopy">No personal information displayed (Legal)</h5>
             <ul className="legalListStyle">
             <li className="legalBodyCopy mt-3">
             On the live recovery map we wanted the experience to feel more human, we tried to do this by providing a name and photo of the engineer and vehicle (2A). 
@@ -515,7 +515,7 @@ export const RSA = () => (
             We also wasn't able to provide a direct phone number to call the engineer, however having a number to call the roadside assistance was still very important to include (2B, 2C).
           </li>
           </ul>
-            <h5 className="mt-5 subHeaderCopy">GDPR and sending personal data</h5>
+            <h5 className="mt-5 subHeaderCopy">GDPR and sending personal data (Legal)</h5>
           <ul className="legalListStyle">
             <li className="legalBodyCopy mt-3">
              To get the best breakdown experience possible we send over the fault code of the vehicle to the RSA provider and the location of the vehicle. This allows the RSA company to assist users in the best way possible if they already know the problem with your vehicle before they leave the garage. 
@@ -523,7 +523,7 @@ export const RSA = () => (
             <li className="legalBodyCopy mt-3">The legal team wanted us to make it clear to the user we are sending their data to an external partner, so i changed the hierarchy of the screens to fit this in and making the user understand sending over their data is going to get them a faster recovery experience. (1B, 1C).
             </li>
           </ul>
-            <h5 className="mt-5 subHeaderCopy">Gathering vehicle data</h5>
+            <h5 className="mt-5 subHeaderCopy">Gathering vehicle data (Technical)</h5>
           <ul className="legalListStyle">
             <li className="legalBodyCopy mt-3">Before you call the RSA provider you have to confirm details about your vehicle. We thought displaying the vehicle error would be useful so the user has more transparency of what's hapenning.
              However after working with our vehicle data engineer we wasn't able to provide the fault code of the car (1A)

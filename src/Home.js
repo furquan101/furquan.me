@@ -9,6 +9,7 @@ import fordLogo from '../src/Components/Assets/Img/FordLogo.svg';
 import FPPLogo from '../src/Components/Assets/Img/FPPLogo.svg';
 import rsa from '../src/Components/Assets/Img/RSA.jpg';
 import LMD from '../src/Components/Assets/Img/LMD.jpg';
+import LMDLogo from '../src/Components/Assets/Img/LMDLogo.svg';
 import FordTransitDark from  '../src/Components/Assets/Img/FordTransitDark.jpg';
 import './App.css';
 
@@ -90,11 +91,11 @@ export const Home = () => (
  <Row> 
   <Col>
   <BigCard 
-    imgProjectLogo={FPPLogo}
+    imgProjectLogo={LMDLogo}
     imgCardLarge={LMD}
     cardTitleName = {"Creating a scaleable delivery network in mega cities"}
     cardBodyText = {"The Last Mile project is a new urban multimodal goods delivery system. We aim to reduce city congestion, improves air quality and drive up productivity of delivery vans. "}
-    cardLink = {"/About"}
+    cardLink = {"/LMD"}
    />
    </Col>
  </Row>
