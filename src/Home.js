@@ -61,6 +61,17 @@ export const Home = () => (
     </Col>
  </Row>
 
+ <Row> 
+  <Col>
+  <BigCard 
+    imgProjectLogo={LMDLogo}
+    imgCardLarge={LMD}
+    cardTitleName = {"Creating a scaleable delivery network in mega cities"}
+    cardBodyText = {"The Last Mile project is a new urban multimodal goods delivery system. We aim to reduce city congestion, improves air quality and drive up productivity of delivery vans. "}
+    cardLink = {"/LMD"}
+   />
+   </Col>
+ </Row>
 
  <Row> 
   <Col className ="mt-5">
@@ -88,17 +99,7 @@ export const Home = () => (
 
 
 
- <Row> 
-  <Col>
-  <BigCard 
-    imgProjectLogo={LMDLogo}
-    imgCardLarge={LMD}
-    cardTitleName = {"Creating a scaleable delivery network in mega cities"}
-    cardBodyText = {"The Last Mile project is a new urban multimodal goods delivery system. We aim to reduce city congestion, improves air quality and drive up productivity of delivery vans. "}
-    cardLink = {"/LMD"}
-   />
-   </Col>
- </Row>
+
 
 
  <Row> 
