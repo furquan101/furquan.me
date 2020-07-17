@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import LMDPorter from '../src/Components/Assets/Img/LMDPorter.png';
 import LMDHeader from '../src/Components/Assets/Img/LMDHeader.jpg'
-
+import Jumbotron from 'react-bootstrap/Jumbotron';
 
 const Styles = styled.div`
 
@@ -107,6 +107,34 @@ export const LMD = () => (
           </div>
         </Row>
  </Container>
+
+ <Jumbotron className = "myRoleHeader">
+          <Container>
+            <Row>
+              <div className="col-md-5">
+               <h3 className="myRoleHeaderCopy">My Role</h3>
+               <div className="myRoleBodyCopy">
+               <p>
+               Since 2019 I've been leading a team of product designers responsible for designing, realizing the vision and scaling for the Last Mile Delivery project.
+               </p>
+               <p> Our team works with partners and stakeholders across the globe and of every discipline.</p>
+               </div>
+              </div>
+              <div className="offset-md-2 col-md-5">
+               <h3 className="myRoleHeaderCopy">What I Did</h3>
+               <ul className="whatIDidCopy">
+                 <li>Lead the product vision and strategy </li>
+                 <li>Lead the visual design for the entire iOS app. </li>
+                 <li>Design System Manager</li>
+                 <li>Research coordination</li>
+                 <li>Executive presentations to CEO</li>
+                 <li>Establishing and documenting patterns and best practices</li>
+                 
+               </ul> 
+              </div>
+            </Row>
+          </Container>
+      </Jumbotron>
 
 
 <Container>
