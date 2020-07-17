@@ -62,7 +62,7 @@ export const Home = () => (
  </Row>
 
  <Row> 
-  <Col>
+  <Col className ="mt-5">
   <BigCard 
     imgProjectLogo={LMDLogo}
     imgCardLarge={LMD}
@@ -74,7 +74,7 @@ export const Home = () => (
  </Row>
 
  <Row> 
-  <Col className ="mt-5">
+  <Col>
   <BigCard 
     imgProjectLogo={fordLogo}
     imgCardLarge={rsa}
