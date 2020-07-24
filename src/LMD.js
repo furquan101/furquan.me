@@ -195,7 +195,7 @@ export const LMD = () => (
   </Row>
   <Row>
   <div className="col-12 mt-3">
-  <h1>Field Research For The App</h1>
+  <h1>Prototype</h1>
   </div>
   </Row>
 </Container>
