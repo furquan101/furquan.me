@@ -4,7 +4,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import LMDPorter from '../src/Components/Assets/Img/LMDPorter.png';
 import LMDHeader from '../src/Components/Assets/Img/LMDHeader.jpg'
+import LMDMultiModal from '../src/Components/Assets/Img/MultiModal.png'
 import Jumbotron from 'react-bootstrap/Jumbotron';
+
 
 const Styles = styled.div`
 
@@ -29,7 +31,7 @@ const Styles = styled.div`
 
 .subHeaderCopy{
   font-family: Open Sans, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: black;
   text-transform: uppercase;
@@ -37,7 +39,7 @@ const Styles = styled.div`
 
 .bodyCopy {
   font-family: Open Sans, sans-serif;
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   line-height: 26px;
   color: #202020;
 }
@@ -74,6 +76,35 @@ const Styles = styled.div`
   padding-left: 15px;
 
 }
+
+.projectBackgroundHeader {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 28px;
+  color: black;
+}
+
+.projectBackgroundSubHeader {
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 28px;
+/* or 140% */
+
+}
+
+.projectBackgroundBody {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.15rem;
+  line-height: 24px;
+  /* or 120% */
+  color: #202020;
+  }
    
 
 `;
@@ -99,7 +130,7 @@ export const LMD = () => (
             <p className="bodyCopy mb-4"> The goal of the project was to design a mobile app for porters to allow them to see their deliveries and collections for the day. The project had a limited budget which meant we had to start delivering parcels as soon as possible to start earning revenue. </p>
             <h5 className="subHeaderCopy">The Team</h5>
             <p className="bodyCopy">
-            On this project i was the design lead. I was working with 1 UX designer 1 UI designer and 2 iOS developers, 2 product managers.
+            On this project i was the <b>design lead </b>. I was working with 1 UX designer 1 UI designer and 2 iOS developers, 2 product managers.
             </p>
           </div>
           <div className = "offset-xl-1 col-xl-6 col-md-7 col-sm-12 col-xs-12">
@@ -115,7 +146,7 @@ export const LMD = () => (
                <h3 className="myRoleHeaderCopy">My Role</h3>
                <div className="myRoleBodyCopy">
                <p>
-               Since 2019 I've been leading a team of product designers responsible for designing, realizing the vision and scaling for the Last Mile Delivery project.
+               Since 2019 I've been leading a team of product designers responsible for designing, realising the vision and scaling for the Last Mile Delivery project.
                </p>
                <p> Our team works with partners and stakeholders across the globe and of every discipline.</p>
                </div>
@@ -136,10 +167,51 @@ export const LMD = () => (
           </Container>
       </Jumbotron>
 
+<Container>
+  <Row>
+  <div className="col-12">
+    <h1 className ="projectBackgroundHeader">Last Mile Delivery Background</h1>
+    <h5 className="mt-5 projectBackgroundSubHeader">Congestion In Cities Is Getting Worse</h5>
+    <p className="projectBackgroundBody">Congestion in mega cities is getting worse every year. This results in an increase in journey times and worsening air polloution in the city.
+       90% of road space in London is taken up for transporting goods.
+    </p>
+    <h5 className="mt-4 projectBackgroundSubHeader">A new way of delivering parcels</h5>
+    <p className="projectBackgroundBody">The Last Mile Delivery (LMD) project aims to help ease congestion off the roads and save the envionment by delivering parcels with a innovative multi modal solution. 
+    We do this byreaking down the journey of a parcel in the last mile using pedestrian porters and cyclists teamed up with vans
+    </p>
+    <h5 className="mt-4 projectBackgroundSubHeader">Multi Modal Delivery explained </h5>
+    <p className="projectBackgroundBody">Traditionally parcels are delivered using one van and one driver. 
+    The LMD multi modal soloution allows you to deliver parcels with one van with multiple porters and cyclists sharing the <b>same</b> van.
+    </p>
+    <p className="projectBackgroundBody">This allows us to increase delivery efficiency and take more delivery vans off the road. This helps reduce  congestion in cities and improve air pollution.
+    </p>
+  </div>
+  </Row>
+  
+  <Row>
+  <div className="col-12">
+  <img className = "mt-5 headerJumbotronImage" alt ="last mile delivery in action" src={LMDMultiModal} />
+  </div>
+  </Row>
+  <Row>
+  <div className="col-12 mt-3">
+  <h1>Field Research For The App</h1>
+  </div>
+  </Row>
+  <Row>
+  <div className="col-12">
+  <img className = "mt-5 headerJumbotronImage" alt ="last mile delivery in action" src={LMDMultiModal} />
+  </div>
+  </Row>
+</Container>
+
+
+      
+
 
 <Container>
   <Row>
-    <div className="col-12 mb-5">
+    <div className="col-12 mt-3">
     <div class="embed-responsive embed-responsive-16by9">
     <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlTMQsZWUR7Y57FRPdkBx2g%2FLMD-work%3Fnode-id%3D5%253A2787%26viewport%3D1219%252C20%252C0.3333852291107178%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowFullScreen />
     </div>
