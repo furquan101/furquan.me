@@ -198,11 +198,6 @@ export const LMD = () => (
   <h1>Field Research For The App</h1>
   </div>
   </Row>
-  <Row>
-  <div className="col-12">
-  <img className = "mt-5 headerJumbotronImage" alt ="last mile delivery in action" src={LMDMultiModal} />
-  </div>
-  </Row>
 </Container>
 
 
