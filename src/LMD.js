@@ -125,10 +125,11 @@ export const LMD = () => (
           <div className="col-md-5 col-xl-5 mb-5">
             <h3 className="headerCopy">Project Overview</h3>
             <h5 className="mt-4 subHeaderCopy">Problem</h5>
-            <p className="bodyCopy mb-4">Porters delivering parcels around the city need a way to understand what deliveries and collections they need to carry out whilst on the move so that they can drop off parcels and complete their job.
+            <p className="bodyCopy mb-4">Porters delivering parcels around the city, need a way to understand what deliveries and collections they need to complete on the move. So that they can drop off parcels and complete their job.
             </p> 
             <h5 className="subHeaderCopy"> Goal</h5>
-            <p className="bodyCopy mb-4"> The goal of the project was to design a mobile app for porters to allow them to see their deliveries and collections for the day. The project had a limited budget which meant we had to start delivering parcels as soon as possible to start earning revenue. </p>
+            <p className="bodyCopy mb-4">The goal of the project was to design a mobile app for porters. The app allows porters to see their deliveries, collections for the day. The project had a limited budget, which meant we had to start delivering parcels as soon as possible to start earning revenue. 
+            </p>
             <h5 className="subHeaderCopy">The Team</h5>
             <p className="bodyCopy">
             On this project i was the <b>design lead </b>. I was working with 1 UX designer 1 UI designer and 2 iOS developers, 2 product managers.
@@ -177,8 +178,7 @@ export const LMD = () => (
        90% of road space in London is taken up for transporting goods.
     </p>
     <h5 className="mt-4 projectBackgroundSubHeader">A new way of delivering parcels</h5>
-    <p className="projectBackgroundBody">The Last Mile Delivery (LMD) project aims to help ease congestion off the roads and save the envionment by delivering parcels with a innovative multi modal solution. 
-    We do this breaking down the journey of a parcel in the last mile using pedestrian porters and cyclists teamed up with vans.
+    <p className="projectBackgroundBody">The Last Mile Delivery (LMD) project aims to help ease congestion off the roads and save the envionment. We do this by delivering parcels with a innovative multi modal solution, by breaking down the journey of a parcel in the last mile. Using pedestrian porters and cyclists teamed up with vans
     </p>
     <h5 className="mt-4 projectBackgroundSubHeader">Multi Modal Delivery explained </h5>
     <p className="projectBackgroundBody">Traditionally parcels are delivered using one van and one driver. 
@@ -206,7 +206,7 @@ export const LMD = () => (
     <Row>
     <div className="col-xl-6 mb-5 mt-3">
       <h4>Building empathy with our users</h4>
-      <p>It’s important as a designer to build empathy with our end users. By experiencing the delivery process first hand by becoming a porter allowed me to do this and understand the pain points. 
+      <p>It’s important as a designer to build empathy with our end users. By experiencing the delivery process first hand as a porter allowed me to understand the pain porters porters face. 
       </p>
       <h4>Key Porter Pain Points</h4>
     </div>
@@ -217,8 +217,8 @@ export const LMD = () => (
     </div>
     </Row>
     <Row>
-    <div className="col-12">
-    <h2>LMD Porter Persona</h2>
+    <div className="col-12 mt-5">
+    <h2>Persona for our porters</h2>
     </div>
     <div className="col-12">
     <img className = "mt-2 headerJumbotronImage" alt ="last mile delivery in action" src={LMDPersona} />
