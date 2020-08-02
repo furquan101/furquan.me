@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import LMDPorter from '../src/Components/Assets/Img/LMDPorter.png';
 import LMDHeader from '../src/Components/Assets/Img/LMDHeader.jpg'
 import LMDMultiModal from '../src/Components/Assets/Img/MultiModal.png'
+import LMDPersona from '../src/Components/Assets/Img/LMDPersona.png'
 import Jumbotron from 'react-bootstrap/Jumbotron';
 
 
@@ -177,7 +178,7 @@ export const LMD = () => (
     </p>
     <h5 className="mt-4 projectBackgroundSubHeader">A new way of delivering parcels</h5>
     <p className="projectBackgroundBody">The Last Mile Delivery (LMD) project aims to help ease congestion off the roads and save the envionment by delivering parcels with a innovative multi modal solution. 
-    We do this byreaking down the journey of a parcel in the last mile using pedestrian porters and cyclists teamed up with vans
+    We do this breaking down the journey of a parcel in the last mile using pedestrian porters and cyclists teamed up with vans.
     </p>
     <h5 className="mt-4 projectBackgroundSubHeader">Multi Modal Delivery explained </h5>
     <p className="projectBackgroundBody">Traditionally parcels are delivered using one van and one driver. 
@@ -193,28 +194,91 @@ export const LMD = () => (
   <img className = "mt-5 headerJumbotronImage" alt ="last mile delivery in action" src={LMDMultiModal} />
   </div>
   </Row>
-  <Row>
-  <div className="col-12 mt-3">
-  <h1>Prototype</h1>
-  </div>
-  </Row>
 </Container>
 
+
+<Container>
+  <Row>
+    <div className="col-12 mt-5">
+    <h2>Field Research</h2>
+    </div>
+    </Row>
+    <Row>
+    <div className="col-xl-6 mb-5 mt-3">
+      <h4>Building empathy with our users</h4>
+      <p>It’s important as a designer to build empathy with our end users. By experiencing the delivery process first hand by becoming a porter allowed me to do this and understand the pain points. 
+      </p>
+      <h4>Key Porter Pain Points</h4>
+    </div>
+    <div className="col-xl-6 mb-5">
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kaArF7nRKbQ" allowfullscreen></iframe>
+        </div>
+    </div>
+    </Row>
+    <Row>
+    <div className="col-12">
+    <h2>LMD Porter Persona</h2>
+    </div>
+    <div className="col-12">
+    <img className = "mt-2 headerJumbotronImage" alt ="last mile delivery in action" src={LMDPersona} />
+    </div>
+  </Row>
+  </Container>
 
       
 
 
 <Container>
+<Row>
+  <div className="col-12 mt-3">
+  <h1>Prototype</h1>
+  </div>
+  </Row>
   <Row>
     <div className="col-12 mt-3">
     <div class="embed-responsive embed-responsive-16by9">
     <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlTMQsZWUR7Y57FRPdkBx2g%2FLMD-work%3Fnode-id%3D5%253A2787%26viewport%3D1219%252C20%252C0.3333852291107178%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowFullScreen />
     </div>
     </div>
+  </Row>
+  </Container>
+
+
+  <Container>
+  <Row>
+    <div className="col-12 mt-5">
+    <h2>Usability Testing On Live App</h2>
+    </div>
     </Row>
+    <Row>
+    <div className="col-xl-6 mb-5 mt-3">
+      <h4>Delivering dummy parcels around London</h4>
+      <p>It’s important as a designer to build empathy with our end users. By experiencing the delivery process first hand by becoming a porter allowed me to do this and understand the pain points. 
+      </p>
+      <h4>Key Findings</h4>
+    </div>
+    <div className="col-xl-6 mb-5">
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ToAujFEx51c" allowfullscreen></iframe>
+        </div>
+    </div>
+    </Row>
+    <Row>
+    <div className="col-12 mt-5">
+      <h3>Usability Findings Deck</h3>
+    </div>
+    </Row>
+
+    <Row>
+    <div className="col-12 mt-3">
+    <div class="embed-responsive embed-responsive-16by9">
+    <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fei9zfrIrEN9SoAWb3jAsPT%2FLMD-Usability-Findings%3Fnode-id%3D49%253A0%26viewport%3D536%252C156%252C0.03257698565721512%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowFullScreen />
+    </div>
+    </div>
+  </Row>
   </Container>
       
-
       
 </Styles>
 )
