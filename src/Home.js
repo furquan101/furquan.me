@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import styled from 'styled-components';
 import {BigCard} from './Components/BigCard';
-import fordPass from '../src/Components/Assets/Img/Fordpass.png';
+import fordPass from '../src/Components/Assets/Img/Fordpass.jpg';
 import fordLogo from '../src/Components/Assets/Img/FordLogo.svg';
 import FPPLogo from '../src/Components/Assets/Img/FPPLogo.svg';
 import rsa from '../src/Components/Assets/Img/RSA.jpg';
