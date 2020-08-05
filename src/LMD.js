@@ -164,7 +164,7 @@ export const LMD = () => (
             </p>
             <h5 className="subHeaderCopy">The Team</h5>
             <p className="bodyCopy">
-            On this project i was the <b>design lead </b>. I was working with 1 UX designer 1 UI designer and 2 iOS developers, 2 product managers.
+            On this project i was the <b>design lead </b>. I was working with 1 UX designer 1 UI designer and 2 iOS developers, 2 product managers, 20 delivery porters.
             </p>
           </div>
           <div className = "offset-xl-1 col-xl-6 col-md-7 col-sm-12 col-xs-12">
@@ -183,6 +183,7 @@ export const LMD = () => (
                Since 2019 I've been leading a team of product designers responsible for designing, realising the vision and scaling for the Last Mile Delivery project.
                </p>
                <p> Our team works with partners and stakeholders across the globe and of every discipline.</p>
+               <p>The delivery app has helped deliver over 40,000 parcels in London.</p>
                </div>
               </div>
               <div className="offset-md-2 col-md-5">
@@ -241,6 +242,12 @@ export const LMD = () => (
       <p>It’s important as a designer to build empathy with our end users. By experiencing the delivery process first hand as a porter allowed me to understand the pain porters porters face. 
       </p>
       <h4>Key Porter Pain Points</h4>
+      <ul>
+        <li>Traffic and congestion in the city adds significant journey time</li>
+        <li>Porters want to deliver parcels as quick as possible to get the job done</li>
+        <li>Native in app navigation isn't as good as using Waze or Google Maps </li>
+        <li>When leaving a parcel in a safe place they can get stolen </li>
+      </ul>
     </div>
     <div className="col-xl-6 mb-5">
         <div class="embed-responsive embed-responsive-16by9">
@@ -280,15 +287,21 @@ export const LMD = () => (
   <Container>
   <Row>
     <div className="col-12 mt-5">
-    <h2>Usability Testing On Live App</h2>
+    <h2>Usability Testing On Prototype App</h2>
     </div>
     </Row>
     <Row>
     <div className="col-xl-6 mb-5 mt-3">
       <h4>Delivering dummy parcels around London</h4>
-      <p>It’s important as a designer to build empathy with our end users. By experiencing the delivery process first hand by becoming a porter allowed me to do this and understand the pain points. 
+      <p>Before starting the delivery pilot in London we wanted to make sure porters understood how the MVP app would work. We ran a usability test around Hackney Wick, delivering dummy parcels testing out the app  to filter out any immediate UX issues with the app.
       </p>
       <h4>Key Findings</h4>
+      <ul>
+      <li>94% of tasks where complete succesfully, people where able to deliver and collect parcels. </li>
+        <li>Copy of the app can be misleading and confusing to porters.</li>
+        <li>Seeing the embeded map misleads users.</li>
+        
+      </ul>
     </div>
     <div className="col-xl-6 mb-5">
         <div class="embed-responsive embed-responsive-16by9">
