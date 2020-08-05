@@ -1,12 +1,14 @@
 import React from 'react'
 import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
+import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import LMDPorter from '../src/Components/Assets/Img/LMDPorter.png';
 import LMDHeader from '../src/Components/Assets/Img/LMDHeader.jpg'
 import LMDMultiModal from '../src/Components/Assets/Img/MultiModal.png'
 import LMDPersona from '../src/Components/Assets/Img/LMDPersona.png'
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import {LinkContainer} from 'react-router-bootstrap';
 
 
 const Styles = styled.div`
@@ -106,7 +108,37 @@ line-height: 28px;
   /* or 120% */
   color: #202020;
   }
-   
+  
+
+
+
+
+  .nextProjectHeader {
+    margin-top: 50px;
+    background-color: #7A56FF;
+    margin-bottom: 0px;
+  }
+
+  .nextProjectHeaderCopy {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  .nextProjectSubHeaderCopy {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.55rem;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    }
 
 `;
 
@@ -278,6 +310,30 @@ export const LMD = () => (
     </div>
   </Row>
   </Container>
+
+  <Jumbotron className="nextProjectHeader">
+        <Container>
+            <Row>
+            
+            <div className="col-lg-6 md-12">
+              <h3 className ="nextProjectHeaderCopy">Next Project</h3>
+              </div>
+            </Row>
+                <Row>
+                <div className="col-lg-6 col-12">
+                    <p className="nextProjectSubHeaderCopy">FordPass</p>
+                </div>
+                </Row> 
+                <Row>
+                <div className="col-12">
+                    <LinkContainer to = "/RSA"> 
+                    <Button className = "buttonStyling" variant="outline-light">View Project</Button>
+                    </LinkContainer>
+                </div>
+                </Row>
+        </Container>
+        </Jumbotron>
+
       
       
 </Styles>

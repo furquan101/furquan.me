@@ -188,7 +188,7 @@ export const About = () => (
             <div className="row d-flex align-items-center">
               <div className="col-lg-6 col-12 col-md-7">
               <h1 className = "headerStyle"> Hi, I'm Furquan <span aria-label="waving hand" role="img">👋</span></h1>
-                <p className="subHeaderText"> I'm a product designer designing global mobility soloutions for mega cities.
+                <p className="subHeaderText"> I'm a product designer designing global mobility soloutions for megacities.
                 </p><div className="row">
                   <div className="col-lg-6 col-6">
                     <hr className="fancy-line mt-2 mb-4" />
@@ -197,7 +197,7 @@ export const About = () => (
                 <div className ="bodyHeaderText">
                 <p>Because I've been in the trenches as a designer and developer, I know all about the tech jargon that matters.</p>
                 <p>Today, I'm a product designer at Ford Mobility in London, designing a brand new delivery network to combat congestion in cities.</p>
-                <p>Catch me outside from work you will find me running with my local running club,  at a climbing wall or working on one of my side projects.</p>
+                <p>Catch me outside from work you will find me running with my local running club,  at a climbing wall or working on one of my community side projects.</p>
                </div>
               </div>
               <div className="col-6 col-sm-3 col-md-4 offset-md-1 col-lg-3 offset-lg-3 mb-3 mb-sm-0 text-right order-first order-sm-last">
@@ -251,7 +251,7 @@ export const About = () => (
             <Row className ="justify-content-center">
                 <div className="col-md-6 col-lg-3 mb-4">
                     <h1 className ="sideProjectHeader">Side Projects</h1>
-                    <p className ="sideProjectSubHeader"> A neat collection of my side projects.</p>
+                    <p className ="sideProjectSubHeader"> A neat collection of my community side projects.</p>
                 </div>
                 <div className="col-md-6 col-lg-3  mb-4 col-10">
                     <Card className = "h-100">
