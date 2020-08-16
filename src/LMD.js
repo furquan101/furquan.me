@@ -84,7 +84,7 @@ const Styles = styled.div`
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 1.9rem;
   line-height: 28px;
   color: black;
 }
@@ -110,6 +110,56 @@ line-height: 28px;
   }
   
 
+.fieldResearchHeader {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.9rem;
+  line-height: 28px;
+  color: black;
+
+}
+
+.fieldResearchSubHeader {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 150%;
+  /* identical to box height, or 33px */
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+
+.fieldResearchBodyCopy {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.15rem;;
+  line-height: 24px;
+
+}
+
+.fieldResearchList {
+  font-family: Open Sans, sans-serif;
+  font-size: 1.15rem;
+  color: black;
+  list-style-type: disc;
+  padding-left: 15px;
+  
+
+}
+
+
+.personaHeader {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.9rem;
+  line-height: 28px;
+  color: black;
+}
 
 
 
@@ -206,7 +256,7 @@ export const LMD = () => (
   <Row>
   <div className="col-12">
     <h1 className ="projectBackgroundHeader">Last Mile Delivery Background</h1>
-    <h5 className="mt-5 projectBackgroundSubHeader">Congestion In Cities Is Getting Worse</h5>
+    <h5 className="mt-4 projectBackgroundSubHeader">Congestion In Cities Is Getting Worse</h5>
     <p className="projectBackgroundBody">Congestion in mega cities is getting worse every year. This results in an increase in journey times and worsening air polloution in the city.
        90% of road space in London is taken up for transporting goods.
     </p>
@@ -233,20 +283,20 @@ export const LMD = () => (
 <Container>
   <Row>
     <div className="col-12 mt-5">
-    <h2>Field Research</h2>
+    <h2 className = "fieldResearchHeader">Field Research</h2>
     </div>
     </Row>
     <Row>
     <div className="col-xl-6 mb-5 mt-3">
-      <h4>Building empathy with our users</h4>
-      <p>It’s important as a designer to build empathy with our end users. By experiencing the delivery process first hand as a porter allowed me to understand the pain porters porters face. 
+      <h4 className = "fieldResearchSubHeader"> Building empathy with our users</h4>
+      <p className="fieldResearchBodyCopy">It’s important as a designer to build empathy with our end users. By experiencing the delivery process first hand as a porter allowed me to understand the pain porters porters face. 
       </p>
-      <h4>Key Porter Pain Points</h4>
-      <ul>
+      <h4 className="fieldResearchSubHeader">Key Porter Pain Points:</h4>
+      <ul className="fieldResearchList">
         <li>Traffic and congestion in the city adds significant journey time</li>
-        <li>Porters want to deliver parcels as quick as possible to get the job done</li>
-        <li>Native in app navigation isn't as good as using Waze or Google Maps </li>
-        <li>When leaving a parcel in a safe place they can get stolen </li>
+        <li className="mt-2">Porters want to deliver parcels as quick as possible to get the job done</li>
+        <li className="mt-2">Native in app navigation isn't as good as using Waze or Google Maps </li>
+        <li className="mt-2">When leaving a parcel in a safe place they can get stolen </li>
       </ul>
     </div>
     <div className="col-xl-6 mb-5">
@@ -257,7 +307,7 @@ export const LMD = () => (
     </Row>
     <Row>
     <div className="col-12 mt-5">
-    <h2>Persona for our porters</h2>
+    <h2 className="personaHeader">Persona for our porters</h2>
     </div>
     <div className="col-12">
     <img className = "mt-2 headerJumbotronImage" alt ="last mile delivery in action" src={LMDPersona} />

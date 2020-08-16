@@ -99,7 +99,7 @@
     <footer className="footerStyle">
     <div className="container">
     <div className="row footerPadding">
-        <div className="col-sm-12 col-md-4">
+        <div className="col-md-4">
         <h6 className = "footerHeader">Furquan Ahmad</h6>
         <p className="footerSubHeader text-justify"> A product designer based in London currently solving as many mobility problems as possible.</p>
 
@@ -109,7 +109,7 @@
         <li className = "mb-4"> <Twitter strokeWidth="1.5" color = "#333333" size = {20}></Twitter> <a href="https://twitter.com/furquan101" target="_blank" rel="noopener noreferrer">@furquan101</a></li>
         </ul>
         </div>
-        <div className="offset-md-1 col-xs-6 col-md-3">
+        <div className="offset-md-1 col-xs-6 col-md-2">
         <h6 className="footerBrowsingHeader">Keep Browsing</h6>
         <ul className="footerList">
             <li className = "mb-1">
@@ -120,9 +120,18 @@
             <li className = "mb-1">
                 <NavLink to = "/About">About</NavLink>
             </li>
-            <li className = "mb-1">
+            <li className = "mb-4">
                 <NavLink to = "/Contact">Contact</NavLink>
             </li>
+        </ul>
+        </div>
+
+        <div className="offset-md-1 col-xs-6 col-md-4">
+        <h6 className="footerBrowsingHeader">TALKS AND BLOGS</h6>
+        <ul className="footerList">
+            <li className = "mb-2"><a rel="noopener noreferrer" target="_blank" href="https://config.figma.com/">Speaker at Figma Config Europe 2020</a></li>
+            <li className = "mb-2"><a rel="noopener noreferrer" target="_blank" href="https://muslamicmakers.com/covid19-web-app/">Covid19 – Web App by Furquan Ahmad and Ali Zafar</a></li>
+            <li className = "mb-2"><a rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/watch/?v=300731831060699">Speaker at Muslamic Makers Lightning Talks</a></li>
         </ul>
         </div>
     </div>
@@ -130,9 +139,9 @@
     </div>
     <div className="container">
     <div className="row">
-        <div className="offset-md-8 col-md-4 col-sm-6 col-xs-12">
+        <div className="col-12">
         <p className="copyrightText">Copyright © {new Date().getFullYear()} Furquan Ahmad.&nbsp; 
-            <a rel="noopener noreferrer" target="_blank" href="https://github.com/furquan101">Developed by Furquan</a>.
+            <a rel="noopener noreferrer" target="_blank" href="https://github.com/furquan101">Developed by Furquan.</a>
         </p>
         </div>
     </div>
