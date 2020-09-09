@@ -230,7 +230,7 @@ export const LMD = () => (
                <h3 className="myRoleHeaderCopy">My Role</h3>
                <div className="myRoleBodyCopy">
                <p>
-               Since 2019 I've been leading a team of product designers responsible for designing, realising the vision and scaling for the Last Mile Delivery project.
+               Since 2019 I've been <b>leading</b> a team of product designers responsible for designing, realising the vision and scaling for the Last Mile Delivery project.
                </p>
                <p> Our team works with partners and stakeholders across the globe and of every discipline.</p>
                <p>The delivery app has helped deliver over 40,000 parcels in London.</p>
