@@ -4,6 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import LMDPorter from '../src/Components/Assets/Img/LMDPorter.png';
+import Graph1 from '../src/Components/Assets/Img/Graph1.jpg';
+import iPhoneCamera from '../src/Components/Assets/Img/iPhoneCamera.jpg';
 import LMDHeader from '../src/Components/Assets/Img/LMDHeader.jpg'
 import LMDMultiModal from '../src/Components/Assets/Img/MultiModal.png'
 import LMDPersona from '../src/Components/Assets/Img/LMDPersona.png'
@@ -56,7 +58,7 @@ const Styles = styled.div`
 
  .myRoleHeaderCopy {
   font-family: Open Sans, sans-serif;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: bold;
   color: white;
   
@@ -85,7 +87,7 @@ const Styles = styled.div`
   font-style: normal;
   font-weight: bold;
   font-size: 1.9rem;
-  line-height: 28px;
+  line-height: 40px;
   color: black;
 }
 
@@ -159,6 +161,42 @@ line-height: 28px;
   font-size: 1.9rem;
   line-height: 28px;
   color: black;
+}
+
+
+
+.takeawayJumbotron {
+  background-color: #F7F7F7;
+  margin-top: 50px;
+}
+
+.takeawayHeaderCopy {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 150%;
+
+}
+
+.takeawayLine {
+  border-top: 2px solid;
+  color: black;
+}
+
+.takeawayListStyle {
+  padding-left: 15px;
+}
+
+.takeawayListText {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0.015em;
+  color: #000000;
+
 }
 
 
@@ -279,6 +317,40 @@ export const LMD = () => (
   </Row>
 </Container>
 
+<Container>
+  <Row>
+    <div className="col-12 mt-5">
+    <h2 className = "fieldResearchHeader">Measuring Impact and Success</h2>
+    </div>
+    </Row>
+    <Row>
+    <div className="col-xl-6 mb-5 mt-3">
+      <h4 className = "fieldResearchSubHeader"> Scaling up using iOS App</h4>
+      <p className="fieldResearchBodyCopy">It was made clear from the start
+      of the project we wanted to scale up to 1000 parcels a day, to make the project profitable. The iOS app will be a key part to reach this target with the porters using the app to deliver the parcels.
+      </p>
+      <h4 className="fieldResearchSubHeader">Key Metrics and Targets:</h4>
+      <ul className="fieldResearchList">
+        <li>Getting porters to deliver 16 parcels per hour.</li>
+        <li className="mt-2">Delivering 1000 parcels a day.</li>
+        <li className="mt-2">Adding new post codes and areas successfully.</li>
+        <li className="mt-2">Allowing Hermes to take full autonomy of the pilot without Ford helping out.</li>
+      </ul>
+    </div>
+    <div className="col-xl-6 mt-5 mb-5">
+    <img className = "projectPicture" alt ="LMD metrics for success" src={Graph1} />
+    </div>
+    </Row>
+    <Row>
+    <div className="col-12 mt-5">
+    <h2 className="personaHeader">Persona for our porters</h2>
+    </div>
+    <div className="col-12">
+    <img className = "mt-2 headerJumbotronImage" alt ="last mile delivery in action" src={LMDPersona} />
+    </div>
+  </Row>
+  </Container>
+
 
 <Container>
   <Row>
@@ -305,14 +377,6 @@ export const LMD = () => (
         </div>
     </div>
     </Row>
-    <Row>
-    <div className="col-12 mt-5">
-    <h2 className="personaHeader">Persona for our porters</h2>
-    </div>
-    <div className="col-12">
-    <img className = "mt-2 headerJumbotronImage" alt ="last mile delivery in action" src={LMDPersona} />
-    </div>
-  </Row>
   </Container>
 
       
@@ -372,6 +436,62 @@ export const LMD = () => (
     </div>
     </div>
   </Row>
+  </Container>
+
+  <Jumbotron className="takeawayJumbotron">
+        <Container>
+            <Row>
+            
+            <div className="col-lg-6 md-12">
+              <h3 className ="takeawayHeaderCopy">Key Challenges Faced</h3>
+              </div>
+            </Row>
+                <Row>
+                  <div className="col-lg-4 col-md-4">
+                     <hr className="takeawayLine mt-2 mb-4"></hr>
+                  </div>
+                </Row>
+                <Row>
+                <div className="col-lg-8 col-12">
+                  <ul className="takeawayListStyle">
+                    <li className="takeawayListText mt-2">Routing for the delivery drops was unoptimal and porters had to frequently walk back on themselves.
+                    </li>
+                    <li className="takeawayListText mt-3">Over 30 minutes of time was lost when porters where picking up new bags from the van driver.
+                    </li>
+                    <li className="takeawayListText mt-3">Adapting the app to have a contact free delivery experience during the pandemic added a few more steps to the delivery flow.
+                    </li>
+                  </ul>
+                </div>
+                </Row> 
+        </Container>
+        </Jumbotron>
+
+
+
+        <Container>
+        <Row>
+          <div className="col-12 mt-5">
+          <h2 className = "fieldResearchHeader">The Pandemic Changing Delivery </h2>
+          </div>
+          </Row>
+          <Row>
+          <div className="col-xl-6 mb-5 mt-3">
+            <h4 className = "fieldResearchSubHeader">Contact Free Delivery</h4>
+            <p className="fieldResearchBodyCopy">
+              COVID has changed the delivery world completly. The way we deliver parcels has changed to limit as much contact as possible with customers.
+            </p>
+            <h4 className="fieldResearchSubHeader">Key Changes To The App</h4>
+            <ul className="fieldResearchList">
+              <li>Taking pictures for every delivery instead of signatures</li>
+              <li className="mt-2">Sending emails instead of calling cards</li>
+              <li className="mt-2">Record delivery demand.</li>
+              <li className="mt-2">Leaving parcles at the door step instead of handing them over.</li>
+            </ul>
+          </div>
+          <div className="col-xl-4 ml-4 mt-3 mb-5">
+          <img className = "projectPicture" alt ="LMD metrics for success" src={iPhoneCamera} />
+          </div>
+          </Row>
   </Container>
 
   <Jumbotron className="nextProjectHeader">

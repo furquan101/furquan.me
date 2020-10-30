@@ -11,13 +11,27 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 
 const Styles = styled.div`
 
+
+@media only screen and (max-width: 768px) {
+
+  .playlistCopy{
+    font-family: Open Sans, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+  }
+
+}
+
+
+
 .playlistCopy{
   font-family: Open Sans, sans-serif;
   font-size: 1.4rem;
   font-weight: bold;
   color: black;
-
 }
+
 .headerJumbotronImage {
     max-width: 100%; 
     height: auto;
