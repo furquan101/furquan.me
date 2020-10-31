@@ -6,6 +6,8 @@ import Row from 'react-bootstrap/Row';
 import LMDPorter from '../src/Components/Assets/Img/LMDPorter.png';
 import Graph1 from '../src/Components/Assets/Img/Graph1.jpg';
 import iPhoneCamera from '../src/Components/Assets/Img/iPhoneCamera.jpg';
+import DeliveryResults from '../src/Components/Assets/Img/DeliveryResults.gif';
+import DeliveriesPerHour from '../src/Components/Assets/Img/DeliveriesPerHour.gif';
 import LMDHeader from '../src/Components/Assets/Img/LMDHeader.jpg'
 import LMDMultiModal from '../src/Components/Assets/Img/MultiModal.png'
 import LMDPersona from '../src/Components/Assets/Img/LMDPersona.png'
@@ -492,7 +494,32 @@ export const LMD = () => (
           <img className = "projectPicture" alt ="LMD metrics for success" src={iPhoneCamera} />
           </div>
           </Row>
-  </Container>
+        
+          <Row>
+          <div className="col">
+           <h3 className="headerCopy mt-4 mb-4">Showcasing Impact</h3>
+           <p className="legalBodyCopy">To see how well the delivery pilot is going it's important to reflect on the data and stats of the pilot, to see how well things have improved. As months went on a lot of teething operation and app issues got solved, which allowed us to eventually reach our targets.  
+           </p>
+
+         </div>
+         </Row>
+        
+         <Row className="mb-5">
+         <div className="col-12">
+         <img loading="lazy" className="finalSoloutionImage" alt ="Final soloution" src={DeliveriesPerHour} />
+         </div>
+         </Row>
+
+        <Row className="mb-5">
+         <div className="col-12">
+         <img loading="lazy" className="finalSoloutionImage" alt ="Final soloution" src={DeliveryResults} />
+         </div>
+         </Row>
+
+    </Container>
+
+   
+
 
   <Jumbotron className="nextProjectHeader">
         <Container>

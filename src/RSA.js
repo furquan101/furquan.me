@@ -18,6 +18,7 @@ import Userresearch from '../src/Components/Assets/Img/Research.jpg';
 import FinalMockup1 from '../src/Components/Assets/Img/DigitalRSA.png';
 import FinalMockup2 from  '../src/Components/Assets/Img/RSAHand.png';
 import FinalMockup3 from  '../src/Components/Assets/Img/RSAGoldIphone.png';
+import DigitalRSAUsers from  '../src/Components/Assets/Img/DigitalRSAUsers.gif';
 
 
 const Styles = styled.div`
@@ -561,13 +562,27 @@ export const RSA = () => (
          <img loading="lazy" className="finalSoloutionImage" alt ="Final soloution" src={FinalMockup3} />
          </div>
         </Row>
+        
         <Row>
-        <div className="col-12 mb-2">
+        <div className="col-12 mb-5">
         <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dAuwY0OFkdQ" allowfullscreen></iframe>
         </div>
         </div>
       </Row>
+
+      <Row>
+          <div className="col">
+           <h3 className="headerCopy mt-5 mb-3">Showcasing Impact</h3>
+           <p className="legalBodyCopy">Upon release of the Digital RSA project in Europe, user growth has picked up signficantly and is only growing faster with more FordPass users being added daily on the app.
+           </p>
+         </div>
+         </Row>
+         <Row className="mb-5">
+         <div className="col-12">
+         <img loading="lazy" className="finalSoloutionImage" alt ="Final soloution" src={DigitalRSAUsers} />
+         </div>
+         </Row>
         
       </Container>
 
