@@ -155,6 +155,44 @@ line-height: 28px;
 
 }
 
+.prototypeHeader {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.9rem;
+  line-height: 28px;
+  color: black;
+}
+
+.usabilityHeader {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.9rem;
+  line-height: 28px;
+  color: black;
+}
+
+.usabilitySubHeader {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 150%;
+  /* identical to box height, or 33px */
+  letter-spacing: 0.01em;
+  color: #000000;
+}
+
+.usabilityList {
+  font-family: Open Sans, sans-serif;
+  font-size: 1.15rem;
+  color: black;
+  list-style-type: disc;
+  padding-left: 15px;
+  
+
+}
 
 .personaHeader {
   font-family: Open Sans;
@@ -165,6 +203,11 @@ line-height: 28px;
   color: black;
 }
 
+.finalSoloutionImage {
+  height:auto !important;
+  max-width:100% !important;
+
+ }
 
 
 .takeawayJumbotron {
@@ -202,6 +245,15 @@ line-height: 28px;
 }
 
 
+.impactCopy {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.15rem;
+  line-height: 24px;
+  /* or 120% */
+  color: #202020;
+}
 
   .nextProjectHeader {
     margin-top: 50px;
@@ -387,7 +439,7 @@ export const LMD = () => (
 <Container>
 <Row>
   <div className="col-12 mt-3">
-  <h1>Prototype</h1>
+  <h1 className="prototypeHeader">Prototype</h1>
   </div>
   </Row>
   <Row>
@@ -403,16 +455,16 @@ export const LMD = () => (
   <Container>
   <Row>
     <div className="col-12 mt-5">
-    <h2>Usability Testing On Prototype App</h2>
+    <h2 className="usabilityHeader">Usability Testing On Prototype App</h2>
     </div>
     </Row>
     <Row>
     <div className="col-xl-6 mb-5 mt-3">
-      <h4>Delivering dummy parcels around London</h4>
+      <h4 className="usabilitySubHeader">Delivering dummy parcels around London</h4>
       <p>Before starting the delivery pilot in London we wanted to make sure porters understood how the MVP app would work. We ran a usability test around Hackney Wick, delivering dummy parcels testing out the app  to filter out any immediate UX issues with the app.
       </p>
-      <h4>Key Findings</h4>
-      <ul>
+      <h4 className="usabilitySubHeader">Key Findings</h4>
+      <ul className="usabilityList">
       <li>94% of tasks where complete succesfully, people where able to deliver and collect parcels. </li>
         <li>Copy of the app can be misleading and confusing to porters.</li>
         <li>Seeing the embeded map misleads users.</li>
@@ -427,7 +479,7 @@ export const LMD = () => (
     </Row>
     <Row>
     <div className="col-12 mt-5">
-      <h3>Usability Findings Deck</h3>
+      <h3 className="usabilityHeader">Usability Findings Deck</h3>
     </div>
     </Row>
 
@@ -477,7 +529,7 @@ export const LMD = () => (
           </div>
           </Row>
           <Row>
-          <div className="col-xl-6 mb-5 mt-3">
+          <div className="col-xl-12 mb-5 mt-3">
             <h4 className = "fieldResearchSubHeader">Contact Free Delivery</h4>
             <p className="fieldResearchBodyCopy">
               COVID has changed the delivery world completly. The way we deliver parcels has changed to limit as much contact as possible with customers.
@@ -490,15 +542,15 @@ export const LMD = () => (
               <li className="mt-2">Leaving parcles at the door step instead of handing them over.</li>
             </ul>
           </div>
-          <div className="col-xl-4 ml-4 mt-3 mb-5">
+          <div className="col-xl-12 ml-4 mt-3 mb-5">
           <img className = "projectPicture" alt ="LMD metrics for success" src={iPhoneCamera} />
           </div>
           </Row>
         
           <Row>
           <div className="col">
-           <h3 className="headerCopy mt-4 mb-4">Showcasing Impact</h3>
-           <p className="legalBodyCopy">To see how well the delivery pilot is going it's important to reflect on the data and stats of the pilot, to see how well things have improved. As months went on a lot of teething operation and app issues got solved, which allowed us to eventually reach our targets.  
+           <h3 className="headerCopy mt-5 mb-4">Showcasing Impact</h3>
+           <p className="impactCopy">To see how well the delivery pilot is going it's important to reflect on the data and stats of the pilot, to see how well things have improved. As months went on a lot of teething operation and app issues got solved, which allowed us to eventually reach our targets.  
            </p>
 
          </div>
