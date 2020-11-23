@@ -424,7 +424,7 @@ export const LMD = () => (
     </Row>
     <Row>
     <div className="col-12 mt-5">
-    <h2 className="personaHeader">Persona for our porters</h2>
+    <h2 className="personaHeader">Persona For Our Porters</h2>
     </div>
     <div className="col-12">
     <img className = "mt-3 headerJumbotronImage" alt ="last mile delivery in action" src={LMDPersona} />
