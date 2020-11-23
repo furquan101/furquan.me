@@ -39,9 +39,27 @@ const Styles = styled.div`
 .subHeaderCopy{
   font-family: Open Sans, sans-serif;
   font-size: 1.15rem;
-  font-weight: 600;
+  font-weight: 700;
   color: black;
   text-transform: uppercase;
+}
+
+.subHeaderListCopy {
+  font-family: Open Sans, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+}
+
+.subHeaderListBodyCopy {
+  font-family: Open Sans, sans-serif;
+  font-size: 1.08rem;
+  color: black;
+  list-style-type: disc;
+  line-height: 2rem;
+  padding-left: 15px;
+
 }
 
 .bodyCopy {
@@ -107,7 +125,7 @@ line-height: 28px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.15rem;
+  font-size: 1.08rem;
   line-height: 24px;
   /* or 120% */
   color: #202020;
@@ -140,7 +158,7 @@ line-height: 28px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.15rem;;
+  font-size: 1.08rem;;
   line-height: 24px;
 
 }
@@ -183,7 +201,14 @@ line-height: 28px;
   letter-spacing: 0.01em;
   color: #000000;
 }
+.usabilityBodyCopy{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.08rem;
+  line-height: 24px;
 
+}
 .usabilityList {
   font-family: Open Sans, sans-serif;
   font-size: 1.15rem;
@@ -237,7 +262,7 @@ line-height: 28px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.08rem;
   line-height: 150%;
   letter-spacing: 0.015em;
   color: #000000;
@@ -299,15 +324,19 @@ export const LMD = () => (
           <div className="col-md-5 col-xl-5 mb-5">
             <h3 className="headerCopy">Project Overview</h3>
             <h5 className="mt-4 subHeaderCopy">Problem</h5>
-            <p className="bodyCopy mb-4">Porters delivering parcels around the city, need a way to understand what deliveries and collections they need to complete on the move. So that they can drop off parcels and complete their job.
+            <p className="bodyCopy mb-4">Porters delivering parcels around the city, need a way to understand what deliveries and collections they need to complete on the move so that they can complete their job.
             </p> 
-            <h5 className="subHeaderCopy"> Goal</h5>
-            <p className="bodyCopy mb-4">The goal of the project was to design a mobile app for porters. The app allows porters to see their deliveries, collections for the day. The project had a limited budget, which meant we had to start delivering parcels as soon as possible to start earning revenue. 
+            <h5 className="subHeaderCopy"> Soloution</h5>
+            <p className="bodyCopy mb-4">The goal of the project was to design a mobile delivery app for porters and van drivers. The app allows them to see their deliveries, pickups and transfers for the day.
             </p>
-            <h5 className="subHeaderCopy">The Team</h5>
-            <p className="bodyCopy">
-            On this project i was the <b>design lead </b>. I was working with 1 UX designer 1 UI designer and 2 iOS developers, 2 product managers, 20 delivery porters.
-            </p>
+            <h5 className="subHeaderListCopy">Impact</h5>
+            <ul className ="subHeaderListBodyCopy">
+             <li>50,000+ deliveries completed through the app. </li>
+              <li>Scaled the amount of deliveries per day by 3X.</li>
+              <li>Increased deliveries per hour by 160%.</li>
+              <li>Evolved the product to profitability.</li>
+              <li>Offset 10 tonnes of CO2 emissions.</li>
+            </ul>
           </div>
           <div className = "offset-xl-1 col-xl-6 col-md-7 col-sm-12 col-xs-12">
           <img className = "projectPicture" alt ="roadside assistance app" src={LMDPorter} />
@@ -325,7 +354,7 @@ export const LMD = () => (
                Since 2019 I've been <b>leading</b> a team of product designers responsible for designing, realising the vision and scaling for the Last Mile Delivery project.
                </p>
                <p> Our team works with partners and stakeholders across the globe and of every discipline.</p>
-               <p>The delivery app has helped deliver over 40,000 parcels in London.</p>
+               <p>I was responsible for designing the app and optimising it throughout the pilot</p>
                </div>
               </div>
               <div className="offset-md-2 col-md-5">
@@ -334,7 +363,7 @@ export const LMD = () => (
                  <li>Lead the product vision and strategy </li>
                  <li>Lead the visual design for the entire iOS app. </li>
                  <li>Design System Manager</li>
-                 <li>Research coordination</li>
+                 <li>Lead the user research and strategy</li>
                  <li>Executive presentations to CEO</li>
                  <li>Establishing and documenting patterns and best practices</li>
                  
@@ -353,13 +382,11 @@ export const LMD = () => (
        90% of road space in London is taken up for transporting goods.
     </p>
     <h5 className="mt-4 projectBackgroundSubHeader">A new way of delivering parcels</h5>
-    <p className="projectBackgroundBody">The Last Mile Delivery (LMD) project aims to help ease congestion off the roads and save the envionment. We do this by delivering parcels with a innovative multi modal solution, by breaking down the journey of a parcel in the last mile. Using pedestrian porters and cyclists teamed up with vans
+    <p className="projectBackgroundBody">The Last Mile Delivery (LMD) project aims to help ease congestion off the roads and save the envionment. We do this by delivering parcels with a <b>multi modal</b> solution, that breaks down the journey of a parcel in the last mile.
     </p>
     <h5 className="mt-4 projectBackgroundSubHeader">Multi Modal Delivery explained </h5>
     <p className="projectBackgroundBody">Traditionally parcels are delivered using one van and one driver. 
     The LMD multi modal soloution allows you to deliver parcels with one van with multiple porters and cyclists sharing the <b>same</b> van.
-    </p>
-    <p className="projectBackgroundBody">This allows us to increase delivery efficiency and take more delivery vans off the road. This helps reduce  congestion in cities and improve air pollution.
     </p>
   </div>
   </Row>
@@ -374,7 +401,7 @@ export const LMD = () => (
 <Container>
   <Row>
     <div className="col-12 mt-5">
-    <h2 className = "fieldResearchHeader">Measuring Impact and Success</h2>
+    <h2 className = "fieldResearchHeader">Measuring Impact And Success</h2>
     </div>
     </Row>
     <Row>
@@ -400,7 +427,7 @@ export const LMD = () => (
     <h2 className="personaHeader">Persona for our porters</h2>
     </div>
     <div className="col-12">
-    <img className = "mt-2 headerJumbotronImage" alt ="last mile delivery in action" src={LMDPersona} />
+    <img className = "mt-3 headerJumbotronImage" alt ="last mile delivery in action" src={LMDPersona} />
     </div>
   </Row>
   </Container>
@@ -455,13 +482,13 @@ export const LMD = () => (
   <Container>
   <Row>
     <div className="col-12 mt-5">
-    <h2 className="usabilityHeader">Usability Testing On Prototype App</h2>
+    <h2 className="usabilityHeader">Usability Testing On Prototype</h2>
     </div>
     </Row>
     <Row>
     <div className="col-xl-6 mb-5 mt-3">
       <h4 className="usabilitySubHeader">Delivering dummy parcels around London</h4>
-      <p>Before starting the delivery pilot in London we wanted to make sure porters understood how the MVP app would work. We ran a usability test around Hackney Wick, delivering dummy parcels testing out the app  to filter out any immediate UX issues with the app.
+      <p className="usabilityBodyCopy">Before starting the pilot we wanted to make sure porters could use the app and deliver parcels. We ran a usability test, delivering dummy parcels to filter out any immediate UX issues.
       </p>
       <h4 className="usabilitySubHeader">Key Findings</h4>
       <ul className="usabilityList">
@@ -477,19 +504,6 @@ export const LMD = () => (
         </div>
     </div>
     </Row>
-    <Row>
-    <div className="col-12 mt-5">
-      <h3 className="usabilityHeader">Usability Findings Deck</h3>
-    </div>
-    </Row>
-
-    <Row>
-    <div className="col-12 mt-3">
-    <div class="embed-responsive embed-responsive-16by9">
-    <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fei9zfrIrEN9SoAWb3jAsPT%2FLMD-Usability-Findings%3Fnode-id%3D49%253A0%26viewport%3D536%252C156%252C0.03257698565721512%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowFullScreen />
-    </div>
-    </div>
-  </Row>
   </Container>
 
   <Jumbotron className="takeawayJumbotron">
@@ -510,7 +524,7 @@ export const LMD = () => (
                   <ul className="takeawayListStyle">
                     <li className="takeawayListText mt-2">Routing for the delivery drops was unoptimal and porters had to frequently walk back on themselves.
                     </li>
-                    <li className="takeawayListText mt-3">Over 30 minutes of time was lost when porters where picking up new bags from the van driver.
+                    <li className="takeawayListText mt-3">Bag transfers and collections lost a lot of time for porters and van drivers.
                     </li>
                     <li className="takeawayListText mt-3">Adapting the app to have a contact free delivery experience during the pandemic added a few more steps to the delivery flow.
                     </li>
@@ -538,7 +552,6 @@ export const LMD = () => (
             <ul className="fieldResearchList">
               <li>Taking pictures for every delivery instead of signatures</li>
               <li className="mt-2">Sending emails instead of calling cards</li>
-              <li className="mt-2">Record delivery demand.</li>
               <li className="mt-2">Leaving parcles at the door step instead of handing them over.</li>
             </ul>
           </div>
@@ -549,7 +562,7 @@ export const LMD = () => (
         
           <Row>
           <div className="col">
-           <h3 className="headerCopy mt-5 mb-4">Showcasing Impact</h3>
+           <h3 className="headerCopy mt-5 mb-3">Showcasing Impact</h3>
            <p className="impactCopy">To see how well the delivery pilot is going it's important to reflect on the data and stats of the pilot, to see how well things have improved. As months went on a lot of teething operation and app issues got solved, which allowed us to eventually reach our targets.  
            </p>
 

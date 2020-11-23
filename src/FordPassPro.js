@@ -134,9 +134,9 @@ export const FordPassPro = () => (
             <h5 className="mt-4 subHeaderCopy">Problem</h5>
             <p className="bodyCopy mb-4">Small business owners find it difficult to keep track of the servicing, health and security of their vehicles, whilst managing their business. Even though their fleets are a core component in keeping their business running the vehicles are often overlooked.
             </p> 
-            <h5 className="subHeaderCopy"> Goal</h5>
+            <h5 className="subHeaderCopy"> Soloution</h5>
             <p className="bodyCopy mb-4"> We wanted to allow fleet managers to manage their health, security and  maintenace of their fleet whilst on the move through a mobile app. The  app release date was pegged to the launch of the new Transit Connect. </p>
-            <h5 className="subHeaderCopy">The Team</h5>
+            <h5 className="subHeaderCopy">Impact</h5>
             <p className="bodyCopy">
             On this project i was working with 3 UX designers, 3 UI designers.
             10 Android and iOS developers, 2 product managers.

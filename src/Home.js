@@ -66,8 +66,8 @@ export const Home = () => (
   <BigCard 
     imgProjectLogo={LMDLogo}
     imgCardLarge={LMD}
-    cardTitleName = {"Creating a scaleable delivery network in megacities"}
-    cardBodyText = {"The Last Mile project is a new urban multimodal goods delivery system. We aim to reduce city congestion, improves air quality and drive up productivity of delivery vans. "}
+    cardTitleName = {"Creating a profitable delivery network in megacities"}
+    cardBodyText = {"The Last Mile Delivery project is a new urban multimodal goods delivery system. We aim to reduce city congestion, improves air quality and drive up productivity of delivery vans. "}
     cardLink = {"/LMD"}
    />
    </Col>
