@@ -162,15 +162,24 @@ const Styles = styled.div`
 
   .subHeaderCopy{
     font-family: Open Sans, sans-serif;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-size: 1.15rem;
+    font-weight: 700;
     color: black;
     text-transform: uppercase;
   }
 
+  .subHeaderListBodyCopy {
+    font-family: Open Sans, sans-serif;
+    font-size: 1.06rem;
+    color: black;
+    list-style-type: disc;
+    line-height: 2rem;
+    padding-left: 15px;
+  }
+
   .bodyCopy {
     font-family: Open Sans, sans-serif;
-    font-size: 1.05rem;
+    font-size: 1.06rem;
     line-height: 26px;
     color: #202020;
   }
@@ -358,13 +367,14 @@ export const RSA = () => (
             <h5 className="mt-4 subHeaderCopy">Problem</h5>
             <p className="bodyCopy mb-4">When you breakdown in your vehicle, the current RSA (roadside assistance) experience is very analogue. This means customer's are often left unsure when they will recieve help and what's wrong with their vehicle.
             </p> 
-            <h5 className="subHeaderCopy"> Goal</h5>
-            <p className="bodyCopy mb-4"> The goal of the Digital RSA project was to improve the breakdown experience in Europe by making it live and digital. We would use live data from the modem of the vehicle and add the feature to the FordPass app to achieve this goal.  </p>
-            <h5 className="subHeaderCopy">The Team</h5>
-            <p className="bodyCopy">
-            On this project i was working with a UX designer, Product Manager.
-            2 Android and iOS developers. We partnered with “ARC Europe” who deliver roadside assistance experiences.
-            </p>
+            <h5 className="subHeaderCopy"> Soloution</h5>
+            <p className="bodyCopy mb-4"> The goal of the Digital RSA project was to improve the breakdown experience in Europe by making it live, dynamic and digital. We used live data from the modem of the vehicle and added the feature to the FordPass app.  </p>
+            <h5 className="subHeaderCopy">Impact</h5>
+            <ul className ="subHeaderListBodyCopy">
+            <li><b>2000+</b> successful breakdowns complete using FordPass. </li>
+             <li>Released Digital RSA feature to 30+ markets globally.</li>
+              <li>Increased customer satisfaction for roadside assistance by 1.2X.</li>
+            </ul>
           </div>
           <div className = "offset-xl-1 col-xl-5 col-md-7 col-sm-12 col-xs-12">
           <img className = "projectPicture" alt ="roadside assistance app" src={RSAGif} />
@@ -527,7 +537,7 @@ export const RSA = () => (
             <h5 className="mt-5 subHeaderCopy">Gathering vehicle data (Technical)</h5>
           <ul className="legalListStyle">
             <li className="legalBodyCopy mt-3">Before you call the RSA provider you have to confirm details about your vehicle. We thought displaying the vehicle error would be useful so the user has more transparency of what's hapenning.
-             However after working with our vehicle data engineer we wasn't able to provide the fault code of the car (1A)
+             However after working with our vehicle data engineer we wasn't able to provide the fault code of the car (1A).
             </li>
           </ul>
           </div>

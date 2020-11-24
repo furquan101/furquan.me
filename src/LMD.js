@@ -17,6 +17,41 @@ import {LinkContainer} from 'react-router-bootstrap';
 
 const Styles = styled.div`
 
+
+.fancy-line {
+  background: #9665FF;
+  border-radius: 10px;
+  height: 2px;
+}
+
+
+.TLDRHeader {
+  font-family: Open Sans, sans-serif;
+  font-weight: bold;
+  font-size: 2.3rem;
+  color: black;
+}
+
+.TLDRSubHeader {
+  font-family: Roboto Mono, sans-serif;
+  font-size: 1.75rem;
+  line-height: 150%;
+  color: black;
+}
+
+.TLDRBodyText {
+
+ font-family: Open Sans, sans-serif;
+ font-size: 1rem;
+ line-height: 150%;
+ color: black;
+}
+
+.seperator {
+  background: #C4C4C4;
+  height: 0.5px;
+}
+
 .headerJumbotronImage {
   max-width: 100%; 
   height: auto;
@@ -54,7 +89,7 @@ const Styles = styled.div`
 
 .subHeaderListBodyCopy {
   font-family: Open Sans, sans-serif;
-  font-size: 1.08rem;
+  font-size: 1.06rem;
   color: black;
   list-style-type: disc;
   line-height: 2rem;
@@ -64,7 +99,7 @@ const Styles = styled.div`
 
 .bodyCopy {
   font-family: Open Sans, sans-serif;
-  font-size: 1.08rem;
+  font-size: 1.06rem;
   line-height: 26px;
   color: #202020;
 }
@@ -125,7 +160,7 @@ line-height: 28px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.08rem;
+  font-size: 1.06rem;
   line-height: 24px;
   /* or 120% */
   color: #202020;
@@ -158,14 +193,14 @@ line-height: 28px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.08rem;;
+  font-size: 1.06rem;;
   line-height: 24px;
 
 }
 
 .fieldResearchList {
   font-family: Open Sans, sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.06rem;
   color: black;
   list-style-type: disc;
   padding-left: 15px;
@@ -205,13 +240,13 @@ line-height: 28px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.08rem;
+  font-size: 1.06rem;
   line-height: 24px;
 
 }
 .usabilityList {
   font-family: Open Sans, sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.06rem;
   color: black;
   list-style-type: disc;
   padding-left: 15px;
@@ -320,6 +355,7 @@ export const LMD = () => (
 </Container-fluid>
 
 <Container>
+         
         <Row className="mt-5">
           <div className="col-md-5 col-xl-5 mb-5">
             <h3 className="headerCopy">Project Overview</h3>
@@ -332,10 +368,10 @@ export const LMD = () => (
             <h5 className="subHeaderListCopy">Impact</h5>
             <ul className ="subHeaderListBodyCopy">
              <li>50,000+ deliveries completed through the app. </li>
-              <li>Scaled the amount of deliveries per day by 3X.</li>
+              <li>Scaled the amount of deliveries per day by 5X.</li>
               <li>Increased deliveries per hour by 160%.</li>
               <li>Evolved the product to profitability.</li>
-              <li>Offset 10 tonnes of CO2 emissions.</li>
+              <li>Offset 10+ tonnes of CO2 emissions.</li>
             </ul>
           </div>
           <div className = "offset-xl-1 col-xl-6 col-md-7 col-sm-12 col-xs-12">
@@ -343,6 +379,8 @@ export const LMD = () => (
           </div>
         </Row>
  </Container>
+
+
 
  <Jumbotron className = "myRoleHeader">
           <Container>
@@ -410,7 +448,7 @@ export const LMD = () => (
       <p className="fieldResearchBodyCopy">It was made clear from the start
       of the project we wanted to scale up to 1000 parcels a day, to make the project profitable. The iOS app will be a key part to reach this target with the porters using the app to deliver the parcels.
       </p>
-      <h4 className="fieldResearchSubHeader">Key Metrics and Targets:</h4>
+      <h4 className="fieldResearchSubHeader mt-2">Key Metrics and Targets:</h4>
       <ul className="fieldResearchList">
         <li>Getting porters to deliver 16 parcels per hour.</li>
         <li className="mt-2">Delivering 1000 parcels a day.</li>
@@ -444,7 +482,7 @@ export const LMD = () => (
       <h4 className = "fieldResearchSubHeader"> Building empathy with our users</h4>
       <p className="fieldResearchBodyCopy">It’s important as a designer to build empathy with our end users. By experiencing the delivery process first hand as a porter allowed me to understand the pain porters porters face. 
       </p>
-      <h4 className="fieldResearchSubHeader">Key Porter Pain Points:</h4>
+      <h4 className="fieldResearchSubHeader mt-2">Key Porter Pain Points:</h4>
       <ul className="fieldResearchList">
         <li>Traffic and congestion in the city adds significant journey time</li>
         <li className="mt-2">Porters want to deliver parcels as quick as possible to get the job done</li>
@@ -470,7 +508,7 @@ export const LMD = () => (
   </div>
   </Row>
   <Row>
-    <div className="col-12 mt-3">
+    <div className="col-12 mt-3 mb-4">
     <div class="embed-responsive embed-responsive-16by9">
     <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlTMQsZWUR7Y57FRPdkBx2g%2FLMD-work%3Fnode-id%3D5%253A2787%26viewport%3D1219%252C20%252C0.3333852291107178%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowFullScreen />
     </div>
