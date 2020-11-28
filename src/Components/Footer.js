@@ -77,7 +77,7 @@
     }
 
     .copyrightText a {
-        color:#9665FF;
+        color:#6400EF;
     }
 
     .copyrightText a:hover {
