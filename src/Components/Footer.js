@@ -100,7 +100,7 @@
     <div className="container">
     <div className="row footerPadding">
         <div className="col-md-4">
-        <h4 className = "footerHeader">Furquan Ahmad</h4>
+        <h1 className = "footerHeader">Furquan Ahmad</h1>
         <p className="footerSubHeader text-justify"> A product designer based in London currently solving as many mobility problems as possible.</p>
 
         <ul className = "footerList">
@@ -110,7 +110,7 @@
         </ul>
         </div>
         <div className="offset-md-1 col-xs-6 col-md-2">
-        <h4 className="footerBrowsingHeader">Keep Browsing</h4>
+        <h2 className="footerBrowsingHeader">Keep Browsing</h2>
         <ul className="footerList">
             <li className = "mb-1">
                 <NavLink to = "/">Portfolio</NavLink>
@@ -127,7 +127,7 @@
         </div>
 
         <div className="offset-md-1 col-xs-6 col-md-4">
-        <h4 className="footerBrowsingHeader">TALKS AND BLOGS</h4>
+        <h3 className="footerBrowsingHeader">TALKS AND BLOGS</h3>
         <ul className="footerList">
             <li className = "mb-2"><a rel="noopener noreferrer" target="_blank" href="https://config.figma.com/">Speaker at Figma Config Europe 2020</a></li>
             <li className = "mb-2"><a rel="noopener noreferrer" target="_blank" href="https://muslamicmakers.com/covid19-web-app/">Covid19 – Web App by Furquan Ahmad and Ali Zafar</a></li>
