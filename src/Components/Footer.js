@@ -100,7 +100,7 @@
     <div className="container">
     <div className="row footerPadding">
         <div className="col-md-4">
-        <h6 className = "footerHeader">Furquan Ahmad</h6>
+        <h4 className = "footerHeader">Furquan Ahmad</h4>
         <p className="footerSubHeader text-justify"> A product designer based in London currently solving as many mobility problems as possible.</p>
 
         <ul className = "footerList">
