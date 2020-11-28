@@ -117,6 +117,7 @@ const Styles = styled.div`
 export const BigCard = props =>(
 
 <Styles>
+<LinkContainer to= {props.cardLink}>
 <Container className="cardPadding">
 <Card className = "mx-2 mb-5">
   <Row>
@@ -140,6 +141,7 @@ export const BigCard = props =>(
   </Row>
 </Card>
 </Container>
+</LinkContainer>
 </Styles>
 
 )

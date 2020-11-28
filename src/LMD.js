@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
-import LMDPorter from '../src/Components/Assets/Img/LMDPorter.png';
+import LMDCover from '../src/Components/Assets/Img/LMD.jpg';
 import Graph1 from '../src/Components/Assets/Img/Graph1.jpg';
 import iPhoneCamera from '../src/Components/Assets/Img/iPhoneCamera.jpg';
 import DeliveryResults from '../src/Components/Assets/Img/DeliveryResults.gif';
@@ -375,7 +375,7 @@ export const LMD = () => (
             </ul>
           </div>
           <div className = "offset-xl-1 col-xl-6 col-md-7 col-sm-12 col-xs-12">
-          <img className = "projectPicture" alt ="roadside assistance app" src={LMDPorter} />
+          <img className = "projectPicture" alt ="roadside assistance app" src={LMDCover} />
           </div>
         </Row>
  </Container>

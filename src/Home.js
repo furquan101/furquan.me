@@ -5,12 +5,14 @@ import Col from 'react-bootstrap/Col'
 import styled from 'styled-components';
 import {BigCard} from './Components/BigCard';
 import fordPass from '../src/Components/Assets/Img/Fordpass.jpg';
+import FordPassCoPilot from '../src/Components/Assets/Img/FordPassCoPilot.jpg';
 import fordLogo from '../src/Components/Assets/Img/FordLogo.svg';
 import FPPLogo from '../src/Components/Assets/Img/FPPLogo.svg';
 import rsa from '../src/Components/Assets/Img/RSA.jpg';
+import Journeys from '../src/Components/Assets/Img/Journeys.jpg';
 import LMD from '../src/Components/Assets/Img/LMD.jpg';
 import LMDLogo from '../src/Components/Assets/Img/LMDLogo.svg';
-import FordTransitDark from  '../src/Components/Assets/Img/FordTransitDark.jpg';
+import FPPBuilder from  '../src/Components/Assets/Img/FPPBuilder.jpg';
 import './App.css';
 
 
@@ -67,7 +69,7 @@ export const Home = () => (
     imgProjectLogo={LMDLogo}
     imgCardLarge={LMD}
     cardTitleName = {"Creating a profitable delivery network in megacities"}
-    cardBodyText = {"The Last Mile Delivery project is a new urban multimodal goods delivery system. We aim to reduce city congestion, improves air quality and drive up productivity of delivery vans. "}
+    cardBodyText = {"Last Mile Delivery is a new urban multi modal delivery network made by Ford Mobility. We aim to reduce city congestion, improve air quality and drive up productivity of delivery vans."}
     cardLink = {"/LMD"}
    />
    </Col>
@@ -77,9 +79,9 @@ export const Home = () => (
   <Col>
   <BigCard 
     imgProjectLogo={fordLogo}
-    imgCardLarge={rsa}
+    imgCardLarge={fordPass}
     cardTitleName = {"Designing a smart, live, digital breakdown experience."}
-    cardBodyText = {"When you breakdown in your vehicle, you are left in the cold about what's going on. We changed this experience to be completley digital in the Digital RSA project."}
+    cardBodyText = {"When you break down in your vehicle, your left in the cold about  what's going on. We changed this static experience to be completely digital in the Digital RSA project."}
     cardLink = {"/RSA"}
     />
    </Col>
@@ -89,7 +91,7 @@ export const Home = () => (
   <Col>
   <BigCard 
     imgProjectLogo={FPPLogo}
-    imgCardLarge={FordTransitDark}
+    imgCardLarge= {FPPBuilder}
     cardTitleName = {"Managing your fleet health and security remotely."}
     cardBodyText = {"The FordPass Pro project is about helping fleet managers to manage the health and maintenace of their Ford vehicles on the move. Allowing them to be more proactive when it comes to vehicle maintenace."}
     cardLink = {"/FordPassPro"}
@@ -106,10 +108,10 @@ export const Home = () => (
   <Col>
     <BigCard 
     imgProjectLogo={fordLogo}
-    imgCardLarge={fordPass}
+    imgCardLarge={Journeys}
     cardLink={"/RSA"}
     cardTitleName = {"Putting your live vehicle data into your hands."}
-    cardBodyText = {"The FordPass Digital CoPilot project is about displaying live, important vehicle data into the FordPass app for you to view."}
+    cardBodyText = {"The FordPass Digital CoPilot project was about increasing user engagement on the app using live vehicle data. We designed new features such as  journey histories, fuel reports and mileage milestones. The features increased monthly engagement by 135%."}
     cardLink = {"/404"}
     />
    </Col>
