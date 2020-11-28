@@ -110,7 +110,7 @@
         </ul>
         </div>
         <div className="offset-md-1 col-xs-6 col-md-2">
-        <h6 className="footerBrowsingHeader">Keep Browsing</h6>
+        <h4 className="footerBrowsingHeader">Keep Browsing</h4>
         <ul className="footerList">
             <li className = "mb-1">
                 <NavLink to = "/">Portfolio</NavLink>
@@ -127,7 +127,7 @@
         </div>
 
         <div className="offset-md-1 col-xs-6 col-md-4">
-        <h6 className="footerBrowsingHeader">TALKS AND BLOGS</h6>
+        <h4 className="footerBrowsingHeader">TALKS AND BLOGS</h4>
         <ul className="footerList">
             <li className = "mb-2"><a rel="noopener noreferrer" target="_blank" href="https://config.figma.com/">Speaker at Figma Config Europe 2020</a></li>
             <li className = "mb-2"><a rel="noopener noreferrer" target="_blank" href="https://muslamicmakers.com/covid19-web-app/">Covid19 – Web App by Furquan Ahmad and Ali Zafar</a></li>
