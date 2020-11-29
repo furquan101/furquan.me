@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import FPPHeader from '../src/Components/Assets/Img/FPPHeader.jpg';
 import FPPPhone from '../src/Components/Assets/Img/FordPassPro.jpg';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import FPPCover from '../src/Components/Assets/Img/FPPCover.jpg';
 
 
 
@@ -28,7 +29,7 @@ const Styles = styled.div`
 .playlistCopy{
   font-family: Open Sans, sans-serif;
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: 550;
   color: black;
 }
 
@@ -114,18 +115,7 @@ export const FordPassPro = () => (
         <div className="mb-5"> </div>
 </Container-fluid>
 
-<Container>
-       <Row>
-       <div className="col-xl-5 mb-5">
-        <p className="playlistCopy">Music brings back great memories. To remember my favourite times on FordPass Pro, i made a playlist of my faviourte songs. Put on your headphones, hit play, and read along!</p>
-      </div>
-        <div className="col-xl-7  mb-5">
-        <div class="embed-responsive embed-responsive-21by9">
-        <iframe src="https://open.spotify.com/embed/playlist/0PLsYp6gqF3RPMOuq0ag99" width="300" height="380" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-        </div>
-      </Row>
-</Container>
+
 
 <Container>
         <Row className="mt-5">
@@ -143,7 +133,7 @@ export const FordPassPro = () => (
             </p>
           </div>
           <div className = "offset-xl-1 col-xl-6 col-md-7 col-sm-12 col-xs-12">
-          <img className = "projectPicture" alt ="roadside assistance app" src={FPPPhone} />
+          <img className = "projectPicture" alt ="roadside assistance app" src={FPPCover} />
           </div>
         </Row>
  </Container>
@@ -188,6 +178,19 @@ export const FordPassPro = () => (
         </div>
       </Row>
       </Container>
+
+      <Container>
+       <Row>
+       <div className="col-xl-12 mb-5 mt-5">
+        <p className="playlistCopy">Music brings back great memories. To remember my favourite times on FordPass Pro, i made a playlist of my faviourte songs. Put on your headphones, hit play, and read enjoy!</p>
+      </div>
+        <div className="col-xl-12  mb-5">
+        <div class="embed-responsive embed-responsive-21by9">
+        <iframe src="https://open.spotify.com/embed/playlist/0PLsYp6gqF3RPMOuq0ag99" width="300" height="380" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+        </div>
+      </Row>
+</Container>
 
 
  </Styles>

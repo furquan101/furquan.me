@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import {BigCard} from './Components/BigCard';
 import fordPass from '../src/Components/Assets/Img/Fordpass.jpg';
 import FordPassCoPilot from '../src/Components/Assets/Img/FordPassCoPilot.jpg';
+import FPPCover from '../src/Components/Assets/Img/FPPCover.jpg';
 import fordLogo from '../src/Components/Assets/Img/FordLogo.svg';
 import FPPLogo from '../src/Components/Assets/Img/FPPLogo.svg';
 import rsa from '../src/Components/Assets/Img/RSA.jpg';
