@@ -413,7 +413,7 @@ export const LMD = () => (
 
 <Container>
   <Row>
-  <div className="col-6">
+  <div className="col-xl-6">
     <h1 className ="projectBackgroundHeader">Last Mile Delivery Background</h1>
     <h5 className="mt-4 projectBackgroundSubHeader">Congestion In Cities Is Getting Worse</h5>
     <p className="projectBackgroundBody">Congestion in mega cities is getting worse every year. This results in an increase in journey times and worsening air polloution in the city.
@@ -424,7 +424,7 @@ export const LMD = () => (
     </p>
   </div>
 
-  <div className="col-6 mb-5">
+  <div className="col-xl-6 mb-5">
   <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KYWirKybviA" allowfullscreen></iframe>
   </div>

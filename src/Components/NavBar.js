@@ -86,6 +86,10 @@ export const NavigationBar = () => (
            <Nav.Link className="hvr-underline-from-left mr-4" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/furquan-ahmad-2528a44b/">
             LinkedIn
            </Nav.Link>
+
+           <Nav.Link className="hvr-underline-from-left mr-4" rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UC7IIFWV7QjKja6UYjL-z9Cw">
+            YouTube
+           </Nav.Link>
           
 
           <LinkContainer to = "/About"> 
