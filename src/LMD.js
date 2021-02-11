@@ -413,7 +413,7 @@ export const LMD = () => (
 
 <Container>
   <Row>
-  <div className="col-12">
+  <div className="col-6">
     <h1 className ="projectBackgroundHeader">Last Mile Delivery Background</h1>
     <h5 className="mt-4 projectBackgroundSubHeader">Congestion In Cities Is Getting Worse</h5>
     <p className="projectBackgroundBody">Congestion in mega cities is getting worse every year. This results in an increase in journey times and worsening air polloution in the city.
@@ -422,10 +422,12 @@ export const LMD = () => (
     <h5 className="mt-4 projectBackgroundSubHeader">A new way of delivering parcels</h5>
     <p className="projectBackgroundBody">The Last Mile Delivery (LMD) project aims to help ease congestion off the roads and save the envionment. We do this by delivering parcels with a <b>multi modal</b> solution, that breaks down the journey of a parcel in the last mile.
     </p>
-    <h5 className="mt-4 projectBackgroundSubHeader">Multi Modal Delivery explained </h5>
-    <p className="projectBackgroundBody">Traditionally parcels are delivered using one van and one driver. 
-    The LMD multi modal soloution allows you to deliver parcels with one van with multiple porters and cyclists sharing the <b>same</b> van.
-    </p>
+  </div>
+
+  <div className="col-6 mb-5">
+  <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KYWirKybviA" allowfullscreen></iframe>
+  </div>
   </div>
   </Row>
   

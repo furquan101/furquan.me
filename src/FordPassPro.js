@@ -15,16 +15,28 @@ const Styles = styled.div`
 
 @media only screen and (max-width: 768px) {
 
+  .projectTitle {
+    font-family: Open Sans, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+  }
+
   .playlistCopy{
     font-family: Open Sans, sans-serif;
     font-size: 1.1rem;
-    font-weight: bold;
+    font-weight: black;
     color: black;
   }
 
 }
 
-
+.projectTitle {
+  font-family: Open Sans, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+}
 
 .playlistCopy{
   font-family: Open Sans, sans-serif;
@@ -118,6 +130,11 @@ export const FordPassPro = () => (
 
 
 <Container>
+      <Row>
+      <div className = "col-xl-8 mb-1">
+        <h1 className="projectTitle">Managing your fleet health and security remotely</h1>
+      </div>
+      </Row>
         <Row className="mt-5">
           <div className="col-md-5 col-xl-5 mb-5">
             <h3 className="headerCopy">Project Overview</h3>
