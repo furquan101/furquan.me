@@ -9,6 +9,35 @@ import Container from 'react-bootstrap/Container';
 
 const Styles = styled.div`
 
+@media only screen and (max-width: 768px) {
+
+  .newsHeader {
+    font-size: 20px !important;
+    
+  }
+
+
+
+  .newsTitle{
+    font-size: 28px !important;
+
+  }
+
+  .newsBody {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px !important;
+    line-height: 140%;
+    /* or 45px */
+  
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: black;
+  }
+}
+
 .newsletter {
   background-color: #FEEAFC;
   color: white;
