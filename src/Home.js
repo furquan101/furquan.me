@@ -14,11 +14,10 @@ import Journeys from '../src/Components/Assets/Img/Journeys.jpg';
 import LMD from '../src/Components/Assets/Img/LMD.jpg';
 import LMDLogo from '../src/Components/Assets/Img/LMDLogo.svg';
 import FPPBuilder from  '../src/Components/Assets/Img/FPPBuilder.jpg';
+import {NewsletterFooter} from './Components/NewsletterFooter';
 import './App.css';
 
-
 const Styles = styled.div`
-
 
 
 @media only screen and (max-width: 768px) {
@@ -46,6 +45,7 @@ const Styles = styled.div`
         font-weight: 700;
         line-height: 1.2em;
     }
+
     `;
 
 
@@ -101,10 +101,6 @@ export const Home = () => (
  </Row>
 
 
-
-
-
-
  <Row> 
   <Col>
     <BigCard 
@@ -118,12 +114,8 @@ export const Home = () => (
    </Col>
  </Row>
 
-
-
- 
-
-
 </Container>
+<NewsletterFooter/>
 </Styles>
 
 )

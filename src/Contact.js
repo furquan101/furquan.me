@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import contactPicture from '../src/Components/Assets/Img/ContactMe.png';
-
+import {NewsletterFooter} from './Components/NewsletterFooter';
 
 const Styles = styled.div`
 
@@ -144,5 +144,6 @@ export const Contact = () => (
  </Row>
 
 </Container>
+<NewsletterFooter/>
 </Styles>
 )
