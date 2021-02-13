@@ -195,7 +195,7 @@ export const About = () => (
                   </div>
                 </div>
                 <div className ="bodyHeaderText">
-                <p>Because I've been in the trenches as a designer and developer, I know all about the tech jargon that matters.</p>
+                <p>Because I've been in the trenches as a designer and developer, I know about the tech jargon that matters.</p>
                 <p>Today, I'm a product designer at Ford Mobility in London, designing a brand new delivery network to combat congestion in cities.</p>
                 <p>Catch me outside from work you will find me running with my local running club,  at a climbing wall or working on one of my community side projects.</p>
                </div>
