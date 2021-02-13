@@ -66,7 +66,8 @@ const Styles = styled.div`
   width: 90%;
   padding: 16px;
   border-radius: 4px;
-  border-color: black;
+  border: 2px solid;
+  border-color: black !important;
   color: black;
 }
 
@@ -78,7 +79,7 @@ const Styles = styled.div`
   background: none;
   border: 2px solid #4100FA;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 8px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 800;
@@ -89,6 +90,7 @@ const Styles = styled.div`
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: #4100FA;
+  
 }
 
 .ck-fm button: hover {
