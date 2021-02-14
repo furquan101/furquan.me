@@ -164,7 +164,7 @@ export const NewsletterFooter = () => (
             hideName={true}
             stack={false}
             emailPlaceholder="We saved a spot for your email!"
-            submitText="Send"
+            submitText="Subscribe"
             formId={2038658}
             newTab={true}
             />
