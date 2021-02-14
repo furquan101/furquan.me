@@ -91,6 +91,9 @@ export const NavigationBar = () => (
             YouTube
            </Nav.Link>
           
+           <Nav.Link className="hvr-underline-from-left mr-4" rel="noopener noreferrer" target="_blank" href="https://newsletter.furquan.me/">
+            Newsletter
+           </Nav.Link>
 
           <LinkContainer to = "/About"> 
            <Nav.Link className="hvr-underline-from-left mr-4">About</Nav.Link>
