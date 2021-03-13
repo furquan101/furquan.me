@@ -132,7 +132,7 @@ export const FordPassPro = () => (
 <Container>
       <Row>
       <div className = "col-xl-8 mb-1">
-        <h1 className="projectTitle">Managing your fleet health and security remotely</h1>
+        <h1 className="projectTitle">FordPass Pro</h1>
       </div>
       </Row>
         <Row className="mt-5">

@@ -17,40 +17,21 @@ import {LinkContainer} from 'react-router-bootstrap';
 
 const Styles = styled.div`
 
+@media only screen and (max-width: 768px) {
 
-.fancy-line {
-  background: #9665FF;
-  border-radius: 10px;
-  height: 2px;
+  .tagHeader {
+    font-size: 34px !important;
+  }
+
+  .tagStyling {
+    margin-top: 8px;
+  }
+
 }
 
 
-.TLDRHeader {
-  font-family: Open Sans, sans-serif;
-  font-weight: bold;
-  font-size: 2.3rem;
-  color: black;
-}
 
-.TLDRSubHeader {
-  font-family: Roboto Mono, sans-serif;
-  font-size: 1.75rem;
-  line-height: 150%;
-  color: black;
-}
 
-.TLDRBodyText {
-
- font-family: Open Sans, sans-serif;
- font-size: 1rem;
- line-height: 150%;
- color: black;
-}
-
-.seperator {
-  background: #C4C4C4;
-  height: 0.5px;
-}
 
 .headerJumbotronImage {
   max-width: 100%; 
@@ -58,15 +39,55 @@ const Styles = styled.div`
   margin-bottom: 20px;
 }
 
+.tagHeader{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 150%;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.tagStyling {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: black;
+  margin-right: 12px;
+  border-color: black;
+  border-width: 1.5px;
+}
+
+.tagStyling:hover {
+  background-color: white;
+  font-weight: 600;
+  color:#5D12FF;
+  border-color: #5D12FF;
+  transition: 0.2s ease-in;
+}
+
+.tagStyling:focus {
+  color: white !important;
+  background-color: #5D12FF!important;
+  border-color: none !important;
+  border-width: 1.5px !important;
+  font-weight: 600;
+}
+
+
 .projectPicture {
     max-width: 100%;
-    height:
+    max-height: 500px;
 }
 
 .headerCopy {
   font-family: Open Sans, sans-serif;
   font-size: 1.9rem;
   font-weight: bold;
+  line-height: 140%;
   color: black;
   
 }
@@ -116,6 +137,7 @@ const Styles = styled.div`
   font-size: 1.9rem;
   font-weight: bold;
   color: white;
+  line-height: 140%;
   
 }
 
@@ -142,7 +164,7 @@ const Styles = styled.div`
   font-style: normal;
   font-weight: bold;
   font-size: 1.9rem;
-  line-height: 40px;
+  line-height: 140%;
   color: black;
 }
 
@@ -151,7 +173,7 @@ font-family: Open Sans;
 font-style: normal;
 font-weight: 600;
 font-size: 20px;
-line-height: 28px;
+line-height: 140%;
 /* or 140% */
 
 }
@@ -161,18 +183,22 @@ line-height: 28px;
   font-style: normal;
   font-weight: normal;
   font-size: 1.06rem;
-  line-height: 24px;
+  line-height: 140%;
   /* or 120% */
   color: #202020;
   }
   
+  .metricPicture {
+    max-width: 100%;
+    max-height: 300px;
+  }
 
 .fieldResearchHeader {
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 1.9rem;
-  line-height: 28px;
+  line-height: 140%;
   color: black;
 
 }
@@ -213,7 +239,7 @@ line-height: 28px;
   font-style: normal;
   font-weight: bold;
   font-size: 1.9rem;
-  line-height: 28px;
+  line-height: 140%;
   color: black;
 }
 
@@ -222,7 +248,7 @@ line-height: 28px;
   font-style: normal;
   font-weight: bold;
   font-size: 1.9rem;
-  line-height: 28px;
+  line-height: 140%;
   color: black;
 }
 
@@ -280,7 +306,7 @@ line-height: 28px;
   font-style: normal;
   font-weight: bold;
   font-size: 2rem;
-  line-height: 150%;
+  line-height: 140%;
 
 }
 
@@ -310,7 +336,7 @@ line-height: 28px;
   font-style: normal;
   font-weight: normal;
   font-size: 1.15rem;
-  line-height: 24px;
+  line-height: 140%;
   /* or 120% */
   color: #202020;
 }
@@ -326,7 +352,7 @@ line-height: 28px;
     font-style: normal;
     font-weight: 600;
     font-size: 1.1rem;
-    line-height: 150%;
+    line-height: 140%;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -355,7 +381,23 @@ export const LMD = () => (
 </Container-fluid>
 
 <Container>
-         
+       <Row>
+       <div className="col-xl-12">
+         <h1 className="tagHeader">Lastmile Delivery</h1>
+        </div>
+       <div className="col-xl-12">
+       <Button href = "#impact" className = "tagStyling shadow-none" variant="outline-dark">Impact</Button>
+       <Button href="#background" className = "tagStyling shadow-none" variant="outline-dark">Background</Button>
+       <Button href="#research" className = "tagStyling shadow-none" variant="outline-dark">User Research</Button>
+       <Button href="#prototype" className = "tagStyling shadow-none" variant="outline-dark">Prototype</Button>
+       <Button href="https://www.ford-mobility.eu/business-solutions/last-mile"className = "tagStyling shadow-none" variant="outline-dark" target="_blank">LMD Website</Button>
+
+       </div>
+       </Row>
+       <hr className = "mt-4 solid"></hr>
+  </Container>
+
+<Container>
         <Row className="mt-5">
           <div className="col-md-5 col-xl-5 mb-5">
             <h3 className="headerCopy">Project Overview</h3>
@@ -412,6 +454,7 @@ export const LMD = () => (
       </Jumbotron>
 
 <Container>
+<a id = "background">
   <Row>
   <div className="col-xl-6">
     <h1 className ="projectBackgroundHeader">Last Mile Delivery Background</h1>
@@ -436,9 +479,12 @@ export const LMD = () => (
   <img className = "mt-5 headerJumbotronImage" alt ="last mile delivery in action" src={LMDMultiModal} />
   </div>
   </Row>
+</a>
 </Container>
 
 <Container>
+<a id = "impact">
+
   <Row>
     <div className="col-12 mt-5">
     <h2 className = "fieldResearchHeader">Measuring Impact And Success</h2>
@@ -459,7 +505,7 @@ export const LMD = () => (
       </ul>
     </div>
     <div className="col-xl-6 mt-5 mb-5">
-    <img className = "projectPicture" alt ="LMD metrics for success" src={Graph1} />
+    <img className = "metricPicture" alt ="LMD metrics for success" src={Graph1} />
     </div>
     </Row>
     <Row>
@@ -470,10 +516,12 @@ export const LMD = () => (
     <img className = "mt-3 headerJumbotronImage" alt ="last mile delivery in action" src={LMDPersona} />
     </div>
   </Row>
+  </a>
   </Container>
 
 
 <Container>
+  <a id="research">
   <Row>
     <div className="col-12 mt-5">
     <h2 className = "fieldResearchHeader">Field Research</h2>
@@ -498,12 +546,14 @@ export const LMD = () => (
         </div>
     </div>
     </Row>
+  </a>
   </Container>
 
       
 
 
 <Container>
+<a id="prototype">
 <Row>
   <div className="col-12 mt-3">
   <h1 className="prototypeHeader">Prototype</h1>
@@ -512,13 +562,12 @@ export const LMD = () => (
   <Row>
     <div className="col-12 mt-3 mb-4">
     <div class="embed-responsive embed-responsive-16by9">
-    <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FlTMQsZWUR7Y57FRPdkBx2g%2FLMD-work%3Fnode-id%3D5%253A2787%26viewport%3D1219%252C20%252C0.3333852291107178%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowFullScreen />
+    <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FyVci9mXtRgvHv2ztRPjqrs%2Flmd-prototype%3Fnode-id%3D2%253A10778%26viewport%3D630%252C1402%252C0.1644621044397354%26scaling%3Dscale-down" allowFullScreen />
     </div>
     </div>
   </Row>
+  </a>
   </Container>
-
-
   <Container>
   <Row>
     <div className="col-12 mt-5">
@@ -549,7 +598,6 @@ export const LMD = () => (
   <Jumbotron className="takeawayJumbotron">
         <Container>
             <Row>
-            
             <div className="col-lg-6 md-12">
               <h3 className ="takeawayHeaderCopy">Key Challenges Faced</h3>
               </div>
@@ -577,6 +625,7 @@ export const LMD = () => (
 
 
         <Container>
+        <a id="pandemic">
         <Row>
           <div className="col-12 mt-5">
           <h2 className = "fieldResearchHeader">The Pandemic Changing Delivery </h2>
@@ -599,7 +648,7 @@ export const LMD = () => (
           <img className = "projectPicture" alt ="LMD metrics for success" src={iPhoneCamera} />
           </div>
           </Row>
-        
+        </a>
           <Row>
           <div className="col">
            <h3 className="headerCopy mt-5 mb-3">Showcasing Impact</h3>
