@@ -362,16 +362,16 @@ export const LMD = () => (
             <h5 className="mt-4 subHeaderCopy">Problem</h5>
             <p className="bodyCopy mb-4">Porters delivering parcels around the city, need a way to understand what deliveries and collections they need to complete on the move so that they can complete their job.
             </p> 
-            <h5 className="subHeaderCopy"> Soloution</h5>
+            <h5 className="subHeaderCopy"> Solution</h5>
             <p className="bodyCopy mb-4">The goal of the project was to design a mobile delivery app for porters and van drivers. The app allows them to see their deliveries, pickups and transfers for the day.
             </p>
             <h5 className="subHeaderListCopy">Impact</h5>
             <ul className ="subHeaderListBodyCopy">
-             <li>50,000+ deliveries completed through the app. </li>
-              <li>Scaled the amount of deliveries per day by 5X.</li>
-              <li>Increased deliveries per hour by 160%.</li>
-              <li>Evolved the product to profitability.</li>
-              <li>Offset 10+ tonnes of CO2 emissions.</li>
+              <li>Scaled the amount of deliveries per day by <b>10X</b>.</li>
+              <li>Evolved the product to <b>profitability</b>.</li>
+              <li>Increased deliveries per hour by <b>160%</b>.</li>
+              <li>Reduced congestion by <b>166%</b>.</li>
+              <li>Increased customer satisfaction by <b>108%</b>.</li>
             </ul>
           </div>
           <div className = "offset-xl-1 col-xl-6 col-md-7 col-sm-12 col-xs-12">

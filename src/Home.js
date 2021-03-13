@@ -70,7 +70,7 @@ export const Home = () => (
     imgProjectLogo={LMDLogo}
     imgCardLarge={LMD}
     cardTitleName = {"Creating a profitable delivery network in megacities"}
-    cardBodyText = {"Last Mile Delivery is a new urban multi modal delivery network made by Ford Mobility. We aim to reduce city congestion, improve air quality and drive up productivity of delivery vans."}
+    cardBodyText = {"Last Mile Delivery is a new urban multi modal delivery network. In this project we scale a delivery network 10X, reduce congestion by 166%, increase deliveries per hour by 160%. All during a pandemic. "}
     cardLink = {"/LMD"}
    />
    </Col>
@@ -82,7 +82,7 @@ export const Home = () => (
     imgProjectLogo={fordLogo}
     imgCardLarge={fordPass}
     cardTitleName = {"Designing a smart, live, digital breakdown experience."}
-    cardBodyText = {"When you break down in your vehicle, your left in the cold about  what's going on. We changed this static experience to be completely digital in the Digital RSA project."}
+    cardBodyText = {"When you break down in your vehicle, your left in the cold about  what's going on. We changed this static experience to be completely digital for over 9 million FordPass users, in the Digital RSA project."}
     cardLink = {"/RSA"}
     />
    </Col>

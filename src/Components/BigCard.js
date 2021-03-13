@@ -61,10 +61,20 @@ const Styles = styled.div`
 }
 
 .buttonStyling:hover {
-  background-color: inherit;
-  color: #A346FF;
-  border-color: #A346FF;
+  background-color: white;
+  font-weight: 600;
+  color:#5D12FF;
+  border-color: #5D12FF;
   transition: 0.2s ease-in;
+}
+
+
+.buttonStyling:focus{
+    color: white !important;
+    background-color: #5D12FF!important;
+    border-color: white !important;
+    border-width: 1.5px !important;
+    font-weight: 600;
 }
 
 
@@ -134,7 +144,7 @@ export const BigCard = props =>(
     {props.cardBodyText} 
     </Card.Text>
     <LinkContainer to= {props.cardLink}>
-    <Button block className = "buttonStyling" variant="outline-dark">Read more</Button>
+    <Button block className = "buttonStyling shadow-none" variant="outline-dark">Read more</Button>
     </LinkContainer>
   </Card.Body>
     </div>

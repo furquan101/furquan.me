@@ -24,6 +24,14 @@ import DigitalRSAUsers from  '../src/Components/Assets/Img/DigitalRSAUsers.gif';
 const Styles = styled.div`
 
 @media only screen and (max-width: 768px) {
+
+  .tagHeader {
+    font-size: 34px !important;
+  }
+
+  .tagStyling {
+    margin-top: 8px;
+  }
   .headerCopy {
     font-size: 1.7rem !Important;
   }
@@ -133,10 +141,50 @@ const Styles = styled.div`
 }
 
   .projectPicture{
-     max-height: 50vh;
-     max-width:100vw;
+     max-height: 340px;
+     max-width:100%;
      border-radius: 4px;
   }
+
+  .tagHeader{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    color: black;
+  }
+
+  .tagStyling {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: black;
+    margin-right: 12px;
+    border-color: black;
+    border-width: 1.5px;
+  }
+
+  .tagStyling:hover {
+    background-color: white;
+    font-weight: 600;
+    color:#5D12FF;
+    border-color: #5D12FF;
+    transition: 0.2s ease-in;
+  }
+
+  .tagStyling:focus {
+    color: white !important;
+    background-color: #5D12FF!important;
+    border-color: none !important;
+    border-width: 1.5px !important;
+    font-weight: 600;
+  }
+
+
 
   .flowProjectPicture {
      height:auto;
@@ -359,6 +407,22 @@ export const RSA = () => (
         alt ="roadside assistance app" src={RSAHeader} />
         <div className="mb-5"> </div>
       </Container-fluid>
+    
+
+     <Container>
+       <Row>
+       <div className="col-xl-12">
+         <h1 className="tagHeader">FordPass Digital RSA</h1>
+        </div>
+       <div className="col-xl-12">
+       <Button href = "#impact" className = "tagStyling shadow-none" variant="outline-dark">Impact</Button>
+       <Button href="#wireframes" className = "tagStyling shadow-none" variant="outline-dark">Wireframes</Button>
+       <Button href="#research" className = "tagStyling shadow-none" variant="outline-dark">User Research</Button>
+       <Button href="#finalsoloution"className = "tagStyling shadow-none" variant="outline-dark">Final Soloution</Button>
+       </div>
+       </Row>
+       <hr className = "mt-4 solid"></hr>
+     </Container>
 
       <Container>
         <Row className="mt-5">
@@ -367,13 +431,14 @@ export const RSA = () => (
             <h5 className="mt-4 subHeaderCopy">Problem</h5>
             <p className="bodyCopy mb-4">When you breakdown in your vehicle, the current RSA (roadside assistance) experience is very analogue. This means customer's are often left unsure when they will recieve help and what's wrong with their vehicle.
             </p> 
-            <h5 className="subHeaderCopy"> Soloution</h5>
+            <h5 className="subHeaderCopy"> Solution</h5>
             <p className="bodyCopy mb-4"> The goal of the Digital RSA project was to improve the breakdown experience in Europe by making it live, dynamic and digital. We used live data from the modem of the vehicle and added the feature to the FordPass app.  </p>
             <h5 className="subHeaderCopy">Impact</h5>
             <ul className ="subHeaderListBodyCopy">
-            <li><b>2000+</b> successful breakdowns complete using FordPass. </li>
-             <li>Released Digital RSA feature to 30+ markets globally.</li>
-              <li>Increased customer satisfaction for roadside assistance by 1.2X.</li>
+            <li>Digital RSA has helped with breakdowns for <b>2000+ customers</b>. </li>
+             <li> Digital RSA has been rolled out globally to <b>30+ countries</b>.</li>
+              <li>Customer satisfaction for roadside assistance increased by <b>1.2X</b>.</li>
+              <li>FordPass is being used globally by over <b>9 million+ customers</b>.</li>
             </ul>
           </div>
           <div className = "offset-xl-1 col-xl-5 col-md-7 col-sm-12 col-xs-12">
@@ -413,7 +478,7 @@ export const RSA = () => (
       </Jumbotron>
 
       <Container>
-
+        <a id = "research">
         <Row className="mb-5">
           <div className = "col-md-12 col-lg-7 col-xl-7 ">
             <img className = "mb-4 userResearchPicture" alt ="Furquan conducting user research" src={Userresearch} />
@@ -429,7 +494,7 @@ export const RSA = () => (
             </ul>
           </div>
         </Row>
-      
+      </a>
 
         <Row>
         <div className="col">
@@ -462,7 +527,7 @@ export const RSA = () => (
            </div>
          </Row>
         
-     
+      <a id ="wireframes">
        <Row>
          <div className="col">
          <h3 className="mt-8 headerCopy">Exploring Design Concepts</h3>
@@ -504,7 +569,7 @@ export const RSA = () => (
           <img loading="lazy" className ="callingRSAImage" alt ="roadside assistance app" src={RecoveryRSAMap3} />
           </div>
         </Row>
-
+        </a>
 
       
 
@@ -543,7 +608,7 @@ export const RSA = () => (
           </div>
           </div>
           </Row>
-      
+          <a id ="finalsoloution">
          <Row>
           <div className="col">
            <h3 className="headerCopy mt-4 mb-4">Final Solution</h3>
@@ -556,7 +621,6 @@ export const RSA = () => (
 
          </div>
          </Row>
-
         <Row className="mb-5">
          <div className="col">
          <img loading="lazy" className="finalSoloutionImage" alt ="Final soloution" src={FinalMockup1} />
@@ -576,11 +640,12 @@ export const RSA = () => (
         <Row>
         <div className="col-12 mb-5">
         <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dAuwY0OFkdQ" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3EW41viWZfw" allowfullscreen></iframe>
         </div>
         </div>
       </Row>
-
+      </a>
+      <a id="impact">
       <Row>
           <div className="col">
            <h3 className="headerCopy mt-5 mb-3">Showcasing Impact</h3>
@@ -593,7 +658,7 @@ export const RSA = () => (
          <img loading="lazy" className="finalSoloutionImage" alt ="Final soloution" src={DigitalRSAUsers} />
          </div>
          </Row>
-        
+       </a> 
       </Container>
 
       <Jumbotron className="takeawayJumbotron">
