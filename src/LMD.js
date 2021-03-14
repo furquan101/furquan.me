@@ -45,7 +45,7 @@ const Styles = styled.div`
   font-weight: bold;
   font-size: 38px;
   line-height: 150%;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   color: black;
 }
 
