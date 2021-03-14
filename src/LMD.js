@@ -24,7 +24,7 @@ const Styles = styled.div`
   }
 
   .tagStyling {
-    margin-top: 8px;
+    margin-top: 12px;
   }
 
 }

@@ -16,6 +16,14 @@ const Styles = styled.div`
 
 @media only screen and (max-width: 768px) {
 
+  .tagHeader {
+    font-size: 34px !important;
+  }
+
+  .tagStyling {
+    margin-top: 12px;
+  }
+
   .projectTitle {
     font-family: Open Sans, sans-serif;
     font-size: 2rem;
