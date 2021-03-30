@@ -413,7 +413,7 @@ export const LMD = () => (
               <li>Evolved the product to <b>profitability</b>.</li>
               <li>Increased deliveries per hour by <b>160%</b>.</li>
               <li>Reduced congestion by <b>166%</b>.</li>
-              <li>Increased customer satisfaction by <b>108%</b>.</li>
+              <li>Increased customer satisfaction by <b>120%</b>.</li>
             </ul>
           </div>
           <div className = "offset-xl-1 col-xl-6 col-md-7 col-sm-12 col-xs-12">
