@@ -88,6 +88,8 @@ const Styles = styled.div`
 
 .cardImage {
   border-radius:0px;
+  max-height:100%;
+  max-width: 100%;
 }
 
 .card:hover {
