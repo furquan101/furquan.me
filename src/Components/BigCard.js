@@ -65,7 +65,7 @@ const Styles = styled.div`
   font-weight: 600;
   color:#5D12FF;
   border-color: #5D12FF;
-  transition: 0.2s ease-in;
+  transition: 0.15s ease-in;
 }
 
 
