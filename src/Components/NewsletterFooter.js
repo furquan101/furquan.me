@@ -108,7 +108,7 @@ const Styles = styled.div`
   background: none;
   border: 2px solid #4100FA;
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 6px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 800;
@@ -126,19 +126,19 @@ const Styles = styled.div`
   width: 40%;
   height: 56px;
   background: none;
-  border: 2px solid #CDB6FF;
+  border: 2px solid #000000;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 6px;
   font-family: Open Sans;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 16px;
   line-height: 150%;
   /* or 30px */
   text-align: center;
   letter-spacing: 0.01em;
   text-transform: uppercase;
-  color: #CDB6FF;
+  color: #000000;
 }
 
 

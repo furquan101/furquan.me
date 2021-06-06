@@ -562,7 +562,7 @@ export const LMD = () => (
   <Row>
     <div className="col-12 mt-3 mb-4">
     <div class="embed-responsive embed-responsive-16by9">
-    <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FyVci9mXtRgvHv2ztRPjqrs%2Flmd-prototype%3Fnode-id%3D2%253A10778%26viewport%3D630%252C1402%252C0.1644621044397354%26scaling%3Dscale-down" allowFullScreen />
+    <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FTOJbcWV2eEol9YB2iOmawp%2FFinal-Deck%3Fpage-id%3D1%253A169%26node-id%3D103%253A4465%26viewport%3D14467%252C30311%252C0.5%26scaling%3Dscale-down" allowFullScreen />
     </div>
     </div>
   </Row>
