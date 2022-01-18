@@ -101,7 +101,7 @@
     <div className="row footerPadding">
         <div className="col-md-4">
         <h1 className = "footerHeader">Furquan Ahmad</h1>
-        <p className="footerSubHeader text-justify"> A product designer based in London currently solving as many mobility problems as possible.</p>
+        <p className="footerSubHeader text-justify"> Product designer based at Meta in London. Creating design content online.</p>
 
         <ul className = "footerList">
         <li className = "listStyle mb-2"><Mail strokeWidth="1.5" color = "#333333" size = {20}></Mail> <a href="mailto:furquan101@gmail.com">Email me</a></li>
