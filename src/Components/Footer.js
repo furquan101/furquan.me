@@ -115,7 +115,7 @@
             <li className = "mb-1">
                 <NavLink to = "/">Portfolio</NavLink>
             </li>
-            <li className = "mb-1"><a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1xIkkqduMqnDCDkj35yex8qKkD70O6hic/view?usp=sharing">Resume</a></li>
+            <li className = "mb-1"><a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1UpTdtar62IfRxNy-11cjNovRyueqTSnx/view?usp=sharing">Resume</a></li>
             <li className = "mb-1"><a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/furquan101/">LinkedIn</a></li>
             <li className = "mb-1"><a rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/channel/UC7IIFWV7QjKja6UYjL-z9Cw">YouTube</a></li>
             <li className = "mb-1"><a rel="noopener noreferrer" target="_blank" href="https://newsletter.furquan.me/">Newsletter</a></li>
