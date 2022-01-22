@@ -188,7 +188,7 @@ export const About = () => (
             <div className="row d-flex align-items-center">
               <div className="col-lg-6 col-12 col-md-7">
               <h1 className = "headerStyle"> Hi, I'm Furquan <span aria-label="waving hand" role="img">👋</span></h1>
-                <p className="subHeaderText"> I'm a product designer designing global mobility soloutions for megacities.
+                <p className="subHeaderText"> I'm a product designer at Meta currently working on Workplace team.xw
                 </p><div className="row">
                   <div className="col-lg-6 col-6">
                     <hr className="fancy-line mt-2 mb-4" />
@@ -196,7 +196,7 @@ export const About = () => (
                 </div>
                 <div className ="bodyHeaderText">
                 <p>Because I've been in the trenches as a designer and developer, I know about the tech jargon that matters.</p>
-                <p>Today, I'm a product designer at Meta in London, working on Workplace</p>
+                <p>Today, I'm a product designer at Meta in London, working on Workplace previously at Ford Motor Company</p>
                 <p>Catch me outside from work you will find me running with my local running club,  at a climbing wall or working on one of my community side projects.</p>
                </div>
               </div>
